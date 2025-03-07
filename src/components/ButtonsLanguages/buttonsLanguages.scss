@@ -1,0 +1,83 @@
+.buttonsLanguages {
+  position: relative;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    margin-left: 10px;
+
+    &:hover {
+      border-radius: 100px;
+      background: linear-gradient(135deg, #A3B8E6, #1E4193);
+    }
+  }
+
+  &__listPhone {
+    margin: 0 15px 0 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__buttonPhone {
+    display: block;
+    width: 30px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+    &--ru {
+      background-image: url('../../../public/ru.svg');
+    }
+
+    &--he {
+      background-image: url('../../../public/he.svg');
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      width: 30px;
+      height: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 10px;
+
+      &--ru {
+        background-image: url('../../../public/ru.svg');
+      }
+
+      &--he {
+        background-image: url('../../../public/he.svg');
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+}
+
+[dir = 'rtl'] .buttonsLanguages__listPhone {
+  margin: 0 0 0 15px;
+}

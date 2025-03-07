@@ -1,0 +1,17 @@
+html {
+  background-color: #FAFAFA;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.secondaryFont {
+  font-family: 'Raleway', sans-serif;
+}
