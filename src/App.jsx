@@ -8,7 +8,7 @@ import './App.scss';
 function App() {
   return (
     <Router>
-      <Routes>
+      <Routes basename='/miller-ins'>
         <Route path='/' element={<Home />}/>
         <Route path='/AboutUs' element={<AboutUs />}/>
       </Routes>
