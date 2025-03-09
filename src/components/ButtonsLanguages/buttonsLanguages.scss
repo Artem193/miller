@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     margin-left: 10px;
 
     &:hover {
@@ -17,7 +17,7 @@
     justify-content: end;
     gap: 10px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       display: none;
     }
   }
@@ -45,7 +45,7 @@
   &__button {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       display: block;
       width: 30px;
       height: 20px;

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { ButtonsLanguages } from '../ButtonsLanguages/ButtonsLanguages';
+import { Accessibility } from '../Accessibility/Accessibility';
 
 import './header.scss'
 
@@ -36,7 +37,7 @@ export const Header = () => {
           <ul className='nav__list'>
             <li className='nav__item'>
               <Link
-                className={`nav__link ${location.pathname === '/' ? 'nav__link--active' : ''}`}
+                className={`nav__link ${location.pathname.endsWith('/miller/') ? 'nav__link--active' : ''}`}
                 to='/'
               >
                 {t('header.basic')}
@@ -288,6 +289,7 @@ export const Header = () => {
           <Link className='nav__link' to='/'>{t('header.contacts')}</Link>
         </li>
       </ul>
+      <Accessibility />
     </>
   )
 }

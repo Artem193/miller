@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import './home.scss'
 
 import { Header } from '../../Header/Header';
+import { HeroSection } from './HeroSection/HeroSection'
 import { Footer } from '../../Footer/Footer';
 
 export const Home = () => {
@@ -21,7 +22,7 @@ export const Home = () => {
     <>
       <Header />
       <main>
-        tututu
+        <HeroSection />
       </main>
       <Footer />
     </>

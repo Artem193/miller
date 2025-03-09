@@ -25,6 +25,18 @@ export const languages = {
         investmentFunds: 'קרנות השקעה',
         rightsRealization: 'מימוש זכויות',
       },
+
+      accessibility: {
+        accessibility__title: 'פאנל נגישות',
+        accessibility__button1: 'כיבוי מצב מונוכרום',
+        accessibility__button2: 'הפעלת מצב מונוכרום',
+        accessibility__button3: 'כיבוי ניגודיות כהה',
+        accessibility__button4: 'הפעלת ניגודיות כהה',
+        accessibility__button5: 'כיבוי ניגודיות בהירה',
+        accessibility__button6: 'הפעלת ניגודיות בהירה',
+        accessibility__button7: 'הגדלת גופן',
+        accessibility__button8: 'הקטנת גופן',
+      },
     }
   },
 
@@ -53,6 +65,18 @@ export const languages = {
         pensionAssetManagement: 'Ведение пенсионных активов',
         investmentFunds: 'Инвестиционные фонды',
         rightsRealization: 'Реализация прав',
+      },
+
+      accessibility: {
+        accessibility__title: 'Панель доступности',
+        accessibility__button1: 'Отключить монохромный режим',
+        accessibility__button2: 'Включить монохромный режим',
+        accessibility__button3: 'Отключить темный контраст',
+        accessibility__button4: 'Включить темный контраст',
+        accessibility__button5: 'Отключить светлый контраст',
+        accessibility__button6: 'Включить светлый контраст',
+        accessibility__button7: 'Увеличить шрифт',
+        accessibility__button8: 'Уменьшить шрифт',
       },
     }
   }

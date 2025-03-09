@@ -7,15 +7,19 @@
   border: #1E4193 0.5px solid;
   border-radius: 10px;
 
-
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    margin: 0;
-    padding: 20px 110px 40px;
+    max-width: 80%;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
     height: auto;
     border: none;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 70%;
   }
 
   &--openMenu {
@@ -31,8 +35,7 @@
     width: 50px;
     margin: auto;
 
-    @media (min-width: 768px) {
-      padding-left: 15px;
+    @media (min-width: 1280px) {
       object-fit: fill;
       width: 70px;
       margin: 0;
@@ -45,7 +48,7 @@
     width: 20px;
     height: 20px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       display: none;
     }
 
@@ -58,7 +61,7 @@
 .nav {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     display: block;
   }
 
@@ -67,8 +70,8 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    font-size: 18px;
+    gap: 20px;
+    font-size: 1.25rem;
   }
 
   &__item {
@@ -84,7 +87,7 @@
     cursor: pointer;
     transition: color 0.2s ease-in-out;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       color: #000000;
       padding: 10px;
 
@@ -115,7 +118,7 @@
     flex-direction: column;
     border: #FFFFFF 0.5px solid;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
       background: #FAFAFA;
       border: none;
       width: max-content;
