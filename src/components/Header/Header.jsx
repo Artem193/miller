@@ -31,7 +31,7 @@ export const Header = () => {
   return (
     <>
       <header className={openMenu === 'menuMob' ? 'header header--openMenu' : 'header'}>
-        <Link to='/' className='header__logo'><img className='header__logo' src='./public/logo.svg' alt={t('header.logo')}></img></Link>
+        <Link to='/' className='header__logo'><img className='header__logo' src='/miller/logo.svg' alt={t('header.logo')}></img></Link>
         <nav className='nav'>
           <ul className='nav__list'>
             <li className='nav__item'>
@@ -165,7 +165,7 @@ export const Header = () => {
         <ButtonsLanguages />
         <img
           className={openMenu === 'menuMob' ? 'header__burger-menu header__burger-menu--open' : 'header__burger-menu'}
-          src={openMenu === 'menuMob' ? './public/crossMenu.svg' : './public/burger-menu.svg'}
+          src={openMenu === 'menuMob' ? '/miller/crossMenu.svg' : '/miller/burger-menu.svg'}
           alt={t('header.menu')}
           onClick={() => { toggleMenu('menuMob') }}
         ></img>
