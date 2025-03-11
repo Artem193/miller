@@ -26,6 +26,7 @@ export const HeroSection = () => {
           <h1 className='heroSection__title'>
             Страховое агенство Миллер
           </h1>
+          <img src='/miller/heroSectionPhoto.png' className='heroSection__photo--mobile' alt='Photo'></img>
           <p className='heroSection__text'>
             Ваш надежный партнер в мире финансов и страхования с более чем 20-летним опытом
           </p>
@@ -33,7 +34,7 @@ export const HeroSection = () => {
             Задать вопрос
           </button>
         </div>
-        <img src='/miller/heroSectionPhoto.png' className='heroSection__photo'></img>
+        <img src='/miller/heroSectionPhoto.png' className='heroSection__photo' alt='Photo'></img>
       </div>
       <Swiper
         modules={[Navigation, Pagination]}

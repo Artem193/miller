@@ -19,7 +19,7 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      font-size: 4rem;
+      font-size: 2.5rem;
       text-align: start;
     }
 
@@ -37,6 +37,12 @@
       margin-bottom: 40px;
       max-width: 350px;
       text-align: start;
+      font-size: 1rem;
+    }
+
+    
+    @media (min-width: 1400px) {
+      font-size: 1.25rem;
     }
   }
 
@@ -71,8 +77,20 @@
   }
 
   &__photo {
-    max-width: 100%;
-    height: auto;
+    display: none;
+    width: 55%;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    &--mobile {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__slide {
