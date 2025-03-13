@@ -37,6 +37,12 @@ export const languages = {
         accessibility__button7: 'הגדלת גופן',
         accessibility__button8: 'הקטנת גופן',
       },
+
+      heroSection: {
+        heroSection__title: 'סוכנות הביטוח מילר',
+        heroSection__text: 'השותף האמין שלך בתחום הביטוח והפיננסים עם ניסיון של למעלה מ-20 שנה',
+        heroSection__button: 'לשאול שאלה',
+      },
     }
   },
 
@@ -77,6 +83,12 @@ export const languages = {
         accessibility__button6: 'Включить светлый контраст',
         accessibility__button7: 'Увеличить шрифт',
         accessibility__button8: 'Уменьшить шрифт',
+      },
+
+      heroSection: {
+        heroSection__title: 'Страховое агенство Миллер',
+        heroSection__text: 'Ваш надежный партнер в мире финансов и страхования с более чем 20-летним опытом',
+        heroSection__button: 'Задать вопрос',
       },
     }
   }

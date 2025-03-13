@@ -1,0 +1,22 @@
+.circles {
+  display: grid;
+  grid-template-columns: repeat(9, 10px);
+  grid-template-rows: repeat(5, 10px);
+  gap: 4px;
+
+  @media (min-width: 1400px) {
+    gap: 16px;
+  }
+
+  &__circle {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(202, 202, 202, 0.2);
+    border-radius: 50%;
+
+    @media (min-width: 1400px) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

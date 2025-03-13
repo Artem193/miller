@@ -40,7 +40,7 @@
       font-size: 1rem;
     }
 
-    
+
     @media (min-width: 1400px) {
       font-size: 1.25rem;
     }
@@ -76,15 +76,48 @@
     }
   }
 
-  &__photo {
+  &__circles {
+    position: absolute;
+    top: 10%;
+
+    &--bottom {
+      top: 80%;
+      right: -15%;
+    }
+
+    &--mob {
+      position: absolute;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--mobBottom {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__media {
     display: none;
-    width: 55%;
 
     @media (min-width: 768px) {
       display: block;
+      position: relative;
+      width: 55%;
     }
+  }
 
-    &--mobile {
+  &__photo {
+    width: 100%;
+
+    &--mob {
       width: 100%;
 
       @media (min-width: 768px) {
@@ -98,8 +131,9 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    background: #ddd;
-    font-size: 24px;
-    border-radius: 10px;
   }
+}
+
+[dir='rtl'] .heroSection__circles {
+  left: 0;
 }
