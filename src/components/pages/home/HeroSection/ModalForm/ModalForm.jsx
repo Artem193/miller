@@ -23,7 +23,7 @@ export const ModalForm = ({ onClose }) => {
     <div className="modalForm" onClick={onClose}>
       <div className="modalForm__content" onClick={(e) => e.stopPropagation()}>
         <h2 className="modalForm__title">Получите консультацию</h2>
-        <p className="modalForm__description">Заполните форму, и наш специалист свяжется с вами</p>
+        <p className="modalForm__description">Заполните форму, и наш специалист свяжется с Вами</p>
         <form onSubmit={handleSubmit}>
           <input 
             type="text" 

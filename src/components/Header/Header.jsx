@@ -53,7 +53,7 @@ export const Header = () => {
                 onMouseEnter={() => setOpenDropdown('services')}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                {t('header.services')}<span className={openDropdown === 'services' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▴</span>
+                {t('header.services')}<span className={openDropdown === 'services' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▾</span>
                 {openDropdown === 'services' && (
                   <ul className='nav__dropdown'>
                     <li className='nav__item'>
@@ -109,7 +109,7 @@ export const Header = () => {
                 onMouseEnter={() => setOpenDropdown('ourTeam')}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                {t('header.ourTeam')}<span className={openDropdown === 'ourTeam' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▴</span>
+                {t('header.ourTeam')}<span className={openDropdown === 'ourTeam' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▾</span>
                 {openDropdown === 'ourTeam' && (
                   <ul className='nav__dropdown'>
                     <li className='nav__item'>
@@ -164,7 +164,7 @@ export const Header = () => {
         </li>
         <li className='nav__item'>
           <span className='nav__link' onClick={() => { toggleDropdown('services') }}>
-            {t('header.services')}<span className={openDropdown === 'services' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▴</span>
+            {t('header.services')}<span className={openDropdown === 'services' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▾</span>
             {openDropdown === 'services' && (
               <ul className='nav__dropdown'>
                 <li className='nav__item'>
@@ -215,7 +215,7 @@ export const Header = () => {
         </li>
         <li className='nav__item'>
           <span className='nav__link' onClick={() => { toggleDropdown('ourTeam') }}>
-            {t('header.ourTeam')}<span className={openDropdown === 'ourTeam' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▴</span>
+            {t('header.ourTeam')}<span className={openDropdown === 'ourTeam' ? 'nav__arrow nav__arrow--open' : 'nav__arrow'}>▾</span>
             {openDropdown === 'ourTeam' && (
               <ul className='nav__dropdown'>
                 <li className='nav__item'>
