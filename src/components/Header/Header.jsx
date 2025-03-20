@@ -30,7 +30,7 @@ export const Header = () => {
   }
 
   return (
-    <>
+    <div className='containerMob'>
       <header className={openMenu === 'menuMob' ? 'header header--openMenu' : 'header'}>
         <Link to='/' className='header__logo'><img className='header__logo' src='/miller/logo.svg' alt={t('header.logo')}></img></Link>
         <nav className='nav'>
@@ -113,43 +113,22 @@ export const Header = () => {
                 {openDropdown === 'ourTeam' && (
                   <ul className='nav__dropdown'>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.carInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.AnatolyMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.KristinaMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.travelInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Permyakov')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.healthInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Plugin')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.lifeInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Povolotsky')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.businessInsurance')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.internationalTravelInsurance')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.accidentInsurance')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.propertyInsurance')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.financialPlanningAndLoans')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.pensionAssetManagement')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.investmentFunds')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.rightsRealization')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Pinkasovich')}</Link>
                     </li>
                   </ul>
                 )}
@@ -240,43 +219,22 @@ export const Header = () => {
             {openDropdown === 'ourTeam' && (
               <ul className='nav__dropdown'>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.carInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.AnatolyMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.KristinaMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.travelInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Permyakov')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.healthInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Plugin')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.lifeInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Povolotsky')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.businessInsurance')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.internationalTravelInsurance')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.accidentInsurance')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.propertyInsurance')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.financialPlanningAndLoans')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.pensionAssetManagement')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.investmentFunds')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.rightsRealization')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Pinkasovich')}</Link>
                 </li>
               </ul>
             )}
@@ -290,6 +248,6 @@ export const Header = () => {
         </li>
       </ul>
       <Accessibility />
-    </>
+    </div>
   )
 }

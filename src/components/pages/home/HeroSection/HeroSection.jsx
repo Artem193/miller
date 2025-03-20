@@ -1,68 +1,88 @@
+import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
-import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { Circles } from './Circle/Circles';
+import { ModalForm } from "./ModalForm/ModalForm";
 
 import "swiper/css";
-import './heroSection.scss'
+import './heroSection.scss';
+
+import Arel from '/miller/insCompanies/Arel.png';
+import Klal from '/miller/insCompanies/Klal.png';
+import Shomera from '/miller/insCompanies/Shomera.png';
+import Shlomo from '/miller/insCompanies/Shlomo.png';
+import Fenix from '/miller/insCompanies/Fenix.png';
+import Migdal from '/miller/insCompanies/Migdal.png';
 
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
+  const [isModalFormOpen, setIsModalFormOpen] = useState(false);
+
+  const insCompanies = [
+    { id: 1, img: Arel },
+    { id: 2, img: Klal },
+    { id: 3, img: Shomera },
+    { id: 4, img: Shlomo },
+    { id: 5, img: Fenix },
+    { id: 6, img: Migdal },
+  ];
 
   useEffect(() => {
-    if (i18n.language === 'he') {
-      document.body.setAttribute('dir', 'rtl');
-    } else {
-      document.body.setAttribute('dir', 'ltr');
-    }
+    document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
   }, [i18n.language]);
 
   return (
-    <section className='heroSection container'>
-      <div className='heroSection__flex'>
-        <div className='heroSection__textInfo'>
-          <h1 className='heroSection__title'>
-            {t('heroSection.heroSection__title')}
-          </h1>
-          <div className='heroSection__circles--mob'>
-            <Circles />
+    <>
+      <section className='heroSection container'>
+        <div className='heroSection__flex'>
+          <div className='heroSection__textInfo'>
+            <h1 className='heroSection__title'>
+              {t('home.heroSection.heroSection__title')}
+            </h1>
+            <div className='heroSection__circles--mob'>
+              <Circles />
+            </div>
+            <img src='/miller/heroSectionPhoto.png' className='heroSection__photo--mob' alt='Photo' />
+            <div className='heroSection__circles--mobBottom'>
+              <Circles />
+            </div>
+            <p className='heroSection__text'>
+              {t('home.heroSection.heroSection__text')}
+            </p>
+            <button className='heroSection__button' onClick={() => setIsModalFormOpen(true)}>
+              {t('home.heroSection.heroSection__button')}
+            </button>
           </div>
-          <img src='/miller/heroSectionPhoto.png' className='heroSection__photo--mob' alt='Photo'></img>
-          <div className='heroSection__circles--mobBottom'>
-            <Circles />
+          <div className='heroSection__media'>
+            <div className='heroSection__circles'>
+              <Circles />
+            </div>
+            <img src='/miller/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
+            <div className='heroSection__circles heroSection__circles--bottom'>
+              <Circles />
+            </div>
           </div>
-          <p className='heroSection__text'>
-            {t('heroSection.heroSection__text')}
-          </p>
-          <button className='heroSection__button'>
-            {t('heroSection.heroSection__button')}
-          </button>
         </div>
-        <div className='heroSection__media'>
-          <div className='heroSection__circles'>
-            <Circles />
-          </div>
-          <img src='/miller/heroSectionPhoto.png' className='heroSection__photo' alt='Photo'></img>
-          <div className='heroSection__circles heroSection__circles--bottom'>
-            <Circles />
-          </div>
-        </div>
-      </div>
+      </section>
       <Swiper
-        modules={[Autoplay]}
-        spaceBetween={20}
-        slidesPerView={3}
-        loop={true}
-        autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
-        speed={4000}
-        allowTouchMove={false}
-      >
-        <SwiperSlide><div className="heroSection__slide">1</div></SwiperSlide>
-        <SwiperSlide><div className="heroSection__slide">2</div></SwiperSlide>
-        <SwiperSlide><div className="heroSection__slide">3</div></SwiperSlide>
-        <SwiperSlide><div className="heroSection__slide">4</div></SwiperSlide>
-      </Swiper>
-    </section>
-  )
-}
+          key={i18n.language}
+          modules={[Autoplay]}
+          spaceBetween={10}
+          slidesPerView={4}
+          loop={true}
+          autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
+          speed={2000}
+          allowTouchMove={false}
+        >
+          {insCompanies.map((company) => (
+            <SwiperSlide key={company.id}>
+              <img src={company.img} className="heroSection__slide" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+      {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
+    </>
+  );
+};

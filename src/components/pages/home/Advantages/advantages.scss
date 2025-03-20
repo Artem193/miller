@@ -1,0 +1,87 @@
+.advantages {
+
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__block {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 430px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 768px) {
+      padding: 20px;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #A3B8E6, #1E4193);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--1 {
+      background-image: url('/miller/advantages__icon--1.svg');
+    }
+
+    &--2 {
+      background-image: url('/miller/advantages__icon--2.svg');
+    }
+
+    &--3 {
+      background-image: url('/miller/advantages__icon--3.svg');
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

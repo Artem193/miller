@@ -1,5 +1,6 @@
 html {
   background-color: #FAFAFA;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,11 +22,10 @@ h1 {
   margin: 0 30px;
 
   @media (min-width: 1280px) {
-    max-width: 80%;
     margin: 0 auto;
   }
 
   @media (min-width: 1400px) {
-    max-width: 70%;
+    max-width: 80%;
   }
 }

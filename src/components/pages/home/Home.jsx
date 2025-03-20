@@ -5,6 +5,8 @@ import './home.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSection } from './HeroSection/HeroSection'
+import { Services } from './Services/Services';
+import { Advantages } from './Advantages/Advantages';
 import { Footer } from '../../Footer/Footer';
 
 export const Home = () => {
@@ -21,8 +23,10 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className='Home'>
         <HeroSection />
+        <Services />
+        <Advantages />
       </main>
       <Footer />
     </>
