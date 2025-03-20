@@ -54,7 +54,8 @@ export const ModalForm = ({ onClose }) => {
           />
           <button type="submit" className="modalForm__submit">Получить консультацию</button>
         </form>
-        <button className="modalForm__close" onClick={onClose}>Закрыть</button>
+        <div className='modalForm__close' onClick={onClose}></div>
+        {/* <button className="modalForm__close" onClick={onClose}>Закрыть</button> */}
       </div>
     </div>
   );

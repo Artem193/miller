@@ -74,19 +74,32 @@
     }
   }
 
-  &__close {
-    margin-top: 15px;
-    font-family: inherit;
-    padding: 10px 20px;
-    background-color: #bfa834;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+  // &__close {
+  //   margin-top: 15px;
+  //   font-family: inherit;
+  //   padding: 10px 20px;
+  //   background-color: #bfa834;
+  //   color: #FFFFFF;
+  //   border: none;
+  //   cursor: pointer;
+  //   border-radius: 5px;
+  //   font-size: 16px;
 
-    &:hover {
-      background-color: #8f7b28;
-    }
+  //   &:hover {
+  //     background-color: #8f7b28;
+  //   }
+  // }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url(../../../../../../public/cross.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
   }
 }
