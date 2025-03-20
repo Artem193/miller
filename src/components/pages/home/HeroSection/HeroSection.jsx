@@ -18,6 +18,7 @@ import Migdal from '/insCompanies/Migdal.png';
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
   const [isModalFormOpen, setIsModalFormOpen] = useState(false);
+  const [swiperKey, setSwiperKey] = useState(0);
 
   const insCompanies = [
     { id: 1, img: Arel },
@@ -30,6 +31,10 @@ export const HeroSection = () => {
 
   useEffect(() => {
     document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
+  }, [i18n.language]);
+
+  useEffect(() => {
+    setSwiperKey(prevKey => prevKey + 1);
   }, [i18n.language]);
 
   return (
@@ -66,21 +71,21 @@ export const HeroSection = () => {
         </div>
       </section>
       <Swiper
-          key={i18n.language}
-          modules={[Autoplay]}
-          spaceBetween={10}
-          slidesPerView={4}
-          loop={true}
-          autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
-          speed={2000}
-          allowTouchMove={false}
-        >
-          {insCompanies.map((company) => (
-            <SwiperSlide key={company.id}>
-              <img src={company.img} className="heroSection__slide" />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        key={swiperKey}
+        modules={[Autoplay]}
+        spaceBetween={10}
+        slidesPerView={4}
+        loop={true}
+        autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
+        speed={2000}
+        allowTouchMove={false}
+      >
+        {insCompanies.map((company) => (
+          <SwiperSlide key={company.id}>
+            <img src={company.img} className="heroSection__slide" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </>
