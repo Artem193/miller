@@ -11,23 +11,61 @@
   z-index: 1000;
 
   &__content {
-    background: white;
-    padding: 20px;
+    background: #FFFFFF;
+    padding: 40px;
     border-radius: 10px;
     text-align: center;
-    width: 1320px;
-    height: 1080px;
+    width: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
   }
 
-  &__close {
+  &__title {
+    font-size: 24px;
+    color: #1e4193;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 12px;
+    background: #73C4B1;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
     margin-top: 10px;
+
+    &:hover {
+      background: #5aa996;
+    }
+  }
+
+  &__close {
+    margin-top: 15px;
     padding: 10px 20px;
-    background: red;
-    color: white;
+    background: #bfa834;
+    color: #FFFFFF;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
   }
 }

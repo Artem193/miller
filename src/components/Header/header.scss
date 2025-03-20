@@ -40,7 +40,7 @@
   }
 
   @media (min-width: 1400px) {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   &--openMenu {
@@ -107,22 +107,36 @@
     color: #FFFFFF;
     border-radius: 100px;
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
 
     @media (min-width: 1280px) {
       color: #000000;
       padding: 10px;
+      font-size: 1rem;
 
       &:hover {
         background-color: #A3B8E6;
+        transform: scale(1.05);
       }
+    }
+
+    @media (min-width: 1500px) {
+      font-size: 1.25rem;
     }
 
     &--active {
       font-weight: 700;
       color: #1E4193;
     }
+  }
 
+  &__arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+
+    &--open {
+      transform: rotate(180deg);
+    }
   }
 
   &__dropdown {
