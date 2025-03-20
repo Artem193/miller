@@ -8,12 +8,12 @@ import { ModalForm } from "./ModalForm/ModalForm";
 import "swiper/css";
 import './heroSection.scss';
 
-import Arel from '/miller/insCompanies/Arel.png';
-import Klal from '/miller/insCompanies/Klal.png';
-import Shomera from '/miller/insCompanies/Shomera.png';
-import Shlomo from '/miller/insCompanies/Shlomo.png';
-import Fenix from '/miller/insCompanies/Fenix.png';
-import Migdal from '/miller/insCompanies/Migdal.png';
+import Arel from '/insCompanies/Arel.png';
+import Klal from '/insCompanies/Klal.png';
+import Shomera from '/insCompanies/Shomera.png';
+import Shlomo from '/insCompanies/Shlomo.png';
+import Fenix from '/insCompanies/Fenix.png';
+import Migdal from '/insCompanies/Migdal.png';
 
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
