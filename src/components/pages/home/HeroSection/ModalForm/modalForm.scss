@@ -52,6 +52,10 @@
       outline: none;
       border: 0.5px solid #1e4193;
     }
+
+    &.error {
+      border: 0.5px solid red;
+    }
   }
 
   &__submit {
@@ -74,22 +78,6 @@
     }
   }
 
-  // &__close {
-  //   margin-top: 15px;
-  //   font-family: inherit;
-  //   padding: 10px 20px;
-  //   background-color: #bfa834;
-  //   color: #FFFFFF;
-  //   border: none;
-  //   cursor: pointer;
-  //   border-radius: 5px;
-  //   font-size: 16px;
-
-  //   &:hover {
-  //     background-color: #8f7b28;
-  //   }
-  // }
-
   &__close {
     position: absolute;
     top: 20px;
@@ -101,5 +89,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
   }
 }
