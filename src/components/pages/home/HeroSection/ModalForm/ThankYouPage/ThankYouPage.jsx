@@ -13,9 +13,9 @@ export const ThankYouPage = ({ onClose }) => {
   return (
     <div className="thankYouPage">
       <div className="thankYouPage__content">
-        <h2 className="thankYouPage__title">Спасибо за ваш запрос!</h2>
-        <p className="thankYouPage__message">Мы получили вашу информацию и скоро свяжемся с вами.</p>
-        <button onClick={onClose} className="thankYouPage__close">Закрыть</button>
+        <h2 className="thankYouPage__title">{t('thankYouPage.title')}</h2>
+        <p className="thankYouPage__message">{t('thankYouPage.message')}</p>
+        <button onClick={onClose} className="thankYouPage__close">{t('thankYouPage.close')}</button>
       </div>
     </div>
   );

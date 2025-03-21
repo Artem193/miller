@@ -10,7 +10,7 @@
     border-radius: 100px;
     padding: 4px;
     cursor: pointer;
-    transition: right 0.4s ease-in-out;
+    transition: right 0.4s ease-in-out, left 0.4s ease-in-out;
 
     @media (min-width: 768px) {
       right: -245px;
@@ -73,4 +73,35 @@
       font-size: 1.5rem;
     }
   }
+
+  &__link {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+[dir='rtl'] .buttons__button {
+  left: -195px;
+  right: unset;
+  
+  @media (min-width: 768px) {
+    left: -245px;
+    right: unset;
+  }
+
+  &--open {
+    left: 0;
+  }
+}
+
+[dir='rtl'] .buttons__text {
+  padding-left: 8px;
+
+  @media (min-width: 768px) {
+    padding-left: 10px;
+  }
+}
+
+[dir='rtl'] .buttons__call {
+  width: 60px;
 }

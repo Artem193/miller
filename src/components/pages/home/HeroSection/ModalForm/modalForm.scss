@@ -93,3 +93,7 @@
     background-color: transparent;
   }
 }
+
+[dir='rtl'] .modalForm__input {
+  text-align: right;
+}

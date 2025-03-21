@@ -20,7 +20,7 @@ export const Buttons = () => {
 
   return (
     <div className='buttons'>
-      <div 
+      <div
         className={`buttons__button ${isOpen ? 'buttons__button--open' : ''}`}
         onMouseEnter={() => window.innerWidth > 1024 && setIsOpen(true)}
         onMouseLeave={() => window.innerWidth > 1024 && setIsOpen(false)}
@@ -28,7 +28,11 @@ export const Buttons = () => {
       >
         <div className='buttons__background'>
           <div className='buttons__call'></div>
-          <div className='buttons__text'>050-123-45-67</div>
+          <div className='buttons__text'>
+            <a href="tel:+972504255338" className='buttons__link'>
+              050-425-5338
+            </a>
+          </div>
         </div>
       </div>
     </div>

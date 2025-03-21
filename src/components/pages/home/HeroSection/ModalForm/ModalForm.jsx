@@ -48,31 +48,49 @@ export const ModalForm = ({ onClose }) => {
   return (
     <div className="modalForm" onClick={onClose}>
       <div className="modalForm__content" onClick={(e) => e.stopPropagation()}>
-        <h2 className="modalForm__title">Получите консультацию</h2>
-        <p className="modalForm__description">Заполните форму, и наш специалист свяжется с вами</p>
+        <h2 className="modalForm__title">{t('modalForm.title')}</h2>
+        <p className="modalForm__description">{t('modalForm.description')}</p>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
-            placeholder="Ваше имя"
-            {...register("name", { required: "Это поле обязательное" })}
-            className={`modalForm__input ${errors.name ? "error" : ""}`} 
+            placeholder={t('modalForm.placeholder__name')}
+            {...register("name", {
+              required: t('validation.required'),
+              minLength: {
+                value: 2,
+              },
+            })}
+            className={`modalForm__input ${errors.name ? "error" : ""}`}
+            dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
 
           <input
             type="tel"
-            placeholder="Ваш телефон"
-            {...register("phone", { required: "Это поле обязательное" })}
+            placeholder={t('modalForm.placeholder__phone')}
+            {...register("phone", {
+              required: t('validation.required'),
+              pattern: {
+                value: /^[0-9+() -]{7,15}$/,
+              },
+            })}
             className={`modalForm__input ${errors.phone ? "error" : ""}`}
+            dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
 
           <input
             type="text"
-            placeholder="Ваш город"
-            {...register("city", { required: "Это поле обязательное" })}
+            placeholder={t('modalForm.placeholder__city')}
+            {...register("city", {
+              required: t('validation.required'),
+              minLength: {
+                value: 2,
+              },
+            })}
             className={`modalForm__input ${errors.city ? "error" : ""}`}
+            dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
 
-          <button type="submit" className="modalForm__submit">Отправить</button>
+          <button type="submit" className="modalForm__submit">{t('modalForm.submit')}</button>
         </form>
         <div className='modalForm__close' onClick={onClose}></div>
       </div>
