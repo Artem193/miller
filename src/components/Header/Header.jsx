@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { ButtonsLanguages } from '../ButtonsLanguages/ButtonsLanguages';
 import { Accessibility } from '../Accessibility/Accessibility';
+import { Buttons } from './Buttons/Buttons';
 
 import './header.scss'
 
@@ -31,6 +32,7 @@ export const Header = () => {
 
   return (
     <div className='containerMob'>
+      <Buttons />
       <header className={openMenu === 'menuMob' ? 'header header--openMenu' : 'header'}>
         <Link to='/' className='header__logo'><img className='header__logo' src='/miller/logo.svg' alt={t('header.logo')}></img></Link>
         <nav className='nav'>
