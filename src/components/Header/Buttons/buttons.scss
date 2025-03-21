@@ -3,29 +3,40 @@
   &__button {
     position: absolute;
     top: 15vh;
-    right: -245px;
-    width: 300px;
-    height: 60px;
+    right: -195px;
+    width: 240px;
+    height: 48px;
     border: 0.5px solid #1E4193;
     border-radius: 100px;
-    padding: 5px;
+    padding: 4px;
     cursor: pointer;
     transition: right 0.4s ease-in-out;
+
+    @media (min-width: 768px) {
+      right: -245px;
+      width: 300px;
+      height: 60px;
+      padding: 5px;
+    }
 
     &--open {
       right: 0;
     }
-  
+
   }
 
   &__background {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     width: 100%;
     height: 100%;
     background-color: #6984c2;
     border-radius: 100px;
     box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      gap: 20px;
+    }
   }
 
   &__call {
@@ -35,9 +46,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    width: 57px;
-    height: 40px;
-    margin: 10px;
+    width: 46px;
+    height: 32px;
+    margin: 8px;
+
+    @media (min-width: 768px) {
+      width: 57px;
+      height: 40px;
+      margin: 10px;
+    }
   }
 
   &__text {
@@ -48,7 +65,11 @@
     background-color: #1E4193;
     border-radius: 100px;
     color: #FFFFFF;
-    padding-right: 10px;
+    padding-right: 8px;
     font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      padding-right: 10px;
+    }
   }
 }
