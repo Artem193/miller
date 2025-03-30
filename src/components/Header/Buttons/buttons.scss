@@ -2,11 +2,9 @@
 
   &__button {
     position: absolute;
-    top: 15vh;
     right: -195px;
     width: 240px;
     height: 48px;
-    border: 0.5px solid #1E4193;
     border-radius: 100px;
     padding: 4px;
     cursor: pointer;
@@ -17,6 +15,16 @@
       width: 300px;
       height: 60px;
       padding: 5px;
+    }
+
+    &--call {
+      top: 15vh;
+      border: 0.5px solid #1E4193;
+    }
+
+    &--wp {
+      top: 25vh;
+      border: 0.5px solid #25D366;
     }
 
     &--open {
@@ -30,18 +38,24 @@
     gap: 16px;
     width: 100%;
     height: 100%;
-    background-color: #6984c2;
     border-radius: 100px;
     box-sizing: border-box;
 
     @media (min-width: 768px) {
       gap: 20px;
     }
+
+    &--call {
+      background-color: #6984c2;
+    }
+
+    &--wp {
+      background-color: #25D366;
+    }
   }
 
-  &__call {
+  &__icon {
     display: flex;
-    background-image: url(../../../../public/buttons__call.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,6 +69,14 @@
       height: 40px;
       margin: 10px;
     }
+
+    &--call {
+      background-image: url(../../../../public/buttons__call.svg);
+    }
+
+    &--wp {
+      background-image: url(../../../../public/buttons__wp.svg);
+    }
   }
 
   &__text {
@@ -62,7 +84,6 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    background-color: #1E4193;
     border-radius: 100px;
     color: #FFFFFF;
     padding-right: 8px;
@@ -71,6 +92,14 @@
     @media (min-width: 768px) {
       padding-right: 10px;
       font-size: 1.5rem;
+    }
+
+    &--call {
+      background-color: #1E4193;
+    }
+
+    &--wp {
+      background-color: #075E54;
     }
   }
 
@@ -83,7 +112,7 @@
 [dir='rtl'] .buttons__button {
   left: -195px;
   right: unset;
-  
+
   @media (min-width: 768px) {
     left: -245px;
     right: unset;
@@ -103,5 +132,5 @@
 }
 
 [dir='rtl'] .buttons__call {
-  width: 60px;
+  width: 48px;
 }

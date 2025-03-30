@@ -99,8 +99,8 @@ export const Advantages = () => {
               <div className='advantages__img'>
                 <div className={`advantages__icon advantages__icon--${num}`}></div>
               </div>
-              <h3 className='services__name'>{t(`home.advantages.advantages__name${num}`)}</h3>
-              <p className='services__text'>{t(`home.advantages.advantages__text${num}`)}</p>
+              <h3 className='advantages__name'>{t(`home.advantages.advantages__name${num}`)}</h3>
+              <p className='advantages__text'>{t(`home.advantages.advantages__text${num}`)}</p>
             </div>
           </SwiperSlide>
         ))}

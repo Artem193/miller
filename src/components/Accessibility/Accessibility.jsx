@@ -70,7 +70,6 @@ export const Accessibility = () => {
         className="accessibility__icon-button"
         ref={buttonRef}
       >
-        ♿
       </button>
       {isPanelOpen && (
         <div
