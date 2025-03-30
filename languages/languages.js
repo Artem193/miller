@@ -52,7 +52,7 @@ export const languages = {
         },
 
         services: {
-          "services__title": "השירותים המרכזיים שלנו:",
+          "services__title": "השירותים המרכזיים שלנו",
           "services__name1": "ביטוח מכל הסוגים",
           "services__text1": "אנו מציעים כיסוי ביטוחי מלא ללקוחות פרטיים ועסקיים, כולל ביטוח רכב, דירה, בריאות, חיים ועסקים. הצוות שלנו כאן כדי לעזור לך לבחור את הפוליסה המתאימה ביותר, כך שתוכל להיות רגוע ובטוח.",
           "services__link": "לפרטים נוספים",
@@ -69,7 +69,7 @@ export const languages = {
         },
 
         advantages: {
-          advantages__title: "היתרונות שלנו:",
+          advantages__title: "היתרונות שלנו",
           advantages__name1: "יחס אישי לכל לקוח",
           advantages__text1: "אנו מאמינים שכל אדם ועסק הם ייחודיים, ולכן אנו מתאימים לכל לקוח פתרונות אישיים בהתאם לצרכיו ולמטרותיו. צוות המומחים שלנו בונה אסטרטגיה מותאמת אישית כדי להבטיח לכם הגנה אופטימלית ושקט נפשי.",
           advantages__name2: "מקצועיות ואמינות",
@@ -150,7 +150,7 @@ export const languages = {
         },
 
         services: {
-          services__title: 'Наши основные услуги:',
+          services__title: 'Наши основные услуги',
           services__name1: 'Страхование всех <br />видов',
           services__text1: 'Мы предлагаем полное страховое покрытие для физических и юридических лиц, включая автомобили, имущество, здоровье, жизнь и бизнес. Наша команда поможет вам выбрать оптимальный полис, обеспечивая уверенность и защиту ваших интересов',
           services__link: 'Узнать больше',
@@ -167,13 +167,27 @@ export const languages = {
         },
 
         advantages: {
-          advantages__title: 'Наши преимущества:',
+          advantages__title: 'Наши преимущества',
           advantages__name1: 'Индивидуальный подход к каждому клиенту',
           advantages__text1: 'Мы понимаем, что у каждого человека и бизнеса свои уникальные потребности. Наши специалисты разрабатывают персональные решения, учитывая ваши особенности, цели и жизненные ситуации, что позволяет создать максимально эффективную защиту',
           advantages__name2: 'Профессионализм и надёжность',
           advantages__text2: 'Многолетний опыт и постоянное обучение наших экспертов гарантируют высокий уровень обслуживания. Мы используем современные методы оценки рисков и внедряем инновационные технологии, чтобы обеспечить качественное страхование и защиту ваших активов',
           advantages__name3: 'Прозрачность и оперативное урегулирование убытков',
           advantages__text3: 'Наши процедуры оформлены таким образом, чтобы вы всегда были в курсе каждого этапа работы. Мы стремимся к максимально быстрой и честной выплате компенсаций, минимизируя стресс и время ожидания для наших клиентов',
+        },
+
+        reviews: {
+          title: 'Отывы наших клиентов',
+          name1: 'Микита',
+          text1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name2: 'Микита',
+          text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name3: 'Микита',
+          text3: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name4: 'Микита',
+          text4: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name5: 'Микита',
+          text5: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
         },
       },
 

@@ -7,6 +7,7 @@ import { Header } from '../../Header/Header';
 import { HeroSection } from './HeroSection/HeroSection'
 import { Services } from './Services/Services';
 import { Advantages } from './Advantages/Advantages';
+import { Reviews } from './Reviews/Reviews';
 import { Footer } from '../../Footer/Footer';
 
 export const Home = () => {
@@ -27,6 +28,7 @@ export const Home = () => {
         <HeroSection />
         <Services />
         <Advantages />
+        <Reviews />
       </main>
       <Footer />
     </>

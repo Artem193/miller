@@ -51,7 +51,7 @@ export const Buttons = () => {
           <div className='buttons__icon buttons__icon--wp'></div>
           <div className='buttons__text buttons__text--wp'>
             <a href="tel:+972504255338" className='buttons__link'>
-              WhatsApp
+              050-425-5338
             </a>
           </div>
         </div>

@@ -1,0 +1,26 @@
+.reviews {
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__block {
+    background: linear-gradient(180deg, #A3B8E6, #1E4193);
+    margin: 50px 40px;
+    border-radius: 15px;
+  }
+}

@@ -1,13 +1,8 @@
 .advantages {
+  margin-bottom: 20px;
 
-  &__blocks {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
   }
 
   &__title {
@@ -25,28 +20,24 @@
 
   &__block {
     display: flex;
-    gap: 30px;
+    margin-bottom: 5px;
     flex-direction: column;
     justify-content: space-between;
     max-width: 430px;
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 15px;
-    min-height: 450px;
+    min-height: 350px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 
     @media (min-width: 768px) {
       padding: 20px;
-      min-height: 650px;
-    }
-
-    @media (min-width: 1280px) {
-      min-height: 550px;
+      min-height: 450px;
     }
   }
 
   &__img {
-    flex-shrink: 0;
+    margin: 0 auto;
     width: 75px;
     height: 75px;
     background: linear-gradient(135deg, #A3B8E6, #1E4193);
@@ -56,6 +47,7 @@
     align-items: center;
 
     @media (min-width: 768px) {
+      margin: 0;
       width: 140px;
       height: 140px;
     }
@@ -64,8 +56,9 @@
   &__icon {
     width: 45px;
     height: 45px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 
     @media (min-width: 768px) {
       width: 80px;
@@ -84,7 +77,25 @@
       background-image: url('/miller/advantages__icon--3.svg');
     }
   }
+
+  &__name {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: start;
+    }
+  }
 }
+
+
 
 .swiper-slide {
   display: flex;
