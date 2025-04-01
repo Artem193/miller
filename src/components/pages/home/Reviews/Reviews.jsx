@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
@@ -11,9 +11,14 @@ import './reviews.scss'
 
 export const Reviews = () => {
   const { t, i18n } = useTranslation();
+  const [swiperKey, setSwiperKey] = useState(0);
 
   useEffect(() => {
     document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
+  }, [i18n.language]);
+
+  useEffect(() => {
+    setSwiperKey(prevKey => prevKey + 1);
   }, [i18n.language]);
 
   return (
@@ -21,13 +26,13 @@ export const Reviews = () => {
       <h2 className='reviews__title'>{t('home.reviews.title')}</h2>
 
       <Swiper
+        key={swiperKey}
         modules={[Navigation, Pagination]}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         breakpoints={{
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
         }}
       >
         {[1, 2, 3, 4, 5].map((num) => (

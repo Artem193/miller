@@ -76,7 +76,25 @@ export const languages = {
           advantages__text2: "עם ניסיון עשיר וצוות מומחים שעובר הכשרות מתמשכות, אנו מתחייבים לרמה הגבוהה ביותר של שירות. אנו משלבים כלים חדשניים ושיטות מתקדמות להערכת סיכונים, במטרה להעניק לכם ביטחון מלא ושירות ברמה הגבוהה ביותר.",
           advantages__name3: "שקיפות ותהליך מהיר ויעיל",
           advantages__text3: "אנו פועלים בשקיפות מלאה ודואגים שתהיו מעודכנים בכל שלב בתהליך. המדיניות שלנו מבוססת על מתן שירות הוגן ומהיר, על מנת להבטיח לכם תהליך קל, ללא עיכובים וללא דאגות מיותרות."
-        }
+        },
+
+        reviews: {
+          title: 'המלצות מלקוחותינו',
+          name1: 'Микита',
+          text1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name2: 'Микита',
+          text2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name3: 'Микита',
+          text3: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name4: 'Микита',
+          text4: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+          name5: 'Микита',
+          text5: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+        },
+
+        formBigStat: {
+          title: 'הצוות שלנו כאן כדי להבטיח את הביטחון הכלכלי שלכם. השאירו פרטים ונתאם פגישה בהקדם',
+        },
       },
 
       modalForm: {
@@ -188,6 +206,10 @@ export const languages = {
           text4: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
           name5: 'Микита',
           text5: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
+        },
+
+        formBigStat: {
+          title: 'Наша команда готова обеспечить вашу финансовую безопасность. Оставьте свои контактные данные, и мы оперативно свяжемся с Вами',
         },
       },
 
