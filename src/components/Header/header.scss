@@ -1,5 +1,5 @@
 .containerMob {
-  background-color: #FAFAFA;
+  background-color: #EEEEEE;
   position: fixed;
   left: 0;
   top: 0;
@@ -18,7 +18,7 @@
   top: 0;
   right: 0;
   display: grid;
-  background-color: #FAFAFA;
+  background-color: #EEEEEE;
   grid-template-columns: 80px auto 55px;
   margin: 10px 30px;
   box-sizing: border-box;
@@ -154,7 +154,7 @@
     border: #FFFFFF 0.5px solid;
 
     @media (min-width: 1280px) {
-      background: #FAFAFA;
+      background: #EEEEEE;
       border: none;
       width: max-content;
     }

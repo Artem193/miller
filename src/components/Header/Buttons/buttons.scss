@@ -2,110 +2,35 @@
 
   &__button {
     position: absolute;
-    right: -195px;
-    width: 240px;
-    height: 48px;
-    border-radius: 100px;
-    padding: 4px;
-    cursor: pointer;
+    right: -131px;
+    width: 195px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: right 0.4s ease-in-out, left 0.4s ease-in-out;
+    cursor: pointer;
 
     @media (min-width: 768px) {
-      right: -245px;
-      width: 300px;
-      height: 60px;
-      padding: 5px;
+      right: -175px;
+      width: 260px;
+      height: 80px;
     }
 
     &--call {
       top: 15vh;
-      border: 0.5px solid #1E4193;
+      background-image: url(../../../../public/buttons__call.svg);
     }
 
     &--wp {
       top: 25vh;
-      border: 0.5px solid #25D366;
+      background-image: url(../../../../public/buttons__wp.svg);
     }
 
     &--open {
       right: 0;
     }
 
-  }
-
-  &__background {
-    display: flex;
-    gap: 16px;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
-    box-sizing: border-box;
-
-    @media (min-width: 768px) {
-      gap: 20px;
-    }
-
-    &--call {
-      background-color: #6984c2;
-    }
-
-    &--wp {
-      background-color: #25D366;
-    }
-  }
-
-  &__icon {
-    display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    width: 46px;
-    height: 32px;
-    margin: 8px;
-
-    @media (min-width: 768px) {
-      width: 57px;
-      height: 40px;
-      margin: 10px;
-    }
-
-    &--call {
-      background-image: url(../../../../public/buttons__call.svg);
-    }
-
-    &--wp {
-      background-image: url(../../../../public/buttons__wp.svg);
-    }
-  }
-
-  &__text {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    border-radius: 100px;
-    color: #FFFFFF;
-    padding-right: 8px;
-    font-size: 1.2rem;
-
-    @media (min-width: 768px) {
-      padding-right: 10px;
-      font-size: 1.5rem;
-    }
-
-    &--call {
-      background-color: #1E4193;
-    }
-
-    &--wp {
-      background-color: #075E54;
-    }
-  }
-
-  &__link {
-    color: #FFFFFF;
-    text-decoration: none;
   }
 }
 
@@ -114,12 +39,16 @@
   right: unset;
 
   @media (min-width: 768px) {
-    left: -245px;
+    left: -175px;
     right: unset;
   }
 
   &--open {
     left: 0;
+  }
+
+  &--call {
+    background-image: url(../../../../public/buttons__call--he.svg);
   }
 }
 

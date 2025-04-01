@@ -25,23 +25,24 @@ export const Buttons = () => {
 
   return (
     <div className='buttons'>
-      <div
+
+      <a href="tel:+972504255338"
         className={`buttons__button buttons__button--call ${isOpenCall ? 'buttons__button--open' : ''}`}
         onMouseEnter={() => window.innerWidth > 1024 && setIsOpenCall(true)}
         onMouseLeave={() => window.innerWidth > 1024 && setIsOpenCall(false)}
         onClick={handleToggleCall}
       >
-        <div className='buttons__background buttons__background--call'>
-          <div className='buttons__icon buttons__icon--call'></div>
-          <div className='buttons__text buttons__text--call'>
-            <a href="tel:+972504255338" className='buttons__link'>
-              050-425-5338
-            </a>
-          </div>
-        </div>
-      </div>
+      </a>
 
-      <div
+      <a href="https://wa.me/972504255338"
+        className={`buttons__button buttons__button--wp ${isOpenWp ? 'buttons__button--open' : ''}`}
+        onMouseEnter={() => window.innerWidth > 1024 && setIsOpenWp(true)}
+        onMouseLeave={() => window.innerWidth > 1024 && setIsOpenWp(false)}
+        onClick={handleToggleWp}
+      >
+      </a>
+
+      {/* <div
         className={`buttons__button buttons__button--wp ${isOpenWp ? 'buttons__button--open' : ''}`}
         onMouseEnter={() => window.innerWidth > 1024 && setIsOpenWp(true)}
         onMouseLeave={() => window.innerWidth > 1024 && setIsOpenWp(false)}
@@ -55,7 +56,7 @@ export const Buttons = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

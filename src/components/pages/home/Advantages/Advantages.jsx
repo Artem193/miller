@@ -34,14 +34,14 @@ export const Advantages = () => {
 
         <div className='advantages__block advantages__block--white'>
           <img src="/miller/advantages__img.png" alt="" className='advantages__img' />
-          <div className='advantages__name'>{t(`home.advantages.advantages__name1`)}</div>
-          <div className='advantages__text'>{t(`home.advantages.advantages__text1`)}</div>
+          <div className='advantages__name'>{t(`home.advantages.advantages__name2`)}</div>
+          <div className='advantages__text'>{t(`home.advantages.advantages__text2`)}</div>
         </div>
 
         <div className='advantages__block'>
           <img src="/miller/advantages__img.png" alt="" className='advantages__img' />
-          <div className='advantages__name'>{t(`home.advantages.advantages__name1`)}</div>
-          <div className='advantages__text'>{t(`home.advantages.advantages__text1`)}</div>
+          <div className='advantages__name'>{t(`home.advantages.advantages__name3`)}</div>
+          <div className='advantages__text'>{t(`home.advantages.advantages__text3`)}</div>
         </div>
       </div>
 
