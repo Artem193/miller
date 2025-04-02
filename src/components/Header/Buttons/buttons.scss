@@ -25,6 +25,10 @@
     &--wp {
       top: 25vh;
       background-image: url(../../../../public/buttons__wp.svg);
+
+      @media (min-width: 768px) {
+        top: 27vh;
+      }
     }
 
     &--open {

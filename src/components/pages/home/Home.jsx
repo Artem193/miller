@@ -8,7 +8,7 @@ import { HeroSection } from './HeroSection/HeroSection'
 import { Services } from './Services/Services';
 import { Advantages } from './Advantages/Advantages';
 import { Reviews } from './Reviews/Reviews';
-import { FormBigStat } from './FormBigStat/FormBigStat';
+import { Contacts } from './Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
 export const Home = () => {
@@ -30,7 +30,7 @@ export const Home = () => {
         <Services />
         <Advantages />
         <Reviews />
-        <FormBigStat />
+        <Contacts />
       </main>
       <Footer />
     </>

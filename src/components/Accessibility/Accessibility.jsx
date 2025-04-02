@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from 'react-i18next';
 
 import './accessibility.scss';
@@ -51,7 +51,7 @@ export const Accessibility = () => {
       filterStyles += 'contrast(50%)';
     }
 
-    document.body.style.filter = filterStyles.trim(); //
+    document.body.style.filter = filterStyles.trim();
     document.documentElement.style.fontSize = `${fontSize}px`;
   }, [isMonochrome, isDarkContrast, isLightContrast, fontSize]);
 
