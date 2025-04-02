@@ -28,7 +28,7 @@ export const Home = () => {
       <main className='Home'>
         <HeroSection />
         <Services />
-        {/* <Advantages /> */}
+        <Advantages />
         <Reviews />
         <FormBigStat />
       </main>

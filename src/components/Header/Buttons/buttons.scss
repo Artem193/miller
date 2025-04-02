@@ -30,12 +30,26 @@
     &--open {
       right: 0;
     }
+  }
 
+  &__link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 60px;
+    margin-left: 65px;
+    font-weight: 600;
+
+    @media (min-width: 768px) {
+      line-height: 80px;
+      margin-left: 90px;
+      font-size: 1.4rem;
+    }
   }
 }
 
 [dir='rtl'] .buttons__button {
-  left: -195px;
+  left: -131px;
   right: unset;
 
   @media (min-width: 768px) {
@@ -50,6 +64,10 @@
   &--call {
     background-image: url(../../../../public/buttons__call--he.svg);
   }
+
+  &--wp {
+    background-image: url(../../../../public/buttons__wp--he.svg);
+  }
 }
 
 [dir='rtl'] .buttons__text {
@@ -62,4 +80,14 @@
 
 [dir='rtl'] .buttons__call {
   width: 48px;
+}
+
+[dir='rtl'] .buttons__link {
+  margin-left: unset;
+  margin-right: 65px;
+
+  @media (min-width: 768px) {
+    margin-left: unset;
+    margin-right: 90px;
+  }
 }
