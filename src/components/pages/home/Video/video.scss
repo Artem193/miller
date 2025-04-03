@@ -1,6 +1,5 @@
 .video {
   margin-bottom: 20px;
-  height: 50vh;
 
   @media (min-width: 768px) {
     margin-bottom: 90px;
@@ -9,8 +8,17 @@
   &__iframe {
     display: block;
     margin: 0 auto;
-    width: 60%;
-    height: 50vh;
+    width: 100%;
+    height: 40vh;
     border: none;
+
+    @media (min-width: 768px) {
+      height: 60vh;
+      width: 80%;
+    }
+
+    @media (min-width: 1278px) {
+      width: 60%;
+    }
   }
 }
