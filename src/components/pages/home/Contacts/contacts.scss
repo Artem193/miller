@@ -62,7 +62,67 @@
   }
 
   &__form {
+    padding: 50px;
     background-color: #D4DDF1;
     width: 65%;
+
+    &--title {
+      margin: 0 0 50px 0;
+    }
+  }
+
+  &__inputsFlex {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #A0A0A0;
+    font-size: 1.1rem;
+    resize: none;
+
+    &--textarea {
+      width: 70%;
+      margin-bottom: 80px;
+    }
+
+    &:focus {
+      background-color: transparent;
+      outline: none;
+    }
+
+    &.error {
+      border-bottom: 1px solid red;
+    }
+  }
+
+  &__submit {
+    width: 70%;
+    font-family: inherit;
+    padding: 12px;
+    background-color: #BFA834;
+    font-size: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: #000000;
+    border: none;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #A28F2E;
+    }
   }
 }

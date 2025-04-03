@@ -1,14 +1,51 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+
+import { ThankYouPage } from '../HeroSection/ModalForm/ThankYouPage/ThankYouPage';
 
 import './contacts.scss';
 
-export const Contacts = () => {
+export const Contacts = ({ onClose }) => {
   const { t, i18n } = useTranslation();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   useEffect(() => {
     document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
   }, [i18n.language]);
+
+  const onSubmit = (data) => {
+    emailjs.send(
+      'service_artem193',
+      'template_zjh9pmt',
+      {
+        name: data.name,
+        phone: data.phone,
+        city: data.city,
+        to_email: "aviktorovich193@gmail.com",
+      },
+      'SzlkGa3Kx8Zxlkt17'
+    )
+      .then(() => {
+        setIsSubmitted(true);
+        reset();
+      })
+      .catch((error) => {
+        console.error("Ошибка при отправке", error);
+      });
+  };
+
+  if (isSubmitted) {
+    return <ThankYouPage onClose={onClose} />;
+  }
 
   return (
     <article className='contacts container'>
@@ -90,7 +127,51 @@ export const Contacts = () => {
           </li>
         </ul>
       </div>
-      <div className='contacts__form'></div>
+      <form onSubmit={handleSubmit(onSubmit)} className='contacts__form'>
+        <h2 className='contacts__form--title'>{t('home.contacts.formTitle')}</h2>
+        <div className='contacts__inputsFlex'>
+          <div>
+            <label htmlFor="name" className='contacts__label'>Имя</label>
+            <input
+              id='name'
+              type="text"
+              {...register("name", {
+                required: t('validation.required'),
+                minLength: {
+                  value: 2,
+                },
+              })}
+              className={`contacts__input ${errors.name ? "error" : ""}`}
+              dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="tel" className='contacts__label'>Телефон</label>
+            <input
+              id='tel'
+              type="tel"
+              {...register("phone", {
+                required: t('validation.required'),
+                pattern: {
+                  value: /^[0-9+() -]{7,15}$/,
+                },
+              })}
+              className={`contacts__input ${errors.phone ? "error" : ""}`}
+              dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
+            />
+          </div>
+        </div>
+        <label htmlFor="question" className='contacts__label contacts__label--textarea'>Ваш вопрос</label>
+        <textarea
+          id="question"
+          {...register("question")}
+          className='contacts__input contacts__input--textarea'
+          dir={i18n.language === "he" ? "rtl" : "ltr"}
+          rows="1"
+        />
+        <button type="submit" className="contacts__submit">{t('modalForm.submit')}</button>
+      </form>
     </article>
   )
 }

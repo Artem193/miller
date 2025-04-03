@@ -208,8 +208,8 @@ export const languages = {
           text5: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
         },
 
-        formBigStat: {
-          title: 'Наша команда готова обеспечить вашу финансовую безопасность. Оставьте свои контактные данные, и мы оперативно свяжемся с Вами',
+        contacts: {
+          formTitle: 'Наша команда готова обеспечить вашу финансовую безопасность. Оставьте свои контактные данные, и мы оперативно свяжемся с Вами',
         },
       },
 
