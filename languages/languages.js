@@ -92,8 +92,15 @@ export const languages = {
           text5: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex officiis nobis beatae assumenda! Saepe quis, nam corrupti fuga non sequi veniam? Alias facilis exercitationem ipsa esse mollitia recusandae tenetur possimus explicabo quis temporibus necessitatibus repellat itaque ut nemo suscipit, odit consectetur quibusdam reprehenderit similique. Deserunt, deleniti non a impedit hic ea vero, assumenda optio reprehenderit maiores quam eveniet fugiat ex maxime illum magnam fugit, officiis tempora! Unde, tempora in?',
         },
 
-        formBigStat: {
-          title: 'הצוות שלנו כאן כדי להבטיח את הביטחון הכלכלי שלכם. השאירו פרטים ונתאם פגישה בהקדם',
+        contacts: {
+          infoTitle: "יצירת קשר",
+          textTitle1: "טלפון",
+          textTitle2: "כתובת",
+          textInfo: "רמת גן, רחוב ז'בוטינסקי 43, קומה 4",
+          formTitle: 'הצוות שלנו כאן כדי להבטיח את הביטחון הכלכלי שלכם. השאירו פרטים ונתאם פגישה בהקדם',
+          label1: "שם:",
+          label2: "טלפון:",
+          label3: "השאלה שלך:"
         },
       },
 
@@ -168,7 +175,7 @@ export const languages = {
         },
 
         services: {
-          services__title: 'Наши основные услуги',
+          services__title: 'Основные услуги',
           services__name1: 'Страхование всех <br />видов',
           services__text1: 'Мы предлагаем полное страховое покрытие для физических и юридических лиц, включая автомобили, имущество, здоровье, жизнь и бизнес. Наша команда поможет вам выбрать оптимальный полис, обеспечивая уверенность и защиту ваших интересов',
           services__link: 'Узнать больше',
@@ -185,7 +192,7 @@ export const languages = {
         },
 
         advantages: {
-          advantages__title: 'Наши преимущества',
+          advantages__title: 'Почему мы?',
           advantages__name1: 'Индивидуальный подход к каждому клиенту',
           advantages__text1: 'Мы понимаем, что у каждого человека и бизнеса свои уникальные потребности. Наши специалисты разрабатывают персональные решения, учитывая ваши особенности, цели и жизненные ситуации, что позволяет создать максимально эффективную защиту',
           advantages__name2: 'Профессионализм и надёжность',
@@ -209,7 +216,14 @@ export const languages = {
         },
 
         contacts: {
+          infoTitle: 'Контакты',
+          textTitle1: 'Телефон',
+          textTitle2: 'Адрес',
+          textInfo: 'Рамат-Ган, ул. Жаботински, 43, 4-й этаж',
           formTitle: 'Наша команда готова обеспечить вашу финансовую безопасность. Оставьте свои контактные данные, и мы оперативно свяжемся с Вами',
+          label1: 'Имя:',
+          label2: 'Телефон:',
+          label3: 'Ваш вопрос:',
         },
       },
 
