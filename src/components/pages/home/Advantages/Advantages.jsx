@@ -1,10 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 import './advantages.scss'
 
 export const Advantages = () => {

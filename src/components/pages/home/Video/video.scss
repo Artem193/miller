@@ -1,0 +1,16 @@
+.video {
+  margin-bottom: 20px;
+  height: 50vh;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__iframe {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 50vh;
+    border: none;
+  }
+}
