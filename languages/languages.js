@@ -46,7 +46,7 @@ export const languages = {
 
       home: {
         heroSection: {
-          heroSection__title: 'סוכנות הביטוח מילר',
+          heroSection__title: 'מילר סוכנות ביטוח',
           heroSection__text: 'השותף האמין שלך בתחום הביטוח והפיננסים עם ניסיון של למעלה מ-20 שנה',
           heroSection__button: 'לשאול שאלה',
         },
@@ -169,8 +169,8 @@ export const languages = {
 
       home: {
         heroSection: {
-          heroSection__title: 'Страховое агенство Миллер',
-          heroSection__text: 'Ваш надежный партнер в мире финансов и страхования с более чем 20-летним опытом',
+          heroSection__title: 'Миллер cтраховое агенство',
+          heroSection__text: 'Ваш надежный партнер в мире финансов и страхования с более чем 20-летним опытом, которому доверяют семьи, водители, бизнесмены и репатрианты по всей стране',
           heroSection__button: 'Задать вопрос',
         },
 

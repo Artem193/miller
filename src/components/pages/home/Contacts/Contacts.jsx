@@ -120,7 +120,7 @@ export const Contacts = ({ onClose }) => {
 
             <li className='contacts__item'>
               <a
-                href="https://www.facebook.com/anatolynatan.miller"
+                href="https://www.google.com/maps/place/Derech+Zeev+Jabutinsky+43,+Ramat+Gan/@32.084329,34.8084587,17z/data=!4m6!3m5!1s0x151d4bc8662ad3b1:0xcef11f5a5e415da7!8m2!3d32.084329!4d34.8084587!16s%2Fg%2F11cs719bdt?entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoASAFQAw%3D%3D"
                 className='contacts__link'
                 target="_blank"
               >

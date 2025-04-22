@@ -82,7 +82,8 @@
       font-weight: 600;
 
       @media(min-width: 768px) {
-        font-size: 1.1rem;;
+        font-size: 1.1rem;
+        ;
       }
     }
 
@@ -177,6 +178,15 @@
 
     &:hover {
       background-color: #A28F2E;
+    }
+  }
+}
+
+[dir='rtl'] .contacts {
+  &__form {
+    @media(min-width: 1024px) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 15px;
     }
   }
 }

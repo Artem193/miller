@@ -40,11 +40,12 @@ export const HeroSection = () => {
   return (
     <>
       <section className='heroSection container'>
+        <h1 className='heroSection__title'>
+          {t('home.heroSection.heroSection__title')}
+        </h1>
+        <h2 className="heroSection__slogan">Ваше спокойствие — наша работа</h2>
         <div className='heroSection__flex'>
           <div className='heroSection__textInfo'>
-            <h1 className='heroSection__title'>
-              {t('home.heroSection.heroSection__title')}
-            </h1>
             <div className='heroSection__circles--mob'>
               <Circles />
             </div>
@@ -54,6 +55,12 @@ export const HeroSection = () => {
             </div>
             <p className='heroSection__text'>
               {t('home.heroSection.heroSection__text')}
+            </p>
+            <p className='heroSection__text'>
+              Мы подберём надёжное страховое решение именно для вас — просто, понятно и с заботой
+            </p>
+            <p className='heroSection__text'>
+              Получите бесплатную консультацию уже сегодня
             </p>
             <button className='heroSection__button' onClick={() => setIsModalFormOpen(true)}>
               {t('home.heroSection.heroSection__button')}
