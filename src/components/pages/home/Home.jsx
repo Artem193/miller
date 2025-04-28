@@ -30,7 +30,7 @@ export const Home = () => {
         <HeroSection />
         <Services />
         <Advantages />
-        <Video />
+        {/* <Video /> */}
         <Reviews />
         <Contacts />
       </main>
