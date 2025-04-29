@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { Circles } from './Circle/Circles';
-import { ModalForm } from "./ModalForm/ModalForm";
+import { Button } from './Button/Button'
 
 import "swiper/css";
 import './heroSection.scss';
@@ -17,7 +17,6 @@ import Migdal from '/insCompanies/Migdal.png';
 
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
-  const [isModalFormOpen, setIsModalFormOpen] = useState(false);
   const [swiperKey, setSwiperKey] = useState(0);
 
   const insCompanies = [
@@ -55,9 +54,7 @@ export const HeroSection = () => {
             </div>
             <p className='heroSection__text' dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__text') }}>
             </p>
-            <button className='heroSection__button' onClick={() => setIsModalFormOpen(true)}>
-              {t('home.heroSection.heroSection__button')}
-            </button>
+            <Button />
           </div>
           <div className='heroSection__media'>
             <div className='heroSection__circles'>
@@ -86,8 +83,6 @@ export const HeroSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </>
   );
 };

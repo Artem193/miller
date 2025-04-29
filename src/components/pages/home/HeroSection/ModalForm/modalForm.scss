@@ -27,8 +27,15 @@
   }
 
   &__description {
+    font-size: 1rem;
     color: #000000;
     margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   &__input {
@@ -42,13 +49,13 @@
     font-family: inherit;
     box-sizing: border-box;
     border: 0.5px solid #A3B8E6;
-    
+
     &::placeholder {
       font-family: inherit;
       color: #B9B9B9;
     }
 
-    &:focus{
+    &:focus {
       outline: none;
       border: 0.5px solid #1e4193;
     }

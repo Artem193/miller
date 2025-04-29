@@ -1,18 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 
-import './home.scss'
+import './carInsurance.scss'
 
 import { Header } from '../../Header/Header';
-import { HeroSection } from './HeroSection/HeroSection'
-import { Services } from './Services/Services';
-import { Advantages } from './Advantages/Advantages';
-import { Video } from './Video/Video';
-import { Reviews } from './Reviews/Reviews';
-import { Contacts } from './Contacts/Contacts';
+import { HeroSectionCarIns } from './HeroSectionCarIns/HeroSectionCarIns';
+import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
-export const Home = () => {
+export const CarInsurance = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -26,12 +22,8 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <main className='home'>
-        <HeroSection />
-        <Services />
-        <Advantages />
-        {/* <Video /> */}
-        <Reviews />
+      <main className='carInsurance'>
+        <HeroSectionCarIns />
         <Contacts />
       </main>
       <Footer />

@@ -59,7 +59,7 @@ export const Header = () => {
                 {openDropdown === 'services' && (
                   <ul className='nav__dropdown'>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.carInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/CarInsurance'>{t('header.carInsurance')}</Link>
                     </li>
                     <li className='nav__item'>
                       <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>
@@ -170,7 +170,7 @@ export const Header = () => {
             {openDropdown === 'services' && (
               <ul className='nav__dropdown'>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.carInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/CarInsurance'>{t('header.carInsurance')}</Link>
                 </li>
                 <li className='nav__item'>
                   <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>

@@ -50,7 +50,7 @@ export const ModalForm = ({ onClose }) => {
       <div className="modalForm__content" onClick={(e) => e.stopPropagation()}>
         <h2 className="modalForm__title">{t('modalForm.title')}</h2>
         <p className="modalForm__description">{t('modalForm.description')}</p>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="modalForm__form">
           <input
             type="text"
             placeholder={t('modalForm.placeholder__name')}

@@ -1,0 +1,38 @@
+.button {
+  display: block;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 0;
+  width: 295px;
+  height: 55px;
+  border-radius: 100px;
+  border: none;
+  background-color: #1E4193;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media (min-width: 1400px) {
+    height: 90px;
+  }
+
+  &:hover {
+    background-color: #162f6b;
+  }
+
+  &--carIns {
+    margin-left: 60px;
+    background-color: #F8BA25;
+    color: #000000;
+
+    &:hover {
+      background-color: #af7d09;
+    }
+  }
+}

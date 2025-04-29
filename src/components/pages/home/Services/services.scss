@@ -46,6 +46,10 @@
     }
 
     @media (min-width: 1280px) {
+      min-height: 420px;
+    }
+
+    @media (min-width: 1600px) {
       min-height: 300px;
     }
   }
