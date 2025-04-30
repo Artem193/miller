@@ -126,7 +126,9 @@
 
     &--active {
       font-weight: 700;
-      color: #1E4193;
+      background: linear-gradient(90deg, #1e4193, #3c67d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 

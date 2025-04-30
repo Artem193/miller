@@ -23,6 +23,11 @@ export const HeroSectionCarIns = () => {
         dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}
       ></p>
       <Button addClass='button--carIns' />
+      <img
+        src="/miller/illustration__car.png"
+        alt="Illustration car"
+        className='heroSectionCarIns__illustrationCar'
+      />
     </section>
   )
 }

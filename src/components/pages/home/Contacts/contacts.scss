@@ -165,7 +165,9 @@
     width: 70%;
     font-family: inherit;
     padding: 12px;
-    background-color: #BFA834;
+    background: linear-gradient(90deg, #BFA834, #E1C95A);
+    box-shadow: 0 4px 10px rgba(30, 65, 147, 0.3);
+    transition: background 0.3s ease, transform 0.15s ease;
     font-size: 18px;
     border-radius: 100px;
     cursor: pointer;
@@ -174,10 +176,11 @@
     box-sizing: border-box;
     color: #000000;
     border: none;
-    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+
 
     &:hover {
-      background-color: #A28F2E;
+      background: linear-gradient(90deg, #E1C95A, #BFA834);
+      transform: scale(1.02);
     }
   }
 }
