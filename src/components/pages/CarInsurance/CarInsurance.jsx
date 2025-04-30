@@ -5,6 +5,7 @@ import './carInsurance.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionCarIns } from './HeroSectionCarIns/HeroSectionCarIns';
+import { CalcCarIns } from './CalcCarIns/CalcCarIns';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
@@ -24,6 +25,7 @@ export const CarInsurance = () => {
       <Header />
       <main className='carInsurance'>
         <HeroSectionCarIns />
+        <CalcCarIns />
         <Contacts />
       </main>
       <Footer />

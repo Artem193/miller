@@ -45,26 +45,6 @@
       display: none;
     }
   }
-
-  &--carIns {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: grid;
-      top: 20%;
-      left: 15%;
-    }
-  }
-
-  &--carInsBottom {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: grid;
-      bottom: -5%;
-      right: 15%;
-    }
-  }
 }
 
 [dir='rtl'] .circles {
@@ -75,23 +55,5 @@
 
   &--homeBottom {
     right: 85%;
-  }
-
-  &--carIns {
-    display: none;
-
-    @media (min-width: 768px) {
-      right: 15%;
-    }
-  }
-
-  &--carInsBottom {
-    display: none;
-
-    @media (min-width: 768px) {
-      left: 15%;
-      right: unset;
-      bottom: 0;
-    }
   }
 }
