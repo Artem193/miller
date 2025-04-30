@@ -66,75 +66,75 @@ export const CalcCarIns = () => {
 
   return (
     <section className='calcCarIns container'>
-      <h2 className="calcCarIns__title">Калькулятор стоимости автостраховки</h2>
+      <h2 className="calcCarIns__title">{t('carInsurance.calcCarIns.title')}</h2>
 
       <div className="calcCarIns__selects">
-        <label className="calcCarIns__label">Тип страховки:</label>
+        <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label1')}</label>
         <select
           name="type"
           value={form.type}
           onChange={handleChange}
           className="calcCarIns__select"
         >
-          <option value="Обязательное">Обязательное (חובה)</option>
-          <option value="Третьим лицам">Ответственность перед третьими лицами (צד ג׳)</option>
-          <option value="Полное">Полное (מקיף)</option>
+          <option value="Обязательное">{t('carInsurance.calcCarIns.option1')}</option>
+          <option value="Третьим лицам">{t('carInsurance.calcCarIns.option2')}</option>
+          <option value="Полное">{t('carInsurance.calcCarIns.option3')}</option>
         </select>
 
-        <label className="calcCarIns__label">Возраст водителя:</label>
+        <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label2')}</label>
         <select
           name="age"
           value={form.age}
           onChange={handleChange}
           className="calcCarIns__select"
         >
-          <option value="18-24">18–24 лет</option>
-          <option value="25-34">25–34 лет</option>
-          <option value="35-49">35–49 лет</option>
-          <option value="50+">50 лет и старше</option>
+          <option value="18-24">{t('carInsurance.calcCarIns.option4')}</option>
+          <option value="25-34">{t('carInsurance.calcCarIns.option5')}</option>
+          <option value="35-49">{t('carInsurance.calcCarIns.option6')}</option>
+          <option value="50+">{t('carInsurance.calcCarIns.option7')}</option>
         </select>
 
-        <label className="calcCarIns__label">Стаж вождения:</label>
+        <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label3')}</label>
         <select
           name="experience"
           value={form.experience}
           onChange={handleChange}
           className="calcCarIns__select"
         >
-          <option value="0-2">0–2 года</option>
-          <option value="3-5">3–5 лет</option>
-          <option value="6+">6 лет и более</option>
+          <option value="0-2">{t('carInsurance.calcCarIns.option8')}</option>
+          <option value="3-5">{t('carInsurance.calcCarIns.option9')}</option>
+          <option value="6+">{t('carInsurance.calcCarIns.option10')}</option>
         </select>
 
-        <label className="calcCarIns__label">Возраст автомобиля:</label>
+        <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label4')}</label>
         <select
           name="carAge"
           value={form.carAge}
           onChange={handleChange}
           className="calcCarIns__select"
         >
-          <option value="0-5">0–5 лет</option>
-          <option value="6-10">6–10 лет</option>
-          <option value="11+">11 лет и старше</option>
+          <option value="0-5">{t('carInsurance.calcCarIns.option11')}</option>
+          <option value="6-10">{t('carInsurance.calcCarIns.option12')}</option>
+          <option value="11+">{t('carInsurance.calcCarIns.option13')}</option>
         </select>
 
         <p className="calcCarIns__text">
-          Оценочная годовая стоимость: <b>₪{calculatePrice()}</b>
+          {t('carInsurance.calcCarIns.text1')}<b>₪{calculatePrice()}</b>
         </p>
         <p className="calcCarIns__text">
-          Ориентировочно в месяц:
+          {t('carInsurance.calcCarIns.text2')}
           <b>
             ₪{monthlyPrice()}
           </b>
         </p>
         <p className="calcCarIns__text">
-          * Итоговая сумма зависит от условий страховой компании и может отличаться.
+          {t('carInsurance.calcCarIns.text3')}
         </p>
         <button
           className="calcCarIns__button"
           onClick={() => setIsModalFormOpen(true)}
         >
-          Получить персональное предложение
+          {t('carInsurance.calcCarIns.button')}
         </button>
       </div>
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
