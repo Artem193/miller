@@ -69,35 +69,6 @@
     }
   }
 
-  &__circles {
-    position: absolute;
-    top: 10%;
-    right: 60%;
-
-    &--bottom {
-      top: 80%;
-      right: -15%;
-    }
-
-    &--mob {
-      position: absolute;
-
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-
-    &--mobBottom {
-      position: absolute;
-      top: 50%;
-      right: 0;
-
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-  }
-
   &__media {
     display: none;
 

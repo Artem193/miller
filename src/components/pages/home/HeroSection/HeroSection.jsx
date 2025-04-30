@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { Circles } from './Circle/Circles';
+import { Circles } from './Circles/Circles';
 import { Button } from './Button/Button'
 
 import "swiper/css";
@@ -45,25 +45,17 @@ export const HeroSection = () => {
         <h2 className="heroSection__slogan">{t('home.heroSection.slogan')}</h2>
         <div className='heroSection__flex'>
           <div className='heroSection__textInfo'>
-            <div className='heroSection__circles--mob'>
-              <Circles />
-            </div>
+            <Circles addClass='circles--homeMob' />
             <img src='/miller/heroSectionPhoto.png' className='heroSection__photo--mob' alt='Photo' />
-            <div className='heroSection__circles--mobBottom'>
-              <Circles />
-            </div>
+            <Circles addClass='circles--homeMobBottom' />
             <p className='heroSection__text' dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__text') }}>
             </p>
             <Button />
           </div>
           <div className='heroSection__media'>
-            <div className='heroSection__circles'>
-              <Circles />
-            </div>
+            <Circles addClass='circles--home' />
             <img src='/miller/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
-            <div className='heroSection__circles heroSection__circles--bottom'>
-              <Circles />
-            </div>
+            <Circles addClass='circles--homeBottom' />
           </div>
         </div>
       </section>

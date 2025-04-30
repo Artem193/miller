@@ -1,0 +1,97 @@
+.circles {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(9, 10px);
+  grid-template-rows: repeat(5, 10px);
+  gap: 4px;
+
+  @media (min-width: 1400px) {
+    gap: 16px;
+  }
+
+  &__circle {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(202, 202, 202, 0.2);
+    border-radius: 50%;
+
+    @media (min-width: 1400px) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &--home {
+    top: 10%;
+    right: 60%;
+  }
+
+  &--homeBottom {
+    top: 80%;
+    right: -15%;
+  }
+
+  &--homeMob {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--homeMobBottom {
+    top: 60%;
+    right: 0;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--carIns {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      top: 20%;
+      left: 15%;
+    }
+  }
+
+  &--carInsBottom {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: grid;
+      bottom: -5%;
+      right: 15%;
+    }
+  }
+}
+
+[dir='rtl'] .circles {
+
+  &--home {
+    right: 10%;
+  }
+
+  &--homeBottom {
+    right: 85%;
+  }
+
+  &--carIns {
+    display: none;
+
+    @media (min-width: 768px) {
+      right: 15%;
+    }
+  }
+
+  &--carInsBottom {
+    display: none;
+
+    @media (min-width: 768px) {
+      left: 15%;
+      right: unset;
+      bottom: 0;
+    }
+  }
+}

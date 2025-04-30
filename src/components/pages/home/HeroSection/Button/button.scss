@@ -27,12 +27,20 @@
   }
 
   &--carIns {
-    margin-left: 60px;
-    background-color: #F8BA25;
-    color: #000000;
+    @media (min-width: 768px) {
+      margin-left: 60%;
+    }
+  }
+}
 
-    &:hover {
-      background-color: #af7d09;
+[dir='rtl'] .button {
+
+  &--carIns {
+    margin-left: unset;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      margin-right: 60%;
     }
   }
 }

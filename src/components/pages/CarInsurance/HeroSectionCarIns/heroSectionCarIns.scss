@@ -1,22 +1,60 @@
 .heroSectionCarIns {
-  background-image: url(../../../../../public/heroSection_carInsurance.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 90px 0;
-  border-radius: 15px;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+    padding: 75px 0 220px 0;
+    background-image: url(../../../../../public/heroSection_carInsurance.png);
+  }
 
   &__title {
-    margin: 0 0 50px 60px;
-    font-size: 3.25rem;
-    color: #ffffff;
-    text-align: start;
+    font-size: 1.875rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: #000000;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1400px) {
+      font-size: 3.5rem;
+    }
   }
 
   &__text {
-    margin: 0  0 50px 60px;
-    width: 50%;
-    font-size: 1.5rem;
-    color: #ffff;
+    margin: 0 auto 50px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+
+    @media (min-width: 768px) {
+      margin: 0 70px 50px 50%;
+      width: unset;
+      text-align: start;
+    }
+
+
+    @media (min-width: 1400px) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+[dir='rtl'] .heroSectionCarIns {
+  @media (min-width: 768px) {
+    background-image: url(../../../../../public/heroSection_carInsurance_he.png);
+  }
+
+  &__text {
+    margin: 0 auto 50px auto;
+
+    @media (min-width: 768px) {
+      margin: 0 50% 50px 70px;
+    }
   }
 }
