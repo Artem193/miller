@@ -1,10 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
 
+import { ModalForm } from '../../home/HeroSection/ModalForm/ModalForm';
+
 import './calcCarIns.scss'
 
 export const CalcCarIns = () => {
   const { t, i18n } = useTranslation();
+
+  const [isModalFormOpen, setIsModalFormOpen] = useState(false);
 
   const [form, setForm] = useState({
     type: 'Обязательное',
@@ -72,43 +76,68 @@ export const CalcCarIns = () => {
           onChange={handleChange}
           className="calcCarIns__select"
         >
-          {/* <option value="Обязательное">Обязательное (חובה)</option>
+          <option value="Обязательное">Обязательное (חובה)</option>
           <option value="Третьим лицам">Ответственность перед третьими лицами (צד ג׳)</option>
-          <option value="Полное">Полное (מקיף)</option> */}
+          <option value="Полное">Полное (מקיף)</option>
         </select>
 
-        {/* <label className="block font-medium">Возраст водителя:</label>
-        <select name="age" value={form.age} onChange={handleChange} className="w-full border rounded p-2">
+        <label className="calcCarIns__label">Возраст водителя:</label>
+        <select
+          name="age"
+          value={form.age}
+          onChange={handleChange}
+          className="calcCarIns__select"
+        >
           <option value="18-24">18–24 лет</option>
           <option value="25-34">25–34 лет</option>
           <option value="35-49">35–49 лет</option>
           <option value="50+">50 лет и старше</option>
         </select>
 
-        <label className="block font-medium">Стаж вождения:</label>
-        <select name="experience" value={form.experience} onChange={handleChange} className="w-full border rounded p-2">
+        <label className="calcCarIns__label">Стаж вождения:</label>
+        <select
+          name="experience"
+          value={form.experience}
+          onChange={handleChange}
+          className="calcCarIns__select"
+        >
           <option value="0-2">0–2 года</option>
           <option value="3-5">3–5 лет</option>
           <option value="6+">6 лет и более</option>
         </select>
 
-        <label className="block font-medium">Возраст автомобиля:</label>
-        <select name="carAge" value={form.carAge} onChange={handleChange} className="w-full border rounded p-2">
+        <label className="calcCarIns__label">Возраст автомобиля:</label>
+        <select
+          name="carAge"
+          value={form.carAge}
+          onChange={handleChange}
+          className="calcCarIns__select"
+        >
           <option value="0-5">0–5 лет</option>
           <option value="6-10">6–10 лет</option>
           <option value="11+">11 лет и старше</option>
-        </select> */}
-      </div>
+        </select>
 
-      {/* <div className="text-center mt-4">
-        <p className="text-lg font-semibold">Оценочная годовая стоимость: ₪{calculatePrice()}</p>
-        <p className="text-md text-gray-600">Ориентировочно в месяц: ₪{monthlyPrice()}</p>
-        <p className="text-sm text-gray-500 mt-2">* Итоговая сумма зависит от условий страховой компании и может отличаться.</p>
-        <button className="mt-3 px-4 py-2 bg-blue-700 text-white rounded-xl hover:bg-blue-800">
+        <p className="calcCarIns__text">
+          Оценочная годовая стоимость: <b>₪{calculatePrice()}</b>
+        </p>
+        <p className="calcCarIns__text">
+          Ориентировочно в месяц:
+          <b>
+            ₪{monthlyPrice()}
+          </b>
+        </p>
+        <p className="calcCarIns__text">
+          * Итоговая сумма зависит от условий страховой компании и может отличаться.
+        </p>
+        <button
+          className="calcCarIns__button"
+          onClick={() => setIsModalFormOpen(true)}
+        >
           Получить персональное предложение
         </button>
-      </div> */}
-
+      </div>
+      {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </section>
   )
 }

@@ -16,9 +16,9 @@ export const HeroSectionCarIns = () => {
   }, [i18n.language]);
 
   return (
-    <section className='heroSectionCarIns container'>
-      <h1 className='heroSectionCarIns__title'>{t('carInsurance.heroSection.title')}</h1>
+    <section className='heroSectionCarIns'>
       <div className='heroSectionCarIns__content'>
+      <h1 className='heroSectionCarIns__title'>{t('carInsurance.heroSection.title')}</h1>
         <p
           className='heroSectionCarIns__text'
           dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}

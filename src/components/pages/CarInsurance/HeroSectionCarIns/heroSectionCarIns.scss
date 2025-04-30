@@ -15,6 +15,10 @@
       font-size: 2.5rem;
     }
 
+    @media (min-width: 1024px) {
+      margin: 0 0 100px 0;
+    }
+
     @media (min-width: 1400px) {
       font-size: 3.5rem;
     }
@@ -40,14 +44,13 @@
     color: #000000;
 
     @media (min-width: 1024px) {
-      margin: 0 50px 50px 50%;
-      padding-top: 100px;
+      margin: 0 80px 50px 50%;
       width: unset;
       text-align: start;
     }
 
     @media (min-width: 1400px) {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -73,7 +76,7 @@
     margin: 0 auto 50px auto;
 
     @media (min-width: 1024px) {
-      margin: 0 50% 50px 50px;
+      margin: 0 50% 50px 80px;
     }
   }
 }
