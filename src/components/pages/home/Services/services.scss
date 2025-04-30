@@ -58,7 +58,7 @@
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #A3B8E6, #1E4193);
+    background: linear-gradient(90deg, #1e4193, #3c67d4);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -114,7 +114,9 @@
 
   &__name {
     margin: 0 0 10px 0;
-    color: #1E4193;
+    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.25rem;
 
     @media (min-width: 768px) {
@@ -134,7 +136,9 @@
 
   &__link {
     text-decoration: none;
-    color: #1E4193;
+    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1rem;
     font-weight: 600;
 

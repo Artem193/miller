@@ -75,7 +75,9 @@
     text-align: center;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1E4193;
+    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media (min-width: 1280px) {
       margin-top: 0;
