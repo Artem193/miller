@@ -18,16 +18,16 @@
     }
 
     &--call {
-      top: 15vh;
+      top: 20vh;
       background-image: url(../../../../public/buttons__call.svg);
     }
 
     &--wp {
-      top: 25vh;
+      top: 30vh;
       background-image: url(../../../../public/buttons__wp.svg);
 
       @media (min-width: 768px) {
-        top: 27vh;
+        top: 35vh;
       }
     }
 

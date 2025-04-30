@@ -18,16 +18,18 @@ export const HeroSectionCarIns = () => {
   return (
     <section className='heroSectionCarIns container'>
       <h1 className='heroSectionCarIns__title'>{t('carInsurance.heroSection.title')}</h1>
-      <p
-        className='heroSectionCarIns__text'
-        dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}
-      ></p>
-      <Button addClass='button--carIns' />
-      <img
-        src="/miller/illustration__car.png"
-        alt="Illustration car"
-        className='heroSectionCarIns__illustrationCar'
-      />
+      <div className='heroSectionCarIns__content'>
+        <p
+          className='heroSectionCarIns__text'
+          dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}
+        ></p>
+        <Button addClass='button--carIns' />
+        <img
+          src="/miller/illustration__car.png"
+          alt="Illustration car"
+          className='heroSectionCarIns__illustrationCar'
+        />
+      </div>
     </section>
   )
 }
