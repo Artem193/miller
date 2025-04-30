@@ -18,8 +18,8 @@ export const HeroSectionCarIns = () => {
 
   return (
     <section className='heroSectionCarIns container'>
-      <Circles addClass='circles--carIns'/>
-      <Circles addClass='circles--carInsBottom'/>
+      {/* <Circles addClass='circles--carIns'/> */}
+      {/* <Circles addClass='circles--carInsBottom'/> */}
       <h1 className='heroSectionCarIns__title'>{t('carInsurance.heroSection.title')}</h1>
       <p
         className='heroSectionCarIns__text'
