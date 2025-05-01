@@ -1,4 +1,10 @@
 .calcCarIns {
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // // background-image: url(../../../../../public/test.png);
+  // aspect-ratio: 16 / 9;
+  // width: 100%;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
@@ -27,7 +33,16 @@
     margin-bottom: 20px;
 
     @media (min-width: 768px) {
-      width: 60%;
+      width: 40%;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
     }
   }
 
@@ -41,18 +56,16 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #DFE7F8;
+    background-color: #E7F0FA;
     border-radius: 15px;
     font-size: 16px;
-    border: none;
     font-family: inherit;
     box-sizing: border-box;
-    border: 0.5px solid #A3B8E6;
+    border: 0.5px solid #5A9BD5;
     cursor: pointer;
 
     &::placeholder {
       font-family: inherit;
-      color: #B9B9B9;
     }
 
     &:focus {
@@ -71,8 +84,8 @@
     width: 100%;
     padding: 0.75rem 1rem;
     font-size: 1.05rem;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
-    color: #fff;
+    background: linear-gradient(90deg, #1e4193, #5A9BD5);
+    color: #EEEEEE ;
     border: none;
     border-radius: 0.75rem;
     font-weight: 600;
@@ -81,7 +94,7 @@
     transition: background 0.3s ease, transform 0.15s ease;
 
     &:hover {
-      background: linear-gradient(90deg, #3c67d4, #1e4193);
+      background: linear-gradient(90deg, #5A9BD5, #1e4193);
       transform: scale(1.02);
     }
 

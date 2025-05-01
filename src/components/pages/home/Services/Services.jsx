@@ -16,9 +16,9 @@ export const Services = () => {
 
   return (
     <section className='services container'>
-      <h2 className='services__title'>
+      <h1 className='services__title'>
         {t('home.services.services__title')}
-      </h2>
+      </h1>
       <div className='services__row'>
         <div className='services__block'>
           <div className='services__img'>

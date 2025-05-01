@@ -7,8 +7,8 @@
   height: 55px;
   border-radius: 100px;
   border: none;
-  background: linear-gradient(90deg, #1e4193, #3c67d4);
-  box-shadow: 0 4px 10px rgba(30, 65, 147, 0.3);
+  background: linear-gradient(90deg, #1e4193, #5A9BD5);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease, transform 0.15s ease;
   font-size: 1.5rem;
   font-weight: 700;
@@ -24,7 +24,7 @@
   }
 
   &:hover {
-    background: linear-gradient(90deg, #3c67d4, #1e4193);
+    background: linear-gradient(90deg, #5A9BD5, #1e4193);
     transform: scale(1.02);
   }
 

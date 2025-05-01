@@ -27,14 +27,13 @@
   }
 
   &__message {
-    color: #000000;
     margin-bottom: 20px;
   }
 
   &__close {
     padding: 12px;
     font-family: inherit;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    background: linear-gradient(90deg, #1e4193, #5A9BD5);
     box-shadow: 0 4px 10px rgba(30, 65, 147, 0.3);
     transition: background 0.3s ease, transform 0.15s ease;
     font-size: 18px;
@@ -45,7 +44,7 @@
     font-weight: 700;
 
     &:hover {
-      background: linear-gradient(90deg, #3c67d4, #1e4193);
+      background: linear-gradient(90deg, #5A9BD5, #1e4193);
       transform: scale(1.02);
     }
   }

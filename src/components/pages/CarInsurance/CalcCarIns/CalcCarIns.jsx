@@ -66,9 +66,10 @@ export const CalcCarIns = () => {
 
   return (
     <section className='calcCarIns container'>
-      <h2 className="calcCarIns__title">{t('carInsurance.calcCarIns.title')}</h2>
+      <h1 className="calcCarIns__title">{t('carInsurance.calcCarIns.title')}</h1>
 
       <div className="calcCarIns__selects">
+        <h3 className='calcCarIns__subtitle'>Получите приблизительную стоимость автострахования за 30 секунд</h3>
         <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label1')}</label>
         <select
           name="type"

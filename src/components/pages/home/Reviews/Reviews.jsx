@@ -23,7 +23,7 @@ export const Reviews = () => {
 
   return (
     <article className='reviews container'>
-      <h2 className='reviews__title'>{t('home.reviews.title')}</h2>
+      <h1 className='reviews__title'>{t('home.reviews.title')}</h1>
 
       <Swiper
         key={swiperKey}

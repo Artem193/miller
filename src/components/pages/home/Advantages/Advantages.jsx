@@ -12,7 +12,7 @@ export const Advantages = () => {
 
   return (
     <section className='advantages container'>
-      <h2 className='advantages__title'>{t('home.advantages.advantages__title')}</h2>
+      <h1 className='advantages__title'>{t('home.advantages.advantages__title')}</h1>
 
       <div className='advantages__blocks'>
         <div className='advantages__block'>

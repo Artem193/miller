@@ -28,7 +28,6 @@
 
   &__description {
     font-size: 1rem;
-    color: #000000;
     margin-bottom: 20px;
   }
 
@@ -42,13 +41,13 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #DFE7F8;
+    background-color: #E7F0FA;
     border-radius: 100px;
     font-size: 16px;
     border: none;
     font-family: inherit;
     box-sizing: border-box;
-    border: 0.5px solid #A3B8E6;
+    border: 0.5px solid #5A9BD5;
 
     &::placeholder {
       font-family: inherit;
@@ -69,7 +68,7 @@
     width: 100%;
     font-family: inherit;
     padding: 12px;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    background: linear-gradient(90deg, #1e4193, #5A9BD5);
     box-shadow: 0 4px 10px rgba(30, 65, 147, 0.3);
     transition: background 0.3s ease, transform 0.15s ease;
     font-size: 18px;
@@ -82,7 +81,7 @@
     border: none;
 
     &:hover {
-      background: linear-gradient(90deg, #3c67d4, #1e4193);
+      background: linear-gradient(90deg, #5A9BD5, #1e4193);
       transform: scale(1.02);
     }
   }

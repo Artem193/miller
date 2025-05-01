@@ -1,6 +1,7 @@
 html {
   background-color: #EEEEEE;
   overflow-x: hidden;
+  color: #1E1E1E;
 }
 
 body {
@@ -11,12 +12,8 @@ body {
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  color: #1E4193;
 }
-
-.secondaryFont {
-  font-family: 'Raleway', sans-serif;
-}
-
 
 .container {
   margin: 0 30px;

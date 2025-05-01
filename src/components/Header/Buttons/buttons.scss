@@ -1,5 +1,4 @@
 .buttons {
-
   &__button {
     position: absolute;
     right: -131px;
@@ -19,12 +18,12 @@
 
     &--call {
       top: 20vh;
-      background-image: url(../../../../public/buttons__call.svg);
+      background-image: url(/miller/public/buttons__call.svg);
     }
 
     &--wp {
       top: 30vh;
-      background-image: url(../../../../public/buttons__wp.svg);
+      background-image: url(/miller/public/buttons__wp.svg);
 
       @media (min-width: 768px) {
         top: 35vh;
@@ -38,7 +37,7 @@
 
   &__link {
     display: block;
-    color: #ffffff;
+    color: #EEEEEE ;
     text-decoration: none;
     line-height: 60px;
     margin-left: 65px;
@@ -52,46 +51,48 @@
   }
 }
 
-[dir='rtl'] .buttons__button {
-  left: -131px;
-  right: unset;
-
-  @media (min-width: 768px) {
-    left: -175px;
+[dir='rtl'] .buttons {
+  &__button {
+    left: -131px;
     right: unset;
+
+    @media (min-width: 768px) {
+      left: -175px;
+      right: unset;
+    }
+
+    &--open {
+      left: 0;
+    }
+
+    &--call {
+      background-image: url(/miller/public/buttons__call--he.svg);
+    }
+
+    &--wp {
+      background-image: url(/miller/public/buttons__wp--he.svg);
+    }
   }
 
-  &--open {
-    left: 0;
+  &__text {
+    padding-left: 8px;
+
+    @media (min-width: 768px) {
+      padding-left: 10px;
+    }
   }
 
-  &--call {
-    background-image: url(../../../../public/buttons__call--he.svg);
+  &__call {
+    width: 48px;
   }
 
-  &--wp {
-    background-image: url(../../../../public/buttons__wp--he.svg);
-  }
-}
-
-[dir='rtl'] .buttons__text {
-  padding-left: 8px;
-
-  @media (min-width: 768px) {
-    padding-left: 10px;
-  }
-}
-
-[dir='rtl'] .buttons__call {
-  width: 48px;
-}
-
-[dir='rtl'] .buttons__link {
-  margin-left: unset;
-  margin-right: 65px;
-
-  @media (min-width: 768px) {
+  &__link {
     margin-left: unset;
-    margin-right: 90px;
+    margin-right: 65px;
+
+    @media (min-width: 768px) {
+      margin-left: unset;
+      margin-right: 90px;
+    }
   }
 }

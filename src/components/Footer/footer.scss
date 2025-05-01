@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(270deg, #A3B8E6, #1E4193);
+  background: linear-gradient(270deg, #5A9BD5, #1E4193);
   width: 100%;
 
   &__flex {
@@ -13,7 +13,7 @@
   }
 
   &__title {
-    color: #D3D3D3;
+    color: #EEEEEE ;
   }
 
   &__list {
@@ -37,7 +37,7 @@
 
   &__link {
     text-decoration: none;
-    color: #D3D3D3;
+    color: #EEEEEE ;
 
     @media(min-width: 768px) {
       font-size: 1.2rem;
@@ -65,5 +65,5 @@
 }
 
 [dir='rtl'] .footer {
-  background: linear-gradient(90deg, #A3B8E6, #1E4193);
+  background: linear-gradient(90deg, #5A9BD5, #1E4193);
 }

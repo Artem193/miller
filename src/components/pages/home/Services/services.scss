@@ -1,5 +1,5 @@
 .services {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     margin-bottom: 90px;
@@ -10,11 +10,12 @@
     width: fit-content;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 40px;
-    font-size: 1.875rem;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
 
     @media (min-width: 768px) {
       font-size: 2.5rem;
+      margin-bottom: 40px;
     }
   }
 
@@ -58,7 +59,7 @@
     flex-shrink: 0;
     width: 40px;
     height: 40px;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
+    background: linear-gradient(90deg, #1e4193, #5A9BD5);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -114,31 +115,28 @@
 
   &__name {
     margin: 0 0 10px 0;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1e4193;
     font-size: 1.25rem;
 
     @media (min-width: 768px) {
-      font-size: 2rem;
+      font-size: 1.875rem;
     }
   }
 
   &__text {
     margin: 0 0 25px 0;
-    font-size: 0.875;
+    font-size: 0.875rem;
     line-height: 1.3;
 
     @media (min-width: 768px) {
+      font-size: 1rem;
       line-height: 1.8;
     }
   }
 
   &__link {
+    color: #1e4193;
     text-decoration: none;
-    background: linear-gradient(90deg, #1e4193, #3c67d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1rem;
     font-weight: 600;
 

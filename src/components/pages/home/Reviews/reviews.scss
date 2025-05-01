@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     margin-bottom: 90px;
@@ -8,9 +8,10 @@
   &__title {
     display: block;
     width: fit-content;
+    margin-bottom: 25px;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
 
     @media (min-width: 768px) {
       font-size: 2.5rem;
@@ -19,7 +20,7 @@
   }
 
   &__block {
-    background: linear-gradient(180deg, #A3B8E6, #1E4193);
+    background: linear-gradient(180deg, #5A9BD5, #1E4193);
     margin: 30px 40px;
     padding: 10px;
     border-radius: 15px;
@@ -62,21 +63,21 @@
 
   &__name {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     color: #ffffff;
 
     @media (min-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 1.875rem;
     }
   }
 
   &__text {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffffff;
 
     @media (min-width: 768px) {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 }
