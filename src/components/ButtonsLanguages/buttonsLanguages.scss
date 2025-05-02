@@ -36,11 +36,11 @@
     border-radius: 3px;
 
     &--ru {
-      background-image: url('../../../public/ru.svg');
+      background-image: url('/miller/public/ru.svg');
     }
 
     &--he {
-      background-image: url('../../../public/he.svg');
+      background-image: url('/miller/public/he.svg');
     }
   }
 
@@ -60,11 +60,11 @@
       margin: 10px;
 
       &--ru {
-        background-image: url('../../../public/ru.svg');
+        background-image: url('/miller/public/ru.svg');
       }
 
       &--he {
-        background-image: url('../../../public/he.svg');
+        background-image: url('/miller/public/he.svg');
       }
     }
   }
