@@ -30,7 +30,7 @@
 
   &__block {
     position: relative;
-    background-image: url(/miller/public/advantages__block.svg);
+    background-image: url(../../../../../public/advantages__block.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     }
 
     &--white {
-      background-image: url(/miller/public/advantages__block--white.svg);
+      background-image: url(../../../../../public/advantages__block--white.svg);
     }
   }
 
@@ -96,14 +96,14 @@
 
 [dir='rtl'] .advantages {
   &__block {
-    background-image: url(/miller/public/advantages__block--he.svg);
+    background-image: url(../../../../../public/advantages__block--he.svg);
 
     @media (min-width: 1280px) {
       padding: 0 150px 0 100px;
     }
 
     &--white {
-      background-image: url(/miller/public/advantages__block--white--he.svg);
+      background-image: url(../../../../../public/advantages__block--white--he.svg);
     }
   }
 
