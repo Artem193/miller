@@ -65,11 +65,11 @@ export const CalcCarIns = () => {
   }, [i18n.language]);
 
   return (
-    <section className='calcCarIns container'>
-      <h1 className="calcCarIns__title">{t('carInsurance.calcCarIns.title')}</h1>
+    <section className='calcCarIns'>
+      <h2 className="calcCarIns__title">{t('carInsurance.calcCarIns.title')}</h2>
 
       <div className="calcCarIns__selects">
-        <h3 className='calcCarIns__subtitle'>Получите приблизительную стоимость автострахования за 30 секунд</h3>
+        <h3 className='calcCarIns__subtitle'>{t('carInsurance.calcCarIns.subtitle')}</h3>
         <label className="calcCarIns__label">{t('carInsurance.calcCarIns.label1')}</label>
         <select
           name="type"
@@ -137,6 +137,7 @@ export const CalcCarIns = () => {
         >
           {t('carInsurance.calcCarIns.button')}
         </button>
+        <a href="" className='calcCarIns__link'>{t('carInsurance.calcCarIns.link')}</a>
       </div>
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </section>

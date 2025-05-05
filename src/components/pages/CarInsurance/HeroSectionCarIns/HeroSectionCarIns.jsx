@@ -17,14 +17,18 @@ export const HeroSectionCarIns = () => {
 
   return (
     <section className='heroSectionCarIns'>
-      <div className='heroSectionCarIns__head'>
-        <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--left'></div>
-        <div className='heroSectionCarIns__titleFlex'>
-          <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part1'>Страхование</h1>
-          <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part2'>автомобилей</h1>
+      <div className='heroSectionCarIns__relative'>
+        <div className='heroSectionCarIns__head'>
+          <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--left'></div>
+          <div className='heroSectionCarIns__titleFlex'>
+            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part1'>{t('carInsurance.heroSection.title1')}</h1>
+            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part2'>{t('carInsurance.heroSection.title2')}</h1>
+          </div>
+          <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--right'></div>
         </div>
-        <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--right'></div>
       </div>
+      <p className='heroSectionCarIns__text' dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}></p>
+      <Button addClass='heroSectionCarIns__button'/>
     </section>
   )
 }

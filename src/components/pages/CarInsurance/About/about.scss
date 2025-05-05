@@ -1,0 +1,120 @@
+.about {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 60px 0;
+    text-align: center;
+    font-size: 1.875rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 60px;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (min-width: 1024px) {
+      width: 60%;
+      gap: 40px;
+    }
+  }
+
+  &__box {
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 0.5px solid #1E4193;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+
+  &__flexImgTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: 1024px) {
+      width: 75px;
+      height: 75px;
+    }
+
+    &--mob {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+
+  &__nameBox {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__textBox {
+    margin: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+  }
+}
