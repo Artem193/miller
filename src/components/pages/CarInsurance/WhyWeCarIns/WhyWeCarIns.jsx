@@ -1,0 +1,79 @@
+import { useTranslation } from 'react-i18next';
+import { useEffect } from "react";
+
+import './whyWeCarIns.scss';
+
+import icon1 from '/miller/whyWeCarIns__icon1.svg'
+import icon2 from '/miller/whyWeCarIns__icon2.svg'
+import icon3 from '/miller/whyWeCarIns__icon3.svg'
+import icon4 from '/miller/whyWeCarIns__icon4.svg'
+import icon5 from '/miller/whyWeCarIns__icon5.svg'
+import icon6 from '/miller/whyWeCarIns__icon6.svg'
+
+export const WhyWeCarIns = () => {
+  const { t, i18n } = useTranslation();
+
+  const icons = [
+    icon1,
+    icon2,
+    icon3,
+    icon4,
+    icon5,
+    icon6
+  ]
+
+  useEffect(() => {
+    if (i18n.language === 'he') {
+      document.body.setAttribute('dir', 'rtl');
+    } else {
+      document.body.setAttribute('dir', 'ltr');
+    }
+  }, [i18n.language]);
+
+  return (
+    <section className='whyWeCarIns container'>
+      <h1 className='whyWeCarIns__title'>{t('carInsurance.whyWeCarIns.title')}</h1>
+      <div className='whyWeCarIns__boxes'>
+        <div className='whyWeCarIns__boxesRowDesk'>
+          {[1, 2, 3].map((index) => (
+            <div
+              key={index}
+              className={`whyWeCarIns__box ${index % 2 !== 1 ? 'whyWeCarIns__box--light' : ''}`}
+            >
+              <img
+                src={icons[index - 1]}
+                alt="icon"
+                className="whyWeCarIns__icon"
+              />
+              <p
+                className={`whyWeCarIns__text ${index % 2 !== 1 ? 'whyWeCarIns__text--light' : ''}`}
+              >
+                {t(`carInsurance.whyWeCarIns.text${index}`)}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className='whyWeCarIns__boxesRowDesk'>
+          {[4, 5, 6].map((index) => (
+            <div
+              key={index}
+              className={`whyWeCarIns__box ${index % 2 !== 1 ? 'whyWeCarIns__box--light' : ''}`}
+            >
+              <img
+                src={icons[index - 1]}
+                alt="icon"
+                className="whyWeCarIns__icon"
+              />
+              <p
+                className={`whyWeCarIns__text ${index % 2 !== 1 ? 'whyWeCarIns__text--light' : ''}`}
+              >
+                {t(`carInsurance.whyWeCarIns.text${index}`)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

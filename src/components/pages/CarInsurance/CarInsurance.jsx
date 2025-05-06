@@ -7,6 +7,8 @@ import { Header } from '../../Header/Header';
 import { HeroSectionCarIns } from './HeroSectionCarIns/HeroSectionCarIns';
 import { About } from './About/About';
 import { ProcessCarIns } from './ProcessCarIns/ProcessCarIns';
+import { WhyWeCarIns } from './WhyWeCarIns/WhyWeCarIns';
+import { FaqCarIns } from './FaqCarIns/FaqCarIns';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
@@ -28,6 +30,8 @@ export const CarInsurance = () => {
         <HeroSectionCarIns />
         <About />
         <ProcessCarIns />
+        <WhyWeCarIns />
+        <FaqCarIns />
         <Contacts />
       </main>
       <Footer />

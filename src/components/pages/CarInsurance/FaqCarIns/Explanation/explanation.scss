@@ -1,0 +1,43 @@
+.explanation {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #ffff;
+  border: 0.5px #1E4193 solid;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+  &__questionFlex {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__question {
+    font-weight: 600;
+    font-size: 0.875rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 20px;
+    transition: transform 0.5s ease;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__answer {
+    margin-top: 15px;
+    font-size: 0.875rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+}
