@@ -15,6 +15,14 @@ h1 {
   color: #1E4193;
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 .container {
   margin: 0 30px;
 
