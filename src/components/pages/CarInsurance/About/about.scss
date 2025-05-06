@@ -22,7 +22,7 @@
 
     @media (min-width: 1024px) {
       margin-bottom: 60px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -61,6 +61,7 @@
       display: flex;
       justify-content: space-between;
       gap: 40px;
+      padding: 50px;
       align-items: center;
     }
   }
@@ -114,7 +115,7 @@
     margin: 0;
 
     @media (min-width: 1024px) {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 }

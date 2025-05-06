@@ -25,10 +25,11 @@
   &__icon {
     width: 30px;
     height: 20px;
+    transform: rotate(180deg);
     transition: transform 0.5s ease;
 
     &--open {
-      transform: rotate(180deg);
+      transform: unset;
     }
   }
 

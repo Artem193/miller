@@ -42,7 +42,6 @@ export const HeroSection = () => {
         <h1 className='heroSection__title'>
           {t('home.heroSection.heroSection__title')}
         </h1>
-        <h2 className="heroSection__slogan">{t('home.heroSection.slogan')}</h2>
         <div className='heroSection__flex'>
           <div className='heroSection__textInfo'>
             <Circles addClass='circles--homeMob' />
