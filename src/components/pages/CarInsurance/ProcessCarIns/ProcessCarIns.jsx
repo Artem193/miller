@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import './processCarIns.scss';
 
 export const ProcessCarIns = () => {
   const { t, i18n } = useTranslation();
+  const itemsRef = useRef([]);
 
   useEffect(() => {
     if (i18n.language === 'he') {
@@ -14,49 +15,62 @@ export const ProcessCarIns = () => {
     }
   }, [i18n.language]);
 
+  useEffect(() => {
+    document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
+  }, [i18n.language]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('processCarIns__item--visible');
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    itemsRef.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      itemsRef.current.forEach((el) => {
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !itemsRef.current.includes(el)) {
+      itemsRef.current.push(el);
+    }
+  };
+
   return (
     <section className='processCarIns container'>
-      <h1 className='processCarIns__title'>Процесс оформления страховки</h1>
+      <h1 className='processCarIns__title'>{t('carInsurance.processCarIns.title')}</h1>
       <div className='processCarIns__items'>
-        <div className='processCarIns__item'>
-          <h2 className='processCarIns__circle'>1
-          </h2>
-          <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Оставьте заявку на сайте или свяжитесь с нами по телефону или WhatsApp</p>
+        {[1, 2, 3, 4, 5].map((index) => (
+          <div
+            key={index}
+            className='processCarIns__item'
+            ref={addToRefs}
+            style={{ transitionDelay: `${index * 0.2}s` }}
+          >
+            <h2 className='processCarIns__circle'>
+              {index}
+            </h2>
+            <div className='processCarIns__box'>
+              <p className='processCarIns__text'>
+                {t(`carInsurance.processCarIns.text${index}`)}
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className='processCarIns__item processCarIns__item--reverse'>
-          <h2 className='processCarIns__circle'>2
-          </h2>
-          <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Получите консультацию и персональный расчёт стоимости — быстро, понятно, без навязывания</p>
-          </div>
-        </div>
-
-        <div className='processCarIns__item'>
-          <h2 className='processCarIns__circle'>3
-          </h2>
-          <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Выберите подходящий вариант страхования с учётом вашего авто, бюджета и потребностей</p>
-          </div>
-        </div>
-
-        <div className='processCarIns__item processCarIns__item--reverse'>
-          <h2 className='processCarIns__circle'>4
-          </h2>
-          <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Оформите полис удобно — полностью онлайн или с сопровождением персонального менеджера</p>
-          </div>
-        </div>
-
-        <div className='processCarIns__item'>
-          <h2 className='processCarIns__circle'>5
-          </h2>
-          <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Получите все документы и поддержку — в случае ДТП мы рядом и поможем с урегулированием убытков</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )
