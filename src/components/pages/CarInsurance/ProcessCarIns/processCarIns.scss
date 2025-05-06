@@ -15,10 +15,24 @@
     }
   }
 
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &__item {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+    }
   }
 
   &__circle {
@@ -58,6 +72,7 @@
   }
 
   &__text {
+    text-align: center;
     font-size: 0.875rem;
 
     @media (min-width: 1024px) {
