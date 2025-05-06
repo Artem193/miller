@@ -22,7 +22,7 @@ export const ProcessCarIns = () => {
           <h2 className='processCarIns__circle'>1
           </h2>
           <div className='processCarIns__box'>
-            <p className='processCarIns__text'>Оставьте заявку на сайте или свяжитесь с нами по телефону/WhatsApp</p>
+            <p className='processCarIns__text'>Оставьте заявку на сайте или свяжитесь с нами по телефону или WhatsApp</p>
           </div>
         </div>
       </div>
