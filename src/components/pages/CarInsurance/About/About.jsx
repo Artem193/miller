@@ -25,10 +25,10 @@ export const About = () => {
       <div className='about__flex'>
         <div className='about__boxes'>
           <div className='about__box'>
-            <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
+            <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
             <div className='about__textContent'>
               <div className='about__flexImgTitle'>
-                <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
+                <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
                 <h3 className='about__nameBox'>{t('carInsurance.about.nameBox1')}</h3>
               </div>
               <p className='about__textBox'>
@@ -38,10 +38,10 @@ export const About = () => {
           </div>
 
           <div className='about__box'>
-            <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
+            <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
             <div className='about__textContent'>
               <div className='about__flexImgTitle'>
-                <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
+                <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
                 <h3 className='about__nameBox'>{t('carInsurance.about.nameBox2')}</h3>
               </div>
               <p className='about__textBox'>
@@ -51,10 +51,10 @@ export const About = () => {
           </div>
 
           <div className='about__box'>
-            <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
+            <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--desktop' />
             <div className='about__textContent'>
               <div className='about__flexImgTitle'>
-                <img src="/miller/public/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
+                <img src="/miller/about__icon.svg" alt="icon" className='about__icon about__icon--mob' />
                 <h3 className='about__nameBox'>{t('carInsurance.about.nameBox3')}</h3>
               </div>
               <p className='about__textBox'>
