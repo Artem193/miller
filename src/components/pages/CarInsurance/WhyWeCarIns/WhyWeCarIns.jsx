@@ -3,23 +3,16 @@ import { useEffect } from "react";
 
 import './whyWeCarIns.scss';
 
-import icon1 from '/miller/whyWeCarIns__icon1.svg'
-import icon2 from '/miller/whyWeCarIns__icon2.svg'
-import icon3 from '/miller/whyWeCarIns__icon3.svg'
-import icon4 from '/miller/whyWeCarIns__icon4.svg'
-import icon5 from '/miller/whyWeCarIns__icon5.svg'
-import icon6 from '/miller/whyWeCarIns__icon6.svg'
-
 export const WhyWeCarIns = () => {
   const { t, i18n } = useTranslation();
 
   const icons = [
-    icon1,
-    icon2,
-    icon3,
-    icon4,
-    icon5,
-    icon6
+    '/miller/whyWeCarIns__icon1.svg',
+    '/miller/whyWeCarIns__icon2.svg',
+    '/miller/whyWeCarIns__icon3.svg',
+    '/miller/whyWeCarIns__icon4.svg',
+    '/miller/whyWeCarIns__icon5.svg',
+    '/miller/whyWeCarIns__icon6.svg',
   ]
 
   useEffect(() => {
