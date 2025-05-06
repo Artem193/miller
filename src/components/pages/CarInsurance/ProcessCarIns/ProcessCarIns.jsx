@@ -57,7 +57,7 @@ export const ProcessCarIns = () => {
         {[1, 2, 3, 4, 5].map((index) => (
           <div
             key={index}
-            className='processCarIns__item'
+            className={`processCarIns__item ${index % 2 === 1 ? 'processCarIns__item--reverse' : ''}`}
             ref={addToRefs}
             style={{ transitionDelay: `${index * 0.2}s` }}
           >
