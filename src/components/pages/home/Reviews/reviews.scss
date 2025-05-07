@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   @media (min-width: 768px) {
     margin-bottom: 90px;
@@ -8,14 +8,14 @@
   &__title {
     display: block;
     width: fit-content;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: center;
     margin: 0 auto;
     font-size: 1.5rem;
 
     @media (min-width: 768px) {
       font-size: 2.5rem;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
   }
 

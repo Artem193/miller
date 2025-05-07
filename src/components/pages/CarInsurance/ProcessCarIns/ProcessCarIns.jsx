@@ -72,6 +72,63 @@ export const ProcessCarIns = () => {
           </div>
         ))}
       </div>
+
+      <div className='processCarIns__blocks'>
+        <div className='processCarIns__circleNum processCarIns__circleNum--1'>
+          <p className='processCarIns__number'>1</p>
+        </div>
+        <div className='processCarIns__arrow processCarIns__arrow--1'></div>
+        <div className='processCarIns__head processCarIns__head--1'>
+          <p className='processCarIns__headText'>Оставьте заявку</p>
+        </div>
+        <div className='processCarIns__step processCarIns__step--1'>
+          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
+        </div>
+
+        <div className='processCarIns__circleNum processCarIns__circleNum--2'>
+          <p className='processCarIns__number'>1</p>
+        </div>
+        <div className='processCarIns__arrow processCarIns__arrow--2'></div>
+        <div className='processCarIns__head processCarIns__head--2'>
+          <p className='processCarIns__headText'>Оставьте заявку</p>
+        </div>
+        <div className='processCarIns__step processCarIns__step--2'>
+          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
+        </div>
+
+        <div className='processCarIns__circleNum processCarIns__circleNum--3'>
+          <p className='processCarIns__number'>1</p>
+        </div>
+        <div className='processCarIns__arrow processCarIns__arrow--3'></div>
+        <div className='processCarIns__head processCarIns__head--3'>
+          <p className='processCarIns__headText'>Оставьте заявку</p>
+        </div>
+        <div className='processCarIns__step processCarIns__step--3'>
+          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
+        </div>
+
+        <div className='processCarIns__circleNum processCarIns__circleNum--4'>
+          <p className='processCarIns__number'>1</p>
+        </div>
+        <div className='processCarIns__arrow processCarIns__arrow--4'></div>
+        <div className='processCarIns__head processCarIns__head--4'>
+          <p className='processCarIns__headText'>Оставьте заявку</p>
+        </div>
+        <div className='processCarIns__step processCarIns__step--4'>
+          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
+        </div>
+
+        <div className='processCarIns__circleNum processCarIns__circleNum--5'>
+          <p className='processCarIns__number'>1</p>
+        </div>
+        <div className='processCarIns__head processCarIns__head--5'>
+          <p className='processCarIns__headText'>Оставьте заявку</p>
+        </div>
+        <div className='processCarIns__step processCarIns__step--5'>
+          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
+        </div>
+
+      </div>
     </section>
   )
 }
