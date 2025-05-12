@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useEffect, useRef } from "react";
 
 import './processCarIns.scss';
@@ -74,60 +74,31 @@ export const ProcessCarIns = () => {
       </div>
 
       <div className='processCarIns__blocks'>
-        <div className='processCarIns__circleNum processCarIns__circleNum--1'>
-          <p className='processCarIns__number'>1</p>
-        </div>
-        <div className='processCarIns__arrow processCarIns__arrow--1'></div>
-        <div className='processCarIns__head processCarIns__head--1'>
-          <p className='processCarIns__headText'>Оставьте заявку</p>
-        </div>
-        <div className='processCarIns__step processCarIns__step--1'>
-          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
-        </div>
-
-        <div className='processCarIns__circleNum processCarIns__circleNum--2'>
-          <p className='processCarIns__number'>1</p>
-        </div>
-        <div className='processCarIns__arrow processCarIns__arrow--2'></div>
-        <div className='processCarIns__head processCarIns__head--2'>
-          <p className='processCarIns__headText'>Оставьте заявку</p>
-        </div>
-        <div className='processCarIns__step processCarIns__step--2'>
-          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
-        </div>
-
-        <div className='processCarIns__circleNum processCarIns__circleNum--3'>
-          <p className='processCarIns__number'>1</p>
-        </div>
-        <div className='processCarIns__arrow processCarIns__arrow--3'></div>
-        <div className='processCarIns__head processCarIns__head--3'>
-          <p className='processCarIns__headText'>Оставьте заявку</p>
-        </div>
-        <div className='processCarIns__step processCarIns__step--3'>
-          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
-        </div>
-
-        <div className='processCarIns__circleNum processCarIns__circleNum--4'>
-          <p className='processCarIns__number'>1</p>
-        </div>
-        <div className='processCarIns__arrow processCarIns__arrow--4'></div>
-        <div className='processCarIns__head processCarIns__head--4'>
-          <p className='processCarIns__headText'>Оставьте заявку</p>
-        </div>
-        <div className='processCarIns__step processCarIns__step--4'>
-          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
-        </div>
-
-        <div className='processCarIns__circleNum processCarIns__circleNum--5'>
-          <p className='processCarIns__number'>1</p>
-        </div>
-        <div className='processCarIns__head processCarIns__head--5'>
-          <p className='processCarIns__headText'>Оставьте заявку</p>
-        </div>
-        <div className='processCarIns__step processCarIns__step--5'>
-          <p className='processCarIns__textDesk'>Свяжитесь с нами через сайт, телефон или WhatsApp</p>
-        </div>
-
+        {[1, 2, 3, 4, 5].map((index) => (
+          <>
+            <div className={`processCarIns__circleNum processCarIns__circleNum--${index}`}
+            >
+              <p className={index < 3 ? 'processCarIns__number' : 'processCarIns__number processCarIns__number--black'}>{index}</p>
+            </div>
+            {index < 5 && (
+              <div className={`processCarIns__arrow processCarIns__arrow--${index}`}></div>
+            )}
+            <div className={`processCarIns__head processCarIns__head--${index}`}>
+              <p className={index < 3 ? 'processCarIns__headText' : 'processCarIns__headText processCarIns__headText--black'}>{t(`carInsurance.processCarIns.titleDesk${index}`)}</p>
+            </div>
+            <div className={`processCarIns__step processCarIns__step--${index}`}>
+              <p className='processCarIns__textDesk'>
+                <Trans
+                  i18nKey={`carInsurance.processCarIns.textDesk${index}`}
+                  components={{
+                    aPhone: <a href="tel:+972123456789" target="_blank" rel="noopener noreferrer" />,
+                    aWhatsapp: <a href="https://wa.me/972123456789" target="_blank" rel="noopener noreferrer" />
+                  }}
+                />
+              </p>
+            </div>
+          </>
+        ))}
       </div>
     </section>
   )

@@ -62,7 +62,7 @@ export const Header = () => {
                       <Link className="nav__link nav__link--dropdown" to='/CarInsurance'>{t('header.carInsurance')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/MortgageIns'>{t('header.mortgageInsurance')}</Link>
                     </li>
                     <li className='nav__item'>
                       <Link className="nav__link nav__link--dropdown" to='/'>{t('header.travelInsurance')}</Link>
@@ -173,7 +173,7 @@ export const Header = () => {
                   <Link className="nav__link nav__link--dropdown" to='/CarInsurance'>{t('header.carInsurance')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.mortgageInsurance')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/MortgageIns'>{t('header.mortgageInsurance')}</Link>
                 </li>
                 <li className='nav__item'>
                   <Link className="nav__link nav__link--dropdown" to='/'>{t('header.travelInsurance')}</Link>

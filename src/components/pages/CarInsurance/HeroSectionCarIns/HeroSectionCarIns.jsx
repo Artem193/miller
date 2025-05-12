@@ -4,7 +4,7 @@ import { Button } from '../../home/HeroSection/Button/Button'
 
 import './heroSectionCarIns.scss'
 
-export const HeroSectionCarIns = () => {
+export const HeroSectionCarIns = ({ title1, title2, text }) => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -21,13 +21,13 @@ export const HeroSectionCarIns = () => {
         <div className='heroSectionCarIns__head'>
           <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--left'></div>
           <div className='heroSectionCarIns__titleFlex'>
-            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part1'>{t('carInsurance.heroSection.title1')}</h1>
-            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part2'>{t('carInsurance.heroSection.title2')}</h1>
+            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part1'>{title1}</h1>
+            <h1 className='heroSectionCarIns__title heroSectionCarIns__title--part2'>{title2}</h1>
           </div>
           <div className='heroSectionCarIns__yellowLine heroSectionCarIns__yellowLine--right'></div>
         </div>
       </div>
-      <p className='heroSectionCarIns__text' dangerouslySetInnerHTML={{ __html: t('carInsurance.heroSection.text') }}></p>
+      <p className='heroSectionCarIns__text' dangerouslySetInnerHTML={text}></p>
       <Button addClass='heroSectionCarIns__button'/>
     </section>
   )

@@ -4,6 +4,7 @@ import { StartTopPage } from "./components/startTopPage/StartTopPage";
 import { Home } from "./components/pages/home/Home";
 import { AboutUs } from "./components/pages/AboutUs/AboutUs";
 import { CarInsurance } from './components/pages/CarInsurance/CarInsurance';
+import { MortgageIns } from './components/pages/MortgageIns/MortgageIns'
 
 import './App.scss';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/AboutUs' element={<AboutUs />}/>
         <Route path='/CarInsurance' element={<CarInsurance />}/>
+        <Route path='/MortgageIns' element={<MortgageIns />}/>
       </Routes>
     </Router>
   );

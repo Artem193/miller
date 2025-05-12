@@ -1,18 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 
-import './carInsurance.scss'
+import './mortgageIns.scss'
 
 import { Header } from '../../Header/Header';
-import { HeroSectionCarIns } from './HeroSectionCarIns/HeroSectionCarIns';
-import { About } from './About/About';
-import { ProcessCarIns } from './ProcessCarIns/ProcessCarIns';
-import { WhyWeCarIns } from './WhyWeCarIns/WhyWeCarIns';
-import { FaqCarIns } from './FaqCarIns/FaqCarIns';
+import { HeroSectionCarIns } from '../CarInsurance/HeroSectionCarIns/HeroSectionCarIns'
+// import { About } from './About/About';
+// import { ProcessCarIns } from './ProcessCarIns/ProcessCarIns';
+// import { WhyWeCarIns } from './WhyWeCarIns/WhyWeCarIns';
+// import { FaqCarIns } from './FaqCarIns/FaqCarIns';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
-export const CarInsurance = () => {
+export const MortgageIns = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -26,16 +26,16 @@ export const CarInsurance = () => {
   return (
     <>
       <Header />
-      <main className='carInsurance'>
+      <main className='mortgageIns'>
         <HeroSectionCarIns
-          title1={t('carInsurance.heroSection.title1')}
-          title2={t('carInsurance.heroSection.title2')}
-          text={{ __html: t('carInsurance.heroSection.text') }}
+          title1={t('mortgageIns.heroSection.title1')}
+          title2={t('mortgageIns.heroSection.title2')}
+          text={{ __html: t('mortgageIns.heroSection.text') }}
         />
-        <About />
+        {/* <About />
         <ProcessCarIns />
         <WhyWeCarIns />
-        <FaqCarIns />
+        <FaqCarIns /> */}
         <Contacts />
       </main>
       <Footer />
