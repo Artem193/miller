@@ -53,12 +53,12 @@ export const CalcMortgageIns = () => {
 
   return (
     <section className='calcMortgageIns'>
-      <h2 className="calcMortgageIns__title">Рассчитайте стоимость страховки</h2>
+      <h2 className="calcMortgageIns__title">{t('mortgageIns.calcMortgageIns.title')}</h2>
 
       <div className="calcMortgageIns__selects">
-        <h3 className='calcMortgageIns__subtitle'>Получите приблизительную стоимость за 30 секунд</h3>
+        <h3 className='calcMortgageIns__subtitle'>{t('mortgageIns.calcMortgageIns.subtitle')}</h3>
 
-        <label className="calcMortgageIns__label">Сумма кредита (₪)</label>
+        <label className="calcMortgageIns__label">{t('mortgageIns.calcMortgageIns.label1')} (₪)</label>
         <input
           type="text"
           name="loanAmount"
@@ -67,14 +67,14 @@ export const CalcMortgageIns = () => {
           className="calcMortgageIns__select"
         />
 
-        <label className="calcMortgageIns__label">Возраст заёмщика</label>
+        <label className="calcMortgageIns__label">{t('mortgageIns.calcMortgageIns.label2')} </label>
         <select name="age" value={form.age} onChange={handleChange} className="calcMortgageIns__select">
           <option value="18-34">18–34</option>
           <option value="35-49">35–49</option>
           <option value="50+">50+</option>
         </select>
 
-        <label className="calcMortgageIns__label">Срок ипотеки (лет)</label>
+        <label className="calcMortgageIns__label">{t('mortgageIns.calcMortgageIns.label3')} </label>
         <select name="term" value={form.term} onChange={handleChange} className="calcMortgageIns__select">
           <option value="5">5</option>
           <option value="10">10</option>
@@ -82,29 +82,29 @@ export const CalcMortgageIns = () => {
           <option value="20+">20+</option>
         </select>
 
-        <label className="calcMortgageIns__label">Тип страхования</label>
+        <label className="calcMortgageIns__label">{t('mortgageIns.calcMortgageIns.label4')} </label>
         <select name="insuranceType" value={form.insuranceType} onChange={handleChange} className="calcMortgageIns__select">
-          <option value="Оба">Жизнь + Имущество</option>
-          <option value="Жизнь">Только жизнь</option>
-          <option value="Имущество">Только имущество</option>
+          <option value="Оба">{t('mortgageIns.calcMortgageIns.select1')}</option>
+          <option value="Жизнь">{t('mortgageIns.calcMortgageIns.select2')}</option>
+          <option value="Имущество">{t('mortgageIns.calcMortgageIns.select3')}</option>
         </select>
 
         <p className="calcMortgageIns__text">
-          Ориентировочная годовая стоимость: <b>₪{calculateMortgageInsurance()}</b>
+          {t('mortgageIns.calcMortgageIns.text1')}<b>₪{calculateMortgageInsurance()}</b>
         </p>
         <p className="calcMortgageIns__text">
-          В месяц: <b>₪{monthlyPrice()}</b>
+          {t('mortgageIns.calcMortgageIns.text2')}<b>₪{monthlyPrice()}</b>
         </p>
-        <p className="calcMortgageIns__text">Для точного расчёта и оформления оставьте заявку ниже</p>
+        <p className="calcMortgageIns__text">{t('mortgageIns.calcMortgageIns.text3')}</p>
 
         <button
           className="calcMortgageIns__button"
           onClick={() => setIsModalFormOpen(true)}
         >
-          Получить консультацию
+          {t('mortgageIns.calcMortgageIns.button')}
         </button>
 
-        <a href="#form" className='calcMortgageIns__link'>Перейти к оформлению</a>
+        <a href="#form" className='calcMortgageIns__link'>{t('mortgageIns.calcMortgageIns.link')}</a>
       </div>
 
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}

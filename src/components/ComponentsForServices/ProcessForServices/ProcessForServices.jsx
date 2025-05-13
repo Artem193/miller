@@ -1,9 +1,9 @@
 import { useTranslation, Trans } from 'react-i18next';
 import { useEffect, useRef } from "react";
 
-import './processCarIns.scss';
+import './processForServices.scss';
 
-export const ProcessCarIns = () => {
+export const ProcessForServices = ({ text, titleDesk, textDesk }) => {
   const { t, i18n } = useTranslation();
   const itemsRef = useRef([]);
 
@@ -24,7 +24,7 @@ export const ProcessCarIns = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('processCarIns__item--visible');
+            entry.target.classList.add('processForServices__item--visible');
           }
         });
       },
@@ -51,45 +51,45 @@ export const ProcessCarIns = () => {
   };
 
   return (
-    <section className='processCarIns container'>
-      <h1 className='processCarIns__title'>{t('carInsurance.processCarIns.title')}</h1>
-      <div className='processCarIns__items'>
+    <section className='processForServices container'>
+      <h1 className='processForServices__title'>{t('carInsurance.processCarIns.title')}</h1>
+      <div className='processForServices__items'>
         {[1, 2, 3, 4, 5].map((index) => (
           <div
             key={index}
-            className={`processCarIns__item ${index % 2 === 1 ? 'processCarIns__item--reverse' : ''}`}
+            className={`processForServices__item ${index % 2 === 1 ? 'processForServices__item--reverse' : ''}`}
             ref={addToRefs}
             style={{ transitionDelay: `${index * 0.2}s` }}
           >
-            <h2 className='processCarIns__circle'>
+            <h2 className='processForServices__circle'>
               {index}
             </h2>
-            <div className='processCarIns__box'>
-              <p className='processCarIns__text'>
-                {t(`carInsurance.processCarIns.text${index}`)}
+            <div className='processForServices__box'>
+              <p className='processForServices__text'>
+                {text(index)}
               </p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className='processCarIns__blocks'>
+      <div className='processForServices__blocks'>
         {[1, 2, 3, 4, 5].map((index) => (
           <>
-            <div className={`processCarIns__circleNum processCarIns__circleNum--${index}`}
+            <div className={`processForServices__circleNum processForServices__circleNum--${index}`}
             >
-              <p className={index < 3 ? 'processCarIns__number' : 'processCarIns__number processCarIns__number--black'}>{index}</p>
+              <p className={index < 3 ? 'processForServices__number' : 'processForServices__number processForServices__number--black'}>{index}</p>
             </div>
             {index < 5 && (
-              <div className={`processCarIns__arrow processCarIns__arrow--${index}`}></div>
+              <div className={`processForServices__arrow processForServices__arrow--${index}`}></div>
             )}
-            <div className={`processCarIns__head processCarIns__head--${index}`}>
-              <p className={index < 3 ? 'processCarIns__headText' : 'processCarIns__headText processCarIns__headText--black'}>{t(`carInsurance.processCarIns.titleDesk${index}`)}</p>
+            <div className={`processForServices__head processForServices__head--${index}`}>
+              <p className={index < 3 ? 'processForServices__headText' : 'processForServices__headText processForServices__headText--black'}>{titleDesk(index)}</p>
             </div>
-            <div className={`processCarIns__step processCarIns__step--${index}`}>
-              <p className='processCarIns__textDesk'>
+            <div className={`processForServices__step processForServices__step--${index}`}>
+              <p className='processForServices__textDesk'>
                 <Trans
-                  i18nKey={`carInsurance.processCarIns.textDesk${index}`}
+                  i18nKey={textDesk(index)}
                   components={{
                     aPhone: <a href="tel:+972123456789" target="_blank" rel="noopener noreferrer" />,
                     aWhatsapp: <a href="https://wa.me/972123456789" target="_blank" rel="noopener noreferrer" />

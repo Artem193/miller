@@ -1,12 +1,19 @@
-.heroSectionCarIns {
+.heroSectionForServices {
   
-  background-image: url(/miller/heroSection_carInsurance.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   margin-bottom: 50px;
+
+  &--heroSectionCarIns {
+    background-image: url(/miller/heroSection_carInsurance.png);
+  }
+
+  &--heroSectionMortgageIns {
+    background-image: url(/miller/heroSection_MortgageInsurance.png);
+  }
 
   @media (min-width: 768px) {
     background-size: 100% 100%;

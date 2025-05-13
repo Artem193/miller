@@ -1,4 +1,4 @@
-.processCarIns {
+.processForServices {
   margin-bottom: 50px;
 
   @media (min-width: 768px) {
@@ -78,7 +78,7 @@
     @media (min-width: 769px) {
       display: grid;
       grid-template-columns: repeat(15, 1fr);
-      grid-template-rows: 60px 145px 200px;
+      grid-template-rows: 60px 145px max-content;
       column-gap: 20px;
       row-gap: 5px;
     }
