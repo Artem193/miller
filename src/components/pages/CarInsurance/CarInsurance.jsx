@@ -39,7 +39,11 @@ export const CarInsurance = () => {
         <AboutForServices
           arrayIndexes={[1, 2, 3]}
           title={t('carInsurance.aboutCarIns.title')}
-          text={t('carInsurance.aboutCarIns.text')}
+          textMod={
+            <p className="aboutForServices__text--mortgage">
+              {t('carInsurance.aboutCarIns.text')}
+            </p>
+          }
           nameBox={(i) => t(`carInsurance.aboutCarIns.nameBox${i}`)}
           textBox={(i) => t(`carInsurance.aboutCarIns.textBox${i}`)}
           calc={<CalcCarIns />}

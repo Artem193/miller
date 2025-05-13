@@ -46,7 +46,19 @@ export const AboutForServices = ({
                   </h3>
                 </div>
                 <p className='aboutForServices__textBox'>
-                  {textBox(index)}
+                  {Array.isArray(textBox(index)) ? (
+                    <ul className='aboutForServices__list'>
+                      {textBox(index).map((item, idx) => (
+                        <li key={idx} className='aboutForServices__listItem'>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className='aboutForServices__textBox'>
+                      {textBox(index)}
+                    </p>
+                  )}
                 </p>
               </div>
             </div>

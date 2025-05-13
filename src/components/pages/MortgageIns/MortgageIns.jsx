@@ -60,7 +60,7 @@ export const MortgageIns = () => {
             '/miller/whyWeMortgageIns__icon3.svg',
             '/miller/whyWeMortgageIns__icon4.svg',
             '/miller/whyWeMortgageIns__icon5.svg',
-            '/miller/whyWeCarIns__icon6.svg',
+            '/miller/whyWeMortgageIns__icon6.svg',
           ]}
           title={t('mortgageIns.whyWeMortgageIns.title')}
           text={(i) => t(`mortgageIns.whyWeMortgageIns.text${i}`)}

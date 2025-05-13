@@ -30,7 +30,7 @@ export const Footer = () => {
                   <Link className="footer__link" to='/MortgageIns'>{t('header.mortgageInsurance')}</Link>
                 </li>
                 <li className='footer__item'>
-                  <Link className="footer__link" to='/'>{t('header.travelInsurance')}</Link>
+                  <Link className="footer__link" to='/TouristIns'>{t('header.travelInsurance')}</Link>
                 </li>
                 <li className='footer__item'>
                   <Link className="footer__link" to='/'>{t('header.healthInsurance')}</Link>

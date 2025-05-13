@@ -1,5 +1,5 @@
 .heroSectionForServices {
-  
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +13,10 @@
 
   &--heroSectionMortgageIns {
     background-image: url(/miller/heroSection_MortgageInsurance.png);
+  }
+
+  &--heroSectionTouristIns {
+    background-image: url(/miller/heroSection_touristIns.png);
   }
 
   @media (min-width: 768px) {
@@ -75,17 +79,18 @@
   }
 
   &__title {
-    margin: 0;
-    text-align: center;
+    margin: 0 auto;
     font-size: 2rem;
+    width: max-content;
 
     @media (min-width: 768px) {
+      margin: 0;
       text-align: start;
       font-size: 3rem;
     }
 
     @media (min-width: 1024px) {
-      font-size: 5.625rem;
+      font-size: 4.5rem;
     }
 
     &--part1 {
