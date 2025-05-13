@@ -4,11 +4,8 @@ import { useEffect } from "react";
 import './mortgageIns.scss'
 
 import { Header } from '../../Header/Header';
-import { HeroSectionCarIns } from '../CarInsurance/HeroSectionCarIns/HeroSectionCarIns'
-// import { About } from './About/About';
-// import { ProcessCarIns } from './ProcessCarIns/ProcessCarIns';
-// import { WhyWeCarIns } from './WhyWeCarIns/WhyWeCarIns';
-// import { FaqCarIns } from './FaqCarIns/FaqCarIns';
+import { HeroSectionCarIns } from '../CarInsurance/HeroSectionCarIns/HeroSectionCarIns';
+import { MortgageAbout } from './MortgageAbout/MortgageAbout';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
@@ -32,10 +29,7 @@ export const MortgageIns = () => {
           title2={t('mortgageIns.heroSection.title2')}
           text={{ __html: t('mortgageIns.heroSection.text') }}
         />
-        {/* <About />
-        <ProcessCarIns />
-        <WhyWeCarIns />
-        <FaqCarIns /> */}
+        <MortgageAbout />
         <Contacts />
       </main>
       <Footer />

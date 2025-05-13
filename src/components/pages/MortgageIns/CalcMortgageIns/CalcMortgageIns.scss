@@ -1,0 +1,115 @@
+.calcMortgageIns {
+  flex: 1;
+
+  &__title {
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1e4193;
+  }
+
+  &__selects {
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: max-content;
+    border: 0.5px solid #1E4193;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 1024px) {
+      padding: 50px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 1rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.375rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #E7F0FA;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    border: 0.5px solid #5A9BD5;
+    cursor: pointer;
+
+    &::placeholder {
+      font-family: inherit;
+    }
+
+    &:focus {
+      outline: none;
+      border: 0.5px solid #1e4193;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__text {
+    margin: 0 0 20px 0;
+    font-size: 0.875rem;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__button {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+    background: linear-gradient(90deg, #1e4193, #5A9BD5);
+    color: #EEEEEE ;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(30, 65, 147, 0.3);
+    transition: background 0.3s ease, transform 0.15s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #5A9BD5, #1e4193);
+      transform: scale(1.02);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1E4193;
+
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+}
