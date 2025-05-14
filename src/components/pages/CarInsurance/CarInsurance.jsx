@@ -55,12 +55,12 @@ export const CarInsurance = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/whyWeCarIns__icon1.svg',
-            '/miller/whyWeCarIns__icon2.svg',
-            '/miller/whyWeCarIns__icon3.svg',
-            '/miller/whyWeCarIns__icon4.svg',
-            '/miller/whyWeCarIns__icon5.svg',
-            '/miller/whyWeCarIns__icon6.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon2.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon3.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon4.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon5.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon6.svg',
           ]}
           title={t('carInsurance.whyWeCarIns.title')}
           text={(i) => t(`carInsurance.whyWeCarIns.text${i}`)}

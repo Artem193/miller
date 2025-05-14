@@ -14,7 +14,7 @@ export const Explanation = ({ question, answer }) => {
       <div className='explanation__questionFlex' onClick={handleToggle}>
         <p className='explanation__question'>{question}</p>
         <img
-          src="/miller/faqCarIns__icon.svg"
+          src="/miller/componentsForServices/faqForServices/explanation/faqCarIns__icon.svg"
           alt="icon"
           className={`explanation__icon ${isOpen ? 'explanation__icon--open' : ''}`}
         />

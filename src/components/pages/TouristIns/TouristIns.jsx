@@ -69,9 +69,9 @@ export const TouristIns = () => {
         calc={<CalcTouristIns />}
         />
         <ProcessForServices
-          text={(i) => t(`touristIns.processtouristIns.text${i}`)}
-          titleDesk={(i) => t(`touristIns.processtouristIns.titleDesk${i}`)}
-          textDesk={(i) => t(`touristIns.processtouristIns.textDesk${i}`)}
+          text={(i) => t(`touristIns.processTouristIns.text${i}`)}
+          titleDesk={(i) => t(`touristIns.processTouristIns.titleDesk${i}`)}
+          textDesk={(i) => t(`touristIns.processTouristIns.textDesk${i}`)}
         />
         <WhyWeForServices
           icons={[
@@ -82,8 +82,8 @@ export const TouristIns = () => {
             '/miller/whyWetouristIns__icon5.svg',
             '/miller/whyWeCarIns__icon6.svg',
           ]}
-          title={t('touristIns.whyWetouristIns.title')}
-          text={(i) => t(`touristIns.whyWetouristIns.text${i}`)}
+          title={t('touristIns.whyWeTouristIns.title')}
+          text={(i) => t(`touristIns.whyWeTouristIns.text${i}`)}
         />
         <FaqForServices
           box1={[1, 2, 3].map((index) => (

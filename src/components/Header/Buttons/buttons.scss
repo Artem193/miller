@@ -18,12 +18,12 @@
 
     &--call {
       top: 20vh;
-      background-image: url(/miller/buttons__call.svg);
+      background-image: url(/miller/header/buttons/buttons__call.svg);
     }
 
     &--wp {
       top: 30vh;
-      background-image: url(/miller/buttons__wp.svg);
+      background-image: url(/miller/header/buttons/buttons__wp.svg);
 
       @media (min-width: 768px) {
         top: 35vh;
@@ -66,11 +66,11 @@
     }
 
     &--call {
-      background-image: url(/miller/buttons__call--he.svg);
+      background-image: url(/miller/header/buttons/buttons__call--he.svg);
     }
 
     &--wp {
-      background-image: url(/miller/buttons__wp--he.svg);
+      background-image: url(/miller/header/buttons/buttons__wp--he.svg);
     }
   }
 

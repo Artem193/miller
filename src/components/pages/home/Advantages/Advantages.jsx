@@ -17,7 +17,7 @@ export const Advantages = () => {
       <div className='advantages__blocks'>
         <div className='advantages__block'>
           <img
-            src={i18n.language === 'ru' ? '/miller/advantages__img1.png' : '/miller/advantages__img1--he.png'}
+            src={i18n.language === 'ru' ? '/miller/pages/home/advantages/advantages__img1.png' : '/miller/pages/home/advantages/advantages__img1--he.png'}
             alt="icon"
             className='advantages__img'
           />
@@ -27,7 +27,7 @@ export const Advantages = () => {
 
         <div className='advantages__block advantages__block--white'>
           <img
-            src={i18n.language === 'ru' ? '/miller/advantages__img2.png' : '/miller/advantages__img2--he.png'}
+            src={i18n.language === 'ru' ? '/miller/pages/home/advantages/advantages__img2.png' : '/miller/pages/home/advantages/advantages__img2--he.png'}
             alt="icon"
             className='advantages__img'
           />
@@ -37,7 +37,7 @@ export const Advantages = () => {
 
         <div className='advantages__block'>
           <img
-            src="/miller/advantages__img3.png"
+            src="/miller/pages/home/advantages/advantages__img3.png"
             alt="icon"
             className='advantages__img'
           />

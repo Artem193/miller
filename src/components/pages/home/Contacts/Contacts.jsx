@@ -65,7 +65,7 @@ export const Contacts = ({ onClose }) => {
                 target="_blank"
               >
                 <img
-                  src="/miller/contacts__email.svg"
+                  src="/miller/pages/home/contacts/contacts__email.svg"
                   alt="icon"
                   className='contacts__icon'
                 />
@@ -82,7 +82,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/contacts__phone.svg" alt="icon" className='contacts__icon' />
+                <img src="/miller/pages/home/contacts/contacts__phone.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>{t('home.contacts.textTitle1')}</p>
                   <p className='contacts__text--info'>050-425-5338</p>
@@ -96,7 +96,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/contacts__wp.svg" alt="icon" className='contacts__icon' />
+                <img src="/miller/pages/home/contacts/contacts__wp.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>WhatsApp</p>
                   <p className='contacts__text--info'>050-425-5338</p>
@@ -110,7 +110,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/contacts__fb.svg" alt="icon" className='contacts__icon' />
+                <img src="/miller/pages/home/contacts/contacts__fb.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>Facebook</p>
                   <p className='contacts__text--info'>Anatoli Natan Miller</p>
@@ -124,7 +124,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/contacts__location.svg" alt="icon" className='contacts__icon' />
+                <img src="/miller/pages/home/contacts/contacts__location.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>{t('home.contacts.textTitle2')}</p>
                   <p className='contacts__text--info'>{t('home.contacts.textInfo')}</p>
