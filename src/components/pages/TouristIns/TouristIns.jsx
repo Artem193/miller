@@ -75,12 +75,12 @@ export const TouristIns = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/whyWeCarIns__icon1.svg',
-            '/miller/whyWeCarIns__icon2.svg',
-            '/miller/whyWetouristIns__icon3.svg',
-            '/miller/whyWetouristIns__icon4.svg',
-            '/miller/whyWetouristIns__icon5.svg',
-            '/miller/whyWeCarIns__icon6.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon1.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon2.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon3.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon4.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon5.svg',
+            '/miller/pages/touristIns/whyWeTouristIns__icon6.svg',
           ]}
           title={t('touristIns.whyWeTouristIns.title')}
           text={(i) => t(`touristIns.whyWeTouristIns.text${i}`)}
@@ -89,14 +89,14 @@ export const TouristIns = () => {
           box1={[1, 2, 3].map((index) => (
             <Explanation
               key={index}
-              question={t(`touristIns.faqtouristIns.question${index}`)}
-              answer={t(`touristIns.faqtouristIns.answer${index}`)} />
+              question={t(`touristIns.faqTouristIns.question${index}`)}
+              answer={t(`touristIns.faqTouristIns.answer${index}`)} />
           ))}
           box2={[4, 5].map((index) => (
             <Explanation
               key={index}
-              question={t(`touristIns.faqtouristIns.question${index}`)}
-              answer={t(`touristIns.faqtouristIns.answer${index}`)} />
+              question={t(`touristIns.faqTouristIns.question${index}`)}
+              answer={t(`touristIns.faqTouristIns.answer${index}`)} />
           ))}
         />
         <Contacts />

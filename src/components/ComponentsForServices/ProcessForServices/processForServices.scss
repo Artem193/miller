@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1023px) {
       display: none;
     }
   }
@@ -75,7 +75,7 @@
   &__blocks {
     display: none;
 
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
       display: grid;
       grid-template-columns: repeat(15, 1fr);
       grid-template-rows: 60px 145px max-content;
