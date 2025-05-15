@@ -45,12 +45,10 @@
   }
 
   &__text {
-    margin: 0 0 25px 0;
     font-size: 1rem;
     text-align: center;
 
     @media (min-width: 768px) {
-      margin-bottom: 40px;
       text-align: start;
     }
 

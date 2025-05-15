@@ -35,6 +35,7 @@ export const CarInsurance = () => {
           title1={t('carInsurance.heroSection.title1')}
           title2={t('carInsurance.heroSection.title2')}
           text={{ __html: t('carInsurance.heroSection.text') }}
+          textButton={t('home.heroSection.heroSection__button')}
         />
         <AboutForServices
           arrayIndexes={[1, 2, 3]}
@@ -49,6 +50,7 @@ export const CarInsurance = () => {
           calc={<CalcCarIns />}
         />
         <ProcessForServices
+        title={t('carInsurance.processCarIns.title')}
           text={(i) => t(`carInsurance.processCarIns.text${i}`)}
           titleDesk={(i) => t(`carInsurance.processCarIns.titleDesk${i}`)}
           textDesk={(i) => t(`carInsurance.processCarIns.textDesk${i}`)}

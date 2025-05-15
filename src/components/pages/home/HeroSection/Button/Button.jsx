@@ -4,7 +4,7 @@ import { ModalForm } from '../ModalForm/ModalForm'
 
 import './button.scss';
 
-export const Button = ({ addClass }) => {
+export const Button = ({ addClass, textButton }) => {
   const { t, i18n } = useTranslation();
   const [isModalFormOpen, setIsModalFormOpen] = useState(false);
 
@@ -15,7 +15,7 @@ export const Button = ({ addClass }) => {
   return (
     <>
       <button className={`button ${addClass}`} onClick={() => setIsModalFormOpen(true)}>
-        {t('home.heroSection.heroSection__button')}
+        {textButton}
       </button>
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </>

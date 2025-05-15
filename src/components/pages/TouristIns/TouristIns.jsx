@@ -34,6 +34,7 @@ export const TouristIns = () => {
           title1={t('touristIns.heroSection.title1')}
           title2={t('touristIns.heroSection.title2')}
           text={{ __html: t('touristIns.heroSection.text') }}
+          textButton={t('touristIns.heroSection.button')}
         />
         <AboutForServices
           arrayIndexes={[1, 2]}

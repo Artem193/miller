@@ -4,7 +4,7 @@ import { Button } from '../../pages/home/HeroSection/Button/Button'
 
 import './heroSectionForServices.scss'
 
-export const HeroSectionForServices = ({ title1, title2, text, background }) => {
+export const HeroSectionForServices = ({ title1, title2, text, background, textButton }) => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -28,7 +28,10 @@ export const HeroSectionForServices = ({ title1, title2, text, background }) => 
         </div>
       </div>
       <p className='heroSectionForServices__text' dangerouslySetInnerHTML={text}></p>
-      <Button addClass='heroSectionForServices__button'/>
+      <Button
+        addClass='heroSectionForServices__button'
+        textButton={textButton}
+      />
     </section>
   )
 }

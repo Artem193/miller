@@ -49,7 +49,7 @@ export const HeroSection = () => {
             <Circles addClass='circles--homeMobBottom' />
             <p className='heroSection__text' dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__text') }}>
             </p>
-            <Button />
+            <Button textButton={t('home.heroSection.heroSection__button')}/>
           </div>
           <div className='heroSection__media'>
             <Circles addClass='circles--home' />

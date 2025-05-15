@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 import './processForServices.scss';
 
-export const ProcessForServices = ({ text, titleDesk, textDesk }) => {
+export const ProcessForServices = ({ title, text, titleDesk, textDesk }) => {
   const { t, i18n } = useTranslation();
   const itemsRef = useRef([]);
 
@@ -52,7 +52,9 @@ export const ProcessForServices = ({ text, titleDesk, textDesk }) => {
 
   return (
     <section className='processForServices container'>
-      <h1 className='processForServices__title'>{t('carInsurance.processCarIns.title')}</h1>
+      <h1 className='processForServices__title'>
+        {title}
+      </h1>
       <div className='processForServices__items'>
         {[1, 2, 3, 4, 5].map((index) => (
           <div

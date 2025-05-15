@@ -6,6 +6,7 @@ import './mortgageIns.scss'
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
+import { MistakesMortgage } from './MistakesMortgage/MistakesMortgage';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
 import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
@@ -35,6 +36,7 @@ export const MortgageIns = () => {
           title1={t('mortgageIns.heroSection.title1')}
           title2={t('mortgageIns.heroSection.title2')}
           text={{ __html: t('mortgageIns.heroSection.text') }}
+          textButton={t('mortgageIns.heroSection.button')}
         />
         <AboutForServices
           arrayIndexes={[1, 2]}
@@ -48,7 +50,9 @@ export const MortgageIns = () => {
           textBox={(i) => t(`mortgageIns.mortgageAbout.textBox${i}`)}
           calc={<CalcMortgageIns />}
         />
+        <MistakesMortgage />
         <ProcessForServices
+          title={t('mortgageIns.processMortgageIns.title')}
           text={(i) => t(`mortgageIns.processMortgageIns.text${i}`)}
           titleDesk={(i) => t(`mortgageIns.processMortgageIns.titleDesk${i}`)}
           textDesk={(i) => t(`mortgageIns.processMortgageIns.textDesk${i}`)}

@@ -121,9 +121,13 @@
 
     @media (min-width: 1024px) {
       margin-bottom: 2%;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       width: 60%;
       font-weight: 700;
+    }
+
+    @media (min-width: 1540px) {
+      font-size: 1.5rem;
     }
   }
 
