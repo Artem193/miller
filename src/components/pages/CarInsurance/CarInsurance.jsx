@@ -50,9 +50,11 @@ export const CarInsurance = () => {
           calc={<CalcCarIns />}
         />
         <ProcessForServices
-        title={t('carInsurance.processCarIns.title')}
+          title={t('carInsurance.processCarIns.title')}
           text={(i) => t(`carInsurance.processCarIns.text${i}`)}
-          titleDesk={(i) => t(`carInsurance.processCarIns.titleDesk${i}`)}
+          titleDesk={(i) => (
+            <span dangerouslySetInnerHTML={{ __html: t(`carInsurance.processCarIns.titleDesk${i}`) }} />
+          )}
           textDesk={(i) => t(`carInsurance.processCarIns.textDesk${i}`)}
         />
         <WhyWeForServices

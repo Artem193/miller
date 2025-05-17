@@ -54,7 +54,9 @@ export const MortgageIns = () => {
         <ProcessForServices
           title={t('mortgageIns.processMortgageIns.title')}
           text={(i) => t(`mortgageIns.processMortgageIns.text${i}`)}
-          titleDesk={(i) => t(`mortgageIns.processMortgageIns.titleDesk${i}`)}
+          titleDesk={(i) => (
+            <span dangerouslySetInnerHTML={{ __html: t(`mortgageIns.processMortgageIns.titleDesk${i}`) }} />
+          )}
           textDesk={(i) => t(`mortgageIns.processMortgageIns.textDesk${i}`)}
         />
         <WhyWeForServices

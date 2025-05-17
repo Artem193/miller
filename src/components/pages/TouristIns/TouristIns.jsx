@@ -5,6 +5,7 @@ import './touristIns.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
+import { WhyInsuranceForTourist } from './WhyInsuranceForTourist/WhyInsuranceForTourist';
 import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
 import { CalcTouristIns } from './CalcTouristIns/CalcTouristIns';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
@@ -36,7 +37,8 @@ export const TouristIns = () => {
           text={{ __html: t('touristIns.heroSection.text') }}
           textButton={t('touristIns.heroSection.button')}
         />
-        <AboutForServices
+        <WhyInsuranceForTourist />
+        {/* <AboutForServices
           arrayIndexes={[1, 2]}
           title={t('touristIns.touristAbout.title')}
           textMod={
@@ -68,7 +70,7 @@ export const TouristIns = () => {
             return t(`touristIns.touristAbout.textBox${i}`);
           }}
         calc={<CalcTouristIns />}
-        />
+        /> */}
         <ProcessForServices
           text={(i) => t(`touristIns.processTouristIns.text${i}`)}
           titleDesk={(i) => t(`touristIns.processTouristIns.titleDesk${i}`)}
