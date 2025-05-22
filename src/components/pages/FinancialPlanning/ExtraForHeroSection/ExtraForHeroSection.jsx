@@ -57,7 +57,7 @@ export const ExtraForHeroSection = () => {
             centeredSlides={true}
             breakpoints={{
               0: {
-                slidesPerView: 2.2,
+                slidesPerView: 1.8,
               },
               480: {
                 slidesPerView: 1,

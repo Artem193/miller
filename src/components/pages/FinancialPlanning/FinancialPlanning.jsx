@@ -8,6 +8,7 @@ import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionF
 import { ExtraForHeroSection } from './ExtraForHeroSection/ExtraForHeroSection';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
+import { WhyRelevant } from './WhyRelevant/WhyRelevant';
 
 export const FinancialPlanning = () => {
   const { t, i18n } = useTranslation();
@@ -32,6 +33,8 @@ export const FinancialPlanning = () => {
           extraForHeroSectionAddClass='extraForHeroSection'
           textButton={t('financialPlanning.heroSection.button')}
         />
+        <WhyRelevant />
+        <Contacts />
       </main>
       <Footer />
     </>
