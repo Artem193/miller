@@ -1,6 +1,14 @@
 .buttons {
+  position: fixed;
+  top: 30vh;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   &__button {
-    position: absolute;
+    position: relative;
     right: -131px;
     width: 195px;
     height: 60px;
@@ -17,16 +25,13 @@
     }
 
     &--call {
-      top: 20vh;
       background-image: url(/miller/header/buttons/buttons__call.svg);
     }
 
     &--wp {
-      top: 30vh;
       background-image: url(/miller/header/buttons/buttons__wp.svg);
 
       @media (min-width: 768px) {
-        top: 35vh;
       }
     }
 
@@ -37,7 +42,7 @@
 
   &__link {
     display: block;
-    color: #EEEEEE ;
+    color: #EEEEEE;
     text-decoration: none;
     line-height: 60px;
     margin-left: 65px;
@@ -52,6 +57,9 @@
 }
 
 [dir='rtl'] .buttons {
+  right: unset;
+  left: 0;
+
   &__button {
     left: -131px;
     right: unset;

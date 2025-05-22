@@ -6,6 +6,9 @@ import './touristIns.scss'
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { WhyInsuranceForTourist } from './WhyInsuranceForTourist/WhyInsuranceForTourist';
+import { IncludeInTouristIns } from './IncludeInTouristIns/IncludeInTouristIns';
+import { ImportantTouristIns } from './ImportantTouristIns/ImportantTouristIns';
+import { StatForm } from '../../StatForm/StatForm';
 import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
 import { CalcTouristIns } from './CalcTouristIns/CalcTouristIns';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
@@ -38,6 +41,17 @@ export const TouristIns = () => {
           textButton={t('touristIns.heroSection.button')}
         />
         <WhyInsuranceForTourist />
+        <IncludeInTouristIns
+          title={t('touristIns.baseTouristIns.title')}
+          arr={[1, 2, 3, 4, 5, 6]}
+          pack='baseTouristIns'
+        />
+        <IncludeInTouristIns
+          title={t('touristIns.extraTouristIns.title')}
+          arr={[1, 2, 3]}
+          pack='extraTouristIns'
+        />
+        <ImportantTouristIns />
         {/* <AboutForServices
           arrayIndexes={[1, 2]}
           title={t('touristIns.touristAbout.title')}
@@ -71,7 +85,9 @@ export const TouristIns = () => {
           }}
         calc={<CalcTouristIns />}
         /> */}
+        <StatForm />
         <ProcessForServices
+          title={t('carInsurance.processCarIns.title')}
           text={(i) => t(`touristIns.processTouristIns.text${i}`)}
           titleDesk={(i) => t(`touristIns.processTouristIns.titleDesk${i}`)}
           textDesk={(i) => t(`touristIns.processTouristIns.textDesk${i}`)}
@@ -89,13 +105,13 @@ export const TouristIns = () => {
           text={(i) => t(`touristIns.whyWeTouristIns.text${i}`)}
         />
         <FaqForServices
-          box1={[1, 2, 3].map((index) => (
+          box1={[1, 2, 3, 4].map((index) => (
             <Explanation
               key={index}
               question={t(`touristIns.faqTouristIns.question${index}`)}
               answer={t(`touristIns.faqTouristIns.answer${index}`)} />
           ))}
-          box2={[4, 5].map((index) => (
+          box2={[5, 6, 7].map((index) => (
             <Explanation
               key={index}
               question={t(`touristIns.faqTouristIns.question${index}`)}
