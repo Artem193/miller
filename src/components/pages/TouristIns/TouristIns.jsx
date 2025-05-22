@@ -5,6 +5,7 @@ import './touristIns.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
+import { Button } from '../home/HeroSection/Button/Button'
 import { WhyInsuranceForTourist } from './WhyInsuranceForTourist/WhyInsuranceForTourist';
 import { IncludeInTouristIns } from './IncludeInTouristIns/IncludeInTouristIns';
 import { ImportantTouristIns } from './ImportantTouristIns/ImportantTouristIns';
@@ -38,7 +39,11 @@ export const TouristIns = () => {
           title1={t('touristIns.heroSection.title1')}
           title2={t('touristIns.heroSection.title2')}
           text={{ __html: t('touristIns.heroSection.text') }}
-          textButton={t('touristIns.heroSection.button')}
+          textAddClass='text'
+          button={<Button
+            addClass='heroSectionForServices__button'
+            textButton={t('touristIns.heroSection.button')}
+          />}
         />
         <WhyInsuranceForTourist />
         <IncludeInTouristIns

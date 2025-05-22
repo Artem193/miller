@@ -19,6 +19,10 @@
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_touristIns.png);
   }
 
+  &--heroSectionFinancialPlanning {
+    background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_financialPlanning.png);
+  }
+
   @media (min-width: 768px) {
     background-size: 100% 100%;
   }
@@ -116,6 +120,18 @@
     &--part2 {
       font-weight: 400;
       color: #D4B02C;
+    }
+  }
+
+  &__extraForHeroSection {
+    padding-top: 20vh;
+
+    @media (min-width: 400px) {
+      padding-top: 30vh;
+    }
+
+    @media (min-width: 768px) {
+      padding-top: 40vh;
     }
   }
 

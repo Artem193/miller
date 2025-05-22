@@ -1,10 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
-import { Button } from '../../pages/home/HeroSection/Button/Button'
 
 import './heroSectionForServices.scss'
 
-export const HeroSectionForServices = ({ title1, title2, text, background, textButton }) => {
+export const HeroSectionForServices = ({ title1, title2, text, textAddClass, background, button, extraForHeroSectionAddClass, extraForHeroSection }) => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -27,11 +26,11 @@ export const HeroSectionForServices = ({ title1, title2, text, background, textB
           <div className='heroSectionForServices__yellowLine heroSectionForServices__yellowLine--right'></div>
         </div>
       </div>
-      <p className='heroSectionForServices__text' dangerouslySetInnerHTML={text}></p>
-      <Button
-        addClass='heroSectionForServices__button'
-        textButton={textButton}
-      />
+      <div className={`heroSectionForServices__${extraForHeroSectionAddClass}`}>
+        {extraForHeroSection}
+      </div>
+      <p className={`heroSectionForServices__${textAddClass}`} dangerouslySetInnerHTML={text}></p>
+      {button}
     </section>
   )
 }

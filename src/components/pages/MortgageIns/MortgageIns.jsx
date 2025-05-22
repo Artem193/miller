@@ -5,9 +5,11 @@ import './mortgageIns.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
+import { Button } from '../home/HeroSection/Button/Button'
 import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
 import { MistakesMortgage } from './MistakesMortgage/MistakesMortgage';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
+import { StatForm } from '../../StatForm/StatForm'
 import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
 import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
@@ -36,7 +38,11 @@ export const MortgageIns = () => {
           title1={t('mortgageIns.heroSection.title1')}
           title2={t('mortgageIns.heroSection.title2')}
           text={{ __html: t('mortgageIns.heroSection.text') }}
-          textButton={t('mortgageIns.heroSection.button')}
+          textAddClass='text'
+          button={<Button
+            addClass='heroSectionForServices__button'
+            textButton={t('mortgageIns.heroSection.button')}
+          />}
         />
         <AboutForServices
           arrayIndexes={[1, 2]}
@@ -59,6 +65,7 @@ export const MortgageIns = () => {
           )}
           textDesk={(i) => t(`mortgageIns.processMortgageIns.textDesk${i}`)}
         />
+        <StatForm />
         <WhyWeForServices
           icons={[
             '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',

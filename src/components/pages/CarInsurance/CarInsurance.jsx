@@ -5,8 +5,10 @@ import './carInsurance.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
+import { Button } from '../home/HeroSection/Button/Button'
 import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
+import { StatForm } from '../../StatForm/StatForm'
 import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
 import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
@@ -35,7 +37,11 @@ export const CarInsurance = () => {
           title1={t('carInsurance.heroSection.title1')}
           title2={t('carInsurance.heroSection.title2')}
           text={{ __html: t('carInsurance.heroSection.text') }}
-          textButton={t('home.heroSection.heroSection__button')}
+          textAddClass='text'
+          button={<Button
+            addClass='heroSectionForServices__button'
+            textButton={t('home.heroSection.heroSection__button')}
+          />}
         />
         <AboutForServices
           arrayIndexes={[1, 2, 3]}
@@ -57,6 +63,7 @@ export const CarInsurance = () => {
           )}
           textDesk={(i) => t(`carInsurance.processCarIns.textDesk${i}`)}
         />
+        <StatForm />
         <WhyWeForServices
           icons={[
             '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
