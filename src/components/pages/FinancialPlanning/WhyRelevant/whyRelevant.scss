@@ -1,5 +1,5 @@
 .whyRelevant {
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 
   @media (min-width: 768px) {
     margin-top: 200px;
@@ -139,7 +139,40 @@
         width: 40px;
         height: 40px;
       }
+    }
+  }
+}
 
+[dir='rtl'] .whyRelevant {
+
+  &__img {
+    transform: scaleX(-1);
+  }
+
+  &__boxes {
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+
+    @media (min-width: 768px) {
+      right: unset;
+      left: 0;
+      transform: unset;
+    }
+  }
+
+  &__item {
+    padding-left: unset;
+    padding-right: 30px;
+
+    @media (min-width: 768px) {
+      padding-left: unset;
+      padding-right: 70px;
+    }
+
+    &::before {
+      left: unset;
+      right: 0;
     }
   }
 }

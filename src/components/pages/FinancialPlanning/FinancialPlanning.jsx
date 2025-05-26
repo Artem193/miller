@@ -6,9 +6,14 @@ import './financialPlanning.scss'
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { ExtraForHeroSection } from './ExtraForHeroSection/ExtraForHeroSection';
+import { WhyRelevant } from './WhyRelevant/WhyRelevant';
+import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices'
+import { ReasonsFinPlan } from './ReasonsFinPlan/ReasonsFinPlan';
+import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
+import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
+import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
-import { WhyRelevant } from './WhyRelevant/WhyRelevant';
 
 export const FinancialPlanning = () => {
   const { t, i18n } = useTranslation();
@@ -34,6 +39,41 @@ export const FinancialPlanning = () => {
           textButton={t('financialPlanning.heroSection.button')}
         />
         <WhyRelevant />
+        <WhyWeForServices
+          icons={[
+            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon2.svg',
+            '/miller/pages/carInsurance/whyWeCarIns__icon3.svg',
+            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon4.svg',
+            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon5.svg',
+            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon6.svg',
+          ]}
+          title={t('financialPlanning.whyWeFinancialPlanning.title')}
+          text={(i) => t(`financialPlanning.whyWeFinancialPlanning.text${i}`)}
+        />
+        <ReasonsFinPlan />
+        <ProcessForServices
+          title={t('financialPlanning.processFinancialPlanning.title')}
+          text={(i) => t(`financialPlanning.processFinancialPlanning.text${i}`)}
+          titleDesk={(i) => (
+            <span dangerouslySetInnerHTML={{ __html: t(`financialPlanning.processFinancialPlanning.titleDesk${i}`) }} />
+          )}
+          textDesk={(i) => t(`financialPlanning.processFinancialPlanning.textDesk${i}`)}
+        />
+        <FaqForServices
+          box1={[1, 2, 3].map((index) => (
+            <Explanation
+              key={index}
+              question={t(`financialPlanning.faqFinancialPlanning.question${index}`)}
+              answer={t(`financialPlanning.faqFinancialPlanning.answer${index}`)} />
+          ))}
+          box2={[4, 5].map((index) => (
+            <Explanation
+              key={index}
+              question={t(`financialPlanning.faqFinancialPlanning.question${index}`)}
+              answer={t(`financialPlanning.faqFinancialPlanning.answer${index}`)} />
+          ))}
+        />
         <Contacts />
       </main>
       <Footer />

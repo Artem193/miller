@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
+import { Button } from '../../home/HeroSection/Button/Button'
+
 import './whyRelevant.scss'
 
 export const WhyRelevant = () => {
@@ -38,6 +40,11 @@ export const WhyRelevant = () => {
               ))}
             </ul>
           </div>
+
+          <Button
+            addClass='button--financialPlanning'
+            textButton={t('financialPlanning.whyRelevant.button')}
+          />
         </div>
       </div>
     </section>
