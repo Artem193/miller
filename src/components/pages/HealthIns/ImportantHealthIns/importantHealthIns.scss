@@ -1,4 +1,4 @@
-.reasonsFinPlan {
+.importantHealthIns {
   margin-bottom: 50px;
 
   @media (min-width: 1024px) {
@@ -56,10 +56,11 @@
     font-weight: 700;
 
     @media (min-width: 1024px) {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
 
     &--number {
+      font-size: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -73,6 +74,7 @@
 
       @media (min-width: 1024px) {
         width: 70px;
+        font-size: 2rem;
         line-height: 70px;
       }
     }
@@ -93,6 +95,7 @@
     border-radius: 15px;
 
     @media (min-width: 1024px) {
+      min-width: 30%;
       width: 30%;
     }
   }
