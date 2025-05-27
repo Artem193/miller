@@ -64,7 +64,11 @@ export const ImportantHealthIns = ({ onClose }) => {
                 <div className="importantHealthIns__numberBox">
                   <p className="importantHealthIns__item importantHealthIns__item--number">{index}</p>
                 </div>
-                <li className="importantHealthIns__item importantHealthIns__item--text">{t(`healthIns.importantHealthIns.item${index}`)}</li>
+                <li
+                  className="importantHealthIns__item importantHealthIns__item--text"
+                  dangerouslySetInnerHTML={{ __html: t(`healthIns.importantHealthIns.item${index}`) }}
+                >
+                </li>
               </div>
             ))}
           </ul>

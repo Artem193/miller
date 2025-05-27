@@ -57,39 +57,6 @@ export const TouristIns = () => {
           pack='extraTouristIns'
         />
         <ImportantTouristIns />
-        {/* <AboutForServices
-          arrayIndexes={[1, 2]}
-          title={t('touristIns.touristAbout.title')}
-          textMod={
-            <p className="aboutForServices__text--mortgage">
-              {t('touristIns.touristAbout.text')}
-            </p>
-          }
-          nameBox={(i) => t(`touristIns.touristAbout.nameBox${i}`)}
-          textBox={(i) => {
-            if (i === 1) {
-              return [
-                t('touristIns.touristAbout.point1'),
-                t('touristIns.touristAbout.point2'),
-                t('touristIns.touristAbout.point3'),
-                t('touristIns.touristAbout.point4'),
-                t('touristIns.touristAbout.point5'),
-                t('touristIns.touristAbout.point6'),
-                t('touristIns.touristAbout.point7'),
-                t('touristIns.touristAbout.point8')
-              ];
-            }
-            if (i === 2) {
-              return [
-                t('touristIns.touristAbout.point9'),
-                t('touristIns.touristAbout.point10'),
-                t('touristIns.touristAbout.point11'),
-              ];
-            }
-            return t(`touristIns.touristAbout.textBox${i}`);
-          }}
-        calc={<CalcTouristIns />}
-        /> */}
         <StatForm />
         <ProcessForServices
           title={t('carInsurance.processCarIns.title')}
