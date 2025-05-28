@@ -1,0 +1,37 @@
+.risksBusinessIns {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 1.875rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__boxesFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

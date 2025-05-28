@@ -7,6 +7,7 @@ import { CarInsurance } from './components/pages/CarInsurance/CarInsurance';
 import { MortgageIns } from './components/pages/MortgageIns/MortgageIns'
 import { TouristIns } from './components/pages/TouristIns/TouristIns';
 import { HealthIns } from './components/pages/HealthIns/HealthIns';
+import { BusinessIns } from './components/pages/BusinessIns/BussinesIns';
 import { FinancialPlanning } from './components/pages/FinancialPlanning/FinancialPlanning';
 
 import './App.scss';
@@ -22,6 +23,7 @@ function App() {
         <Route path='/MortgageIns' element={<MortgageIns />}/>
         <Route path='/TouristIns' element={<TouristIns />}/>
         <Route path='/HealthIns' element={<HealthIns />}/>
+        <Route path='/BusinessIns' element={<BusinessIns />}/>
         <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
       </Routes>
     </Router>

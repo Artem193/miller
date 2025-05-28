@@ -1,22 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 
-import './healthIns.scss'
+import './businessIns.scss'
 
 import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { Button } from '../home/HeroSection/Button/Button'
-import { MedicineHealthIns } from './MedicineHealthIns/MedicineHealthIns';
-import { CoverageHealthIns } from './CoverageHealthIns/CoverageHealthIns';
-import { ImportantHealthIns } from './ImportantHealthIns/ImportantHealthIns';
-import { CostOfHealthIns } from './CostOfHealthIns/CostOfHealthIns';
-import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
+import { RisksBusinessIns } from './RisksBusinessIns/RisksBusinessIns';
+import { WhatBusinessIns } from './WhatBusinessIns/WhatBusinessIns';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
 import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
-export const HealthIns = () => {
+export const BusinessIns = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -30,35 +27,21 @@ export const HealthIns = () => {
   return (
     <>
       <Header />
-      <main className='healthIns'>
+      <main className='businessIns'>
         <HeroSectionForServices
-          background={'heroSectionHealthIns'}
-          title1={t('healthIns.heroSection.title1')}
-          title2={t('healthIns.heroSection.title2')}
-          text={{ __html: t('healthIns.heroSection.text') }}
+          background={'heroSectionBusinessIns'}
+          title1={t('businessIns.heroSection.title1')}
+          title2={t('businessIns.heroSection.title2')}
+          text={{ __html: t('businessIns.heroSection.text') }}
           textAddClass='text'
           button={<Button
             addClass='heroSectionForServices__button'
-            textButton={t('healthIns.heroSection.button')}
+            textButton={t('businessIns.heroSection.button')}
           />}
         />
-        <MedicineHealthIns />
-        <CoverageHealthIns />
-        <ImportantHealthIns />
-        <CostOfHealthIns />
-        <WhyWeForServices
-          icons={[
-            '/miller/pages/healthIns/whyWeHealthIns__icon1.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon2.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon3.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon4.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon5.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon6.svg',
-          ]}
-          title={t('healthIns.whyWeHealthIns.title')}
-          text={(i) => t(`healthIns.whyWeHealthIns.text${i}`)}
-        />
-        <FaqForServices
+        <RisksBusinessIns />
+        <WhatBusinessIns />
+        {/* <FaqForServices
           box1={[1, 2, 3].map((index) => (
             <Explanation
               key={index}
@@ -71,7 +54,7 @@ export const HealthIns = () => {
               question={t(`healthIns.faqHealthIns.question${index}`)}
               answer={t(`healthIns.faqHealthIns.answer${index}`)} />
           ))}
-        />
+        /> */}
         <Contacts />
       </main>
       <Footer />
