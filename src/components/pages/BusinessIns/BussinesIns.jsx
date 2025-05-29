@@ -8,6 +8,9 @@ import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionF
 import { Button } from '../home/HeroSection/Button/Button'
 import { RisksBusinessIns } from './RisksBusinessIns/RisksBusinessIns';
 import { WhatBusinessIns } from './WhatBusinessIns/WhatBusinessIns';
+import { ImportantBusinessIns } from './ImportantBusinessIns/ImportantBusinessIns';
+import { RightBusinessIns } from './RightBusinessIns/RightBusinessIns';
+import { HowWeWorkBusinessIns } from './HowWeWorkBusinessIns/HowWeWorkBusinessIns';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
 import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { Contacts } from '../home/Contacts/Contacts';
@@ -41,20 +44,23 @@ export const BusinessIns = () => {
         />
         <RisksBusinessIns />
         <WhatBusinessIns />
-        {/* <FaqForServices
+        <ImportantBusinessIns />
+        <RightBusinessIns />
+        <HowWeWorkBusinessIns />
+        <FaqForServices
           box1={[1, 2, 3].map((index) => (
             <Explanation
               key={index}
-              question={t(`healthIns.faqHealthIns.question${index}`)}
-              answer={t(`healthIns.faqHealthIns.answer${index}`)} />
+              question={t(`businessIns.faqBusinessIns.question${index}`)}
+              answer={t(`businessIns.faqBusinessIns.answer${index}`)} />
           ))}
           box2={[4, 5].map((index) => (
             <Explanation
               key={index}
-              question={t(`healthIns.faqHealthIns.question${index}`)}
-              answer={t(`healthIns.faqHealthIns.answer${index}`)} />
+              question={t(`businessIns.faqBusinessIns.question${index}`)}
+              answer={t(`businessIns.faqBusinessIns.answer${index}`)} />
           ))}
-        /> */}
+        />
         <Contacts />
       </main>
       <Footer />

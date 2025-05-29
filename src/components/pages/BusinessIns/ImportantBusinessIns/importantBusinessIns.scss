@@ -1,4 +1,4 @@
-.importantTouristIns {
+.importantBusinessIns {
   display: flex;
   background-color: #E7F0FA;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -6,17 +6,26 @@
   margin-bottom: 50px;
 
   @media (min-width: 768px) {
-    height: 600px;
+    height: 850px;
     margin-bottom: 90px;
   }
 
   &__title {
-    margin: 25px;
+    margin: 25px 25px 0 25px;
     font-size: 1.875rem;
 
     @media (min-width: 768px) {
-      margin: 50px;
+      margin: 50px 50px 0 50px;
       font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    margin: 25px;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+      margin: 25px 50px 50px 50px;
     }
   }
 
@@ -98,7 +107,7 @@
   }
 }
 
-[dir='rtl'] .importantTouristIns {
+[dir='rtl'] .importantBusinessIns {
   &__img {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
