@@ -95,7 +95,7 @@ export const StatForm = ({ onClose }) => {
             className={`statForm__input ${errors.city ? "error" : ""}`}
             dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
-          <button type="submit" className="statForm__submit">{t('modalForm.submit')}</button>
+          <button type="submit" className="statForm__submit">{t('statForm.button')}</button>
         </form>
       </div>
     </div>

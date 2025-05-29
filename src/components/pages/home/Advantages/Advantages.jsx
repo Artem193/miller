@@ -17,17 +17,17 @@ export const Advantages = () => {
       <div className='advantages__blocks'>
         <div className='advantages__block'>
           <img
-            src={i18n.language === 'ru' ? '/miller/pages/home/advantages/advantages__img1.png' : '/miller/pages/home/advantages/advantages__img1--he.png'}
+            src='/miller/pages/home/advantages/advantages__img1.svg'
             alt="icon"
             className='advantages__img'
           />
-          <div className='advantages__name'>{t(`home.advantages.advantages__name1`)}</div>
+          <div className='advantages__name' dangerouslySetInnerHTML={{ __html: t(`home.advantages.advantages__name1`)}}></div>
           <div className='advantages__text'>{t(`home.advantages.advantages__text1`)}</div>
         </div>
 
         <div className='advantages__block advantages__block--white'>
           <img
-            src={i18n.language === 'ru' ? '/miller/pages/home/advantages/advantages__img2.png' : '/miller/pages/home/advantages/advantages__img2--he.png'}
+            src='/miller/pages/home/advantages/advantages__img2.svg'
             alt="icon"
             className='advantages__img'
           />
@@ -37,7 +37,7 @@ export const Advantages = () => {
 
         <div className='advantages__block'>
           <img
-            src="/miller/pages/home/advantages/advantages__img3.png"
+            src='/miller/pages/home/advantages/advantages__img3.svg'
             alt="icon"
             className='advantages__img'
           />

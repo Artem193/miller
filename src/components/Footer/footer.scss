@@ -15,7 +15,8 @@
 
   &__title {
     margin-bottom: 20px;
-    color: #EEEEEE ;
+    color: #ffffff ;
+    text-decoration: underline;
   }
 
   &__list {
@@ -26,7 +27,7 @@
     flex-direction: column;
 
     @media(min-width: 768px) {
-      gap: 100px;
+      gap: 180px;
       flex-direction: row;
     }
   }
@@ -39,15 +40,15 @@
 
   &__link {
     text-decoration: none;
-    color: #EEEEEE ;
+    color: #ffffff ;
 
     @media(min-width: 768px) {
-      font-size: 1.2rem;
+      font-size: 1.125rem;
     }
   }
 
   &__logo {
-    height: 200px;
+    height: 170px;
     margin: 0 auto;
 
     @media(min-width: 768px) {
@@ -59,6 +60,7 @@
     margin: 0;
     padding: 10px 0 10px;
     text-align: center;
+    color: #ffffff;
 
     @media(min-width: 768px) {
       padding: 80px 0 10px;

@@ -34,15 +34,19 @@
   }
 
   &__title {
-    font-size: 1em;
+    font-size: 1.125rem;
     margin-bottom: 10px;
     text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__button {
     padding: 5px;
     font-size: 0.875em;
-    background-color: #E7F0FA ;
+    background-color: #E7F0FA;
     border: 0.5px solid #5A9BD5;
     border-radius: 5px;
     cursor: pointer;
@@ -51,7 +55,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
   }
+  
 }
 
 [dir='rtl'] .accessibility {

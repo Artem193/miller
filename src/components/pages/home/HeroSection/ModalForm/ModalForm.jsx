@@ -91,6 +91,7 @@ export const ModalForm = ({ onClose }) => {
           />
 
           <button type="submit" className="modalForm__submit">{t('modalForm.submit')}</button>
+          <p className="modalForm__confidentiality">{t('modalForm.confidentiality')}</p>
         </form>
         <div className='modalForm__close' onClick={onClose}></div>
       </div>

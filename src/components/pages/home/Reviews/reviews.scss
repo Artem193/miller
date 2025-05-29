@@ -20,7 +20,8 @@
   }
 
   &__block {
-    background: linear-gradient(180deg, #5A9BD5, #1E4193);
+    background-color: #5A9BD5;
+    // background: linear-gradient(180deg, #5A9BD5, #1E4193);
     margin: 30px 40px;
     padding: 10px;
     border-radius: 15px;
@@ -49,6 +50,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 1px solid #1E4193;
     border-radius: 50%;
 
     @media (min-width: 1268px) {
@@ -77,7 +79,7 @@
     color: #ffffff;
 
     @media (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 }

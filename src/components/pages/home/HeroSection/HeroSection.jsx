@@ -39,22 +39,25 @@ export const HeroSection = () => {
   return (
     <>
       <section className='heroSection container'>
-        <h1 className='heroSection__title'>
-          {t('home.heroSection.heroSection__title')}
-        </h1>
         <div className='heroSection__flex'>
           <div className='heroSection__textInfo'>
-            <Circles addClass='circles--homeMob' />
+            <h1 className='heroSection__title'>
+              {t('home.heroSection.heroSection__title')}
+            </h1>
             <img src='/miller/pages/home/heroSection/heroSectionPhoto.png' className='heroSection__photo--mob' alt='Photo' />
+            <p className="heroSection__signature heroSection__signature--mob" dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__signature') }}></p>
             <Circles addClass='circles--homeMobBottom' />
             <p className='heroSection__text' dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__text') }}>
             </p>
-            <Button textButton={t('home.heroSection.heroSection__button')}/>
+            <Button textButton={t('home.heroSection.heroSection__button')} />
           </div>
           <div className='heroSection__media'>
-            <Circles addClass='circles--home' />
-            <img src='/miller/pages/home/heroSection/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
-            <Circles addClass='circles--homeBottom' />
+            <div className="heroSection__mediaFlex">
+              <Circles addClass='circles--home' />
+              <img src='/miller/pages/home/heroSection/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
+              <Circles addClass='circles--homeBottom' />
+              <p className="heroSection__signature heroSection__signature--desk" dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__signature') }}></p>
+            </div>
           </div>
         </div>
       </section>

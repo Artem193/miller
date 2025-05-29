@@ -178,7 +178,7 @@ export const Contacts = ({ onClose }) => {
             dir={i18n.language === "he" ? "rtl" : "ltr"}
             rows="1"
           />
-          <button type="submit" className="contacts__submit">{t('modalForm.submit')}</button>
+          <button type="submit" className="contacts__submit">{t('home.contacts.button')}</button>
         </form>
       </div>
     </article>

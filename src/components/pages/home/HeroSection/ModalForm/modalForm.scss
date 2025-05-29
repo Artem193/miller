@@ -51,7 +51,7 @@
 
     &::placeholder {
       font-family: inherit;
-      color: #B9B9B9;
+      color: #A0A0A0;
     }
 
     &:focus {
@@ -75,6 +75,7 @@
     border-radius: 100px;
     cursor: pointer;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 700;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -84,6 +85,10 @@
       background: linear-gradient(90deg, #5A9BD5, #1e4193);
       transform: scale(1.02);
     }
+  }
+
+  &__confidentiality{
+    font-size: 0.75rem;
   }
 
   &__close {

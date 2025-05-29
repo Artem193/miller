@@ -15,10 +15,10 @@
 
   &__question {
     font-weight: 600;
-    font-size: 0.875rem;
+    // font-size: 0.875rem;
 
     @media (min-width: 1024px) {
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
   }
 
@@ -35,10 +35,9 @@
 
   &__answer {
     margin-top: 15px;
-    font-size: 0.875rem;
 
     @media (min-width: 1024px) {
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
   }
 }
