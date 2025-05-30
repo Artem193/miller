@@ -98,6 +98,9 @@
     background-color: #E7F0FA;
 
     @media(min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 65%;
       border-top-right-radius: 15px;
     }
@@ -162,7 +165,7 @@
   }
 
   &__submit {
-    width: 70%;
+    width: 100%;
     font-family: inherit;
     padding: 12px;
     background: linear-gradient(90deg, #D4B02C, #E1C95A);
@@ -171,11 +174,14 @@
     font-size: 18px;
     border-radius: 100px;
     cursor: pointer;
-    margin-top: 10px;
     font-weight: 700;
     box-sizing: border-box;
     color: #000000;
     border: none;
+
+    @media(min-width: 768px) {
+      width: 70%;
+    }
 
 
     &:hover {

@@ -7,19 +7,32 @@
   flex-direction: column;
   gap: 10px;
 
-  &__button {
+  &__wrapper {
     position: relative;
-    right: -131px;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(70%);
+    pointer-events: none;
+    transition: transform 0.4s ease-in-out;
     width: 195px;
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: right 0.4s ease-in-out, left 0.4s ease-in-out;
     cursor: pointer;
 
     @media (min-width: 768px) {
-      right: -175px;
       width: 260px;
       height: 80px;
     }
@@ -31,12 +44,12 @@
     &--wp {
       background-image: url(/miller/header/buttons/buttons__wp.svg);
 
-      @media (min-width: 768px) {
-      }
+      @media (min-width: 768px) {}
     }
 
     &--open {
-      right: 0;
+      transform: translateX(0);
+      pointer-events: auto;
     }
   }
 
@@ -61,16 +74,10 @@
   left: 0;
 
   &__button {
-    left: -131px;
-    right: unset;
-
-    @media (min-width: 768px) {
-      left: -175px;
-      right: unset;
-    }
+    transform: translateX(0%);
 
     &--open {
-      left: 0;
+      transform: translateX(70%);
     }
 
     &--call {

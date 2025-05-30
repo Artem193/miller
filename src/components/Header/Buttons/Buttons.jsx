@@ -28,27 +28,36 @@ export const Buttons = () => {
     <div className='buttons'>
 
       <div
-        className={`buttons__button buttons__button--call ${isOpenCall ? 'buttons__button--open' : ''}`}
+        className='buttons__wrapper'
         onMouseEnter={() => window.innerWidth > 1024 && setIsOpenCall(true)}
         onMouseLeave={() => window.innerWidth > 1024 && setIsOpenCall(false)}
         onClick={handleToggleCall}
       >
-        <a href="tel:+972504255338" className='buttons__link'>050-425-5338</a>
+        <div
+          className={`buttons__button buttons__button--call ${isOpenCall ? 'buttons__button--open' : ''}`}
+        >
+          <a href="tel:+972504255338" className='buttons__link'>050-425-5338</a>
+        </div>
       </div>
 
       <div
-        className={`buttons__button buttons__button--wp ${isOpenWp ? 'buttons__button--open' : ''}`}
+        className='buttons__wrapper'
         onMouseEnter={() => window.innerWidth > 1024 && setIsOpenWp(true)}
         onMouseLeave={() => window.innerWidth > 1024 && setIsOpenWp(false)}
         onClick={handleToggleWp}
       >
-        <a
-          href="https://wa.me/972504255338"
-          className='buttons__link'
-          target='_blank'
+        <div
+          className={`buttons__button buttons__button--wp ${isOpenWp ? 'buttons__button--open' : ''}`}
+          onClick={handleToggleWp}
         >
-          WhatsApp
-        </a>
+          <a
+            href="https://wa.me/972504255338"
+            className='buttons__link'
+            target='_blank'
+          >
+            WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   );
