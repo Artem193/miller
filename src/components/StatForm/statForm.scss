@@ -13,10 +13,7 @@
     padding: 25px;
     background-color: #E7F0FA;
     border-radius: 15px;
-
-    @media (min-width: 768px) {
-      width: max-content;
-    }
+    width: 70%;
   }
 
   &__title {
@@ -31,7 +28,7 @@
       display: flex;
       gap: 50px;
       margin: 0 auto;
-      width: 90%;
+      justify-content: center;
     }
   }
 
@@ -47,7 +44,7 @@
     box-sizing: border-box;
     border: 0.5px solid #5A9BD5;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       margin-bottom: 0;
     }
 

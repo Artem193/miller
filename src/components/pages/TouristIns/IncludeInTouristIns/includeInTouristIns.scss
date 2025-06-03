@@ -22,7 +22,7 @@
       grid-template-rows: repeat(2, max-content);
       column-gap: 70px;
       row-gap: 30px;
-      justify-content: center;
+      justify-content: space-around;
     }
 
     @media (min-width: 1280px) {

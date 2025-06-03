@@ -59,9 +59,11 @@ export const TouristIns = () => {
         <ImportantTouristIns />
         <StatForm />
         <ProcessForServices
-          title={t('carInsurance.processCarIns.title')}
+          title={t('touristIns.processTouristIns.title')}
           text={(i) => t(`touristIns.processTouristIns.text${i}`)}
-          titleDesk={(i) => t(`touristIns.processTouristIns.titleDesk${i}`)}
+          titleDesk={(i) => (
+            <span dangerouslySetInnerHTML={{ __html: t(`touristIns.processTouristIns.titleDesk${i}`) }} />
+          )}
           textDesk={(i) => t(`touristIns.processTouristIns.textDesk${i}`)}
         />
         <WhyWeForServices

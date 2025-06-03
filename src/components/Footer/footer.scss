@@ -25,6 +25,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
     @media(min-width: 768px) {
       gap: 180px;
