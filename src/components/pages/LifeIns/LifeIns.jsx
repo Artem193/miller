@@ -7,6 +7,7 @@ import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { Button } from '../home/HeroSection/Button/Button'
 import { WhyLifeIns } from './WhyLifeIns/WhyLifeIns.';
+import { TypesOfLifeIns } from './TypesOfLifeIns/TypesOfLifeIns';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
@@ -37,6 +38,7 @@ export const LifeIns = () => {
           />}
         />
         <WhyLifeIns />
+        <TypesOfLifeIns />
         <Contacts />
       </main>
       <Footer />
