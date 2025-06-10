@@ -26,11 +26,22 @@ export const HeroSectionForServices = ({ title1, title2, text, textAddClass, bac
           <div className='heroSectionForServices__yellowLine heroSectionForServices__yellowLine--right'></div>
         </div>
       </div>
-      <div className={`heroSectionForServices__${extraForHeroSectionAddClass}`}>
-        {extraForHeroSection}
-      </div>
+    <div className={`heroSectionForServices__${extraForHeroSectionAddClass}`}>
+      {extraForHeroSection}
+    </div>
       <p className={`heroSectionForServices__${textAddClass}`} dangerouslySetInnerHTML={text}></p>
       {button}
     </section>
+
+    // <section className={`heroSectionForServices heroSectionForServices--${background}`}>
+    //   <div className='container heroSectionForServices__content'>
+    //     <h1 className='heroSectionForServices__title'>{title1} {title2}</h1>
+    //     <div className={`heroSectionForServices__${extraForHeroSectionAddClass}`}>
+    //       {extraForHeroSection}
+    //     </div>
+    //     <p className={`heroSectionForServices__${textAddClass}`} dangerouslySetInnerHTML={text}></p>
+    //     {button}
+    //   </div>
+    // </section>
   )
 }

@@ -9,6 +9,7 @@ import { TouristIns } from './components/pages/TouristIns/TouristIns';
 import { HealthIns } from './components/pages/HealthIns/HealthIns';
 import { LifeIns } from './components/pages/LifeIns/LifeIns';
 import { BusinessIns } from './components/pages/BusinessIns/BusinessIns';
+import { TravelIns } from './components/pages/TravelIns/TravelIns';
 import { FinancialPlanning } from './components/pages/FinancialPlanning/FinancialPlanning';
 
 import './App.scss';
@@ -27,6 +28,7 @@ function App() {
         <Route path='/LifeIns' element={<LifeIns />}/>
         <Route path='/BusinessIns' element={<BusinessIns />}/>
         <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
+        <Route path='/TravelIns' element={<TravelIns />}/>
       </Routes>
     </Router>
   );

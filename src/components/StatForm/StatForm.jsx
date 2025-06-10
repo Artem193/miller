@@ -7,7 +7,7 @@ import { ThankYouPage } from "../pages/home/HeroSection/ModalForm/ThankYouPage/T
 
 import './statForm.scss'
 
-export const StatForm = ({ onClose }) => {
+export const StatForm = ({ onClose, title }) => {
   const { t, i18n } = useTranslation();
   const {
     register,
@@ -55,7 +55,7 @@ export const StatForm = ({ onClose }) => {
   return (
     <div className="statForm">
       <div className="statForm__content" onClick={(e) => e.stopPropagation()}>
-        <h2 className="statForm__title">{t('statForm.title')}</h2>
+        <h2 className="statForm__title">{title}</h2>
         <form className="statForm__form" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"

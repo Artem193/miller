@@ -35,6 +35,10 @@
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_lifeIns.png);
   }
 
+  &--heroSectionTravelIns {
+    background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_travelIns.png);
+  }
+
   @media (min-width: 768px) {
     background-size: 100% 100%;
   }
@@ -190,4 +194,113 @@
       margin: 0 8%;
     }
   }
+
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // height: 100vh;
+  // width: 100%;
+  // margin-bottom: 50px;
+  // display: flex;
+  // align-items: center;
+
+  // &--heroSectionCarIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_carInsurance.png);
+  // }
+
+  // &--heroSectionMortgageIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_MortgageInsurance.png);
+  // }
+
+  // &--heroSectionTouristIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_touristIns.png);
+  // }
+
+  // &--heroSectionHealthIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_healthIns.png);
+  // }
+
+  // &--heroSectionBusinessIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_businessIns.png);
+  // }
+
+  // &--heroSectionFinancialPlanning {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_financialPlanning.png);
+  // }
+
+  // &--heroSectionLifeIns {
+  //   background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_lifeIns.png);
+  // }
+
+  // @media (min-width: 768px) {
+  //   background-size: 100% 100%;
+  // }
+
+  // @media (min-width: 1024px) {
+  //   margin-bottom: 90px;
+  // }
+
+  // &__title {
+  //   text-align: center;
+  //   font-size: 1.5rem;
+  //   width: fit-content;
+  //   color: #ffffff;
+
+  //   @media (min-width: 400px) {
+  //     font-size: 2rem;
+  //   }
+
+  //   @media (min-width: 768px) {
+  //     text-align: start;
+  //     font-size: 3rem;
+  //   }
+
+  //   @media (min-width: 1024px) {
+  //     font-size: 3.5rem;
+  //     margin-bottom: 100px;
+  //   }
+
+  //   &::after {
+  //     content: "";
+  //     display: block;
+  //     width: fit-content;
+  //     width: 100%;
+  //     height: 7px;
+  //     background-color: #D4B02C;
+  //     margin-top: 8px;
+  //   }
+  // }
+
+  // &__text {
+  //   color: #ffffff;
+  //   text-align: center;
+  //   margin-bottom: 50px;
+
+  //   @media (min-width: 768px) {
+  //     font-size: 1.2rem;
+  //     font-weight: 600;
+  //     text-align: start;
+  //     width: 70%;
+  //   }
+
+  //   @media (min-width: 1024px) {
+  //     font-size: 1.2rem;
+  //     width: 60%;
+  //     font-weight: 700;
+  //   }
+
+  //   @media (min-width: 1540px) {
+  //     font-size: 1.5rem;
+  //   }
+  // }
+
+  
+  // &__button {
+  //   background: linear-gradient(90deg, #D4B02C, #E1C95A);
+  //   color: #000000;
+
+  //   &:hover {
+  //     background: linear-gradient(90deg, #E1C95A, #D4B02C);
+  //   }
+  // }
 }

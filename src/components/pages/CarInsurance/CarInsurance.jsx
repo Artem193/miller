@@ -63,7 +63,9 @@ export const CarInsurance = () => {
           )}
           textDesk={(i) => t(`carInsurance.processCarIns.textDesk${i}`)}
         />
-        <StatForm />
+        <StatForm
+          title={t('statForm.title')}
+        />
         <WhyWeForServices
           icons={[
             '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',

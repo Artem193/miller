@@ -57,7 +57,9 @@ export const TouristIns = () => {
           pack='extraTouristIns'
         />
         <ImportantTouristIns />
-        <StatForm />
+        <StatForm
+          title={t('statForm.title')}
+        />
         <ProcessForServices
           title={t('touristIns.processTouristIns.title')}
           text={(i) => t(`touristIns.processTouristIns.text${i}`)}
