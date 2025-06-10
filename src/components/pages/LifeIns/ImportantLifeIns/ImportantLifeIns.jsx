@@ -5,9 +5,9 @@ import emailjs from "@emailjs/browser";
 
 import { ThankYouPage } from "../../home/HeroSection/ModalForm/ThankYouPage/ThankYouPage";
 
-import './importantHealthIns.scss'
+import './importantLifeIns.scss'
 
-export const ImportantHealthIns = ({ onClose }) => {
+export const ImportantLifeIns = ({ onClose }) => {
   const { t, i18n } = useTranslation();
   const {
     register,
@@ -52,21 +52,21 @@ export const ImportantHealthIns = ({ onClose }) => {
     return <ThankYouPage onClose={handleClose} />;
   }
   return (
-    <section className="importantHealthIns container">
-      <h1 className="importantHealthIns__title">
-        {t('healthIns.importantHealthIns.title')}
+    <section className="importantLifeIns container">
+      <h1 className="importantLifeIns__title">
+        {t('lifeIns.importantLifeIns.title')}
       </h1>
-      <div className="importantHealthIns__content">
-        <div className="importantHealthIns__reasons">
-          <ul className="importantHealthIns__list">
+      <div className="importantLifeIns__content">
+        <div className="importantLifeIns__reasons">
+          <ul className="importantLifeIns__list">
             {[1, 2, 3, 4, 5].map((index) => (
-              <div key={index} className="importantHealthIns__reason">
-                <div className="importantHealthIns__numberBox">
-                  <p className="importantHealthIns__item importantHealthIns__item--number">{index}</p>
+              <div key={index} className="importantLifeIns__reason">
+                <div className="importantLifeIns__numberBox">
+                  <p className="importantLifeIns__item importantLifeIns__item--number">{index}</p>
                 </div>
                 <li
-                  className="importantHealthIns__item importantHealthIns__item--text"
-                  dangerouslySetInnerHTML={{ __html: t(`healthIns.importantHealthIns.item${index}`) }}
+                  className="importantLifeIns__item importantLifeIns__item--text"
+                  dangerouslySetInnerHTML={{ __html: t(`lifeIns.importantLifeIns.item${index}`) }}
                 >
                 </li>
               </div>
@@ -74,9 +74,9 @@ export const ImportantHealthIns = ({ onClose }) => {
           </ul>
         </div>
 
-        <form className="importantHealthIns__form" onSubmit={handleSubmit(onSubmit)}>
-          <h2 className="importantHealthIns__subtitle">{t('healthIns.importantHealthIns.subtitle')}</h2>
-          <p className="importantHealthIns__text">{t('healthIns.importantHealthIns.text')}</p>
+        <form className="importantLifeIns__form" onSubmit={handleSubmit(onSubmit)}>
+          <h2 className="importantLifeIns__subtitle">{t('lifeIns.importantLifeIns.subtitle')}</h2>
+          <p className="importantLifeIns__text">{t('lifeIns.importantLifeIns.text')}</p>
 
           <input
             type="text"
@@ -87,7 +87,7 @@ export const ImportantHealthIns = ({ onClose }) => {
                 value: 2,
               },
             })}
-            className={`importantHealthIns__input ${errors.name ? "error" : ""}`}
+            className={`importantLifeIns__input ${errors.name ? "error" : ""}`}
             dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
 
@@ -100,7 +100,7 @@ export const ImportantHealthIns = ({ onClose }) => {
                 value: /^[0-9+() -]{7,15}$/,
               },
             })}
-            className={`importantHealthIns__input ${errors.phone ? "error" : ""}`}
+            className={`importantLifeIns__input ${errors.phone ? "error" : ""}`}
             dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
 
@@ -113,10 +113,10 @@ export const ImportantHealthIns = ({ onClose }) => {
                 value: 2,
               },
             })}
-            className={`importantHealthIns__input ${errors.city ? "error" : ""}`}
+            className={`importantLifeIns__input ${errors.city ? "error" : ""}`}
             dir={i18n.language === 'he' ? 'rtl' : 'ltr'}
           />
-          <button type="submit" className="importantHealthIns__submit">{t('healthIns.importantHealthIns.button')}</button>
+          <button type="submit" className="importantLifeIns__submit">{t('lifeIns.importantLifeIns.button')}</button>
         </form>
       </div>
     </section>

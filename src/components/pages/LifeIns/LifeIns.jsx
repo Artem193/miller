@@ -8,6 +8,12 @@ import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionF
 import { Button } from '../home/HeroSection/Button/Button'
 import { WhyLifeIns } from './WhyLifeIns/WhyLifeIns.';
 import { TypesOfLifeIns } from './TypesOfLifeIns/TypesOfLifeIns';
+import { ImportantLifeIns } from './ImportantLifeIns/ImportantLifeIns';
+import { CostOfLifeIns } from './CostOfLifeIns/CostOfLifeIns';
+import { ProcessLifeIns } from './ProcessLifeIns/ProcessLifeIns';
+import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
+import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
+import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
@@ -39,6 +45,35 @@ export const LifeIns = () => {
         />
         <WhyLifeIns />
         <TypesOfLifeIns />
+        <ImportantLifeIns />
+        <CostOfLifeIns />
+        <ProcessLifeIns />
+        <WhyWeForServices
+          icons={[
+            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
+            '/miller/pages/lifeIns/whyWeLifeIns__icon2.svg',
+            '/miller/pages/lifeIns/whyWeLifeIns__icon3.svg',
+            '/miller/pages/lifeIns/whyWeLifeIns__icon4.svg',
+            '/miller/pages/lifeIns/whyWeLifeIns__icon5.svg',
+            '/miller/pages/lifeIns/whyWeLifeIns__icon6.svg',
+          ]}
+          title={t('lifeIns.whyWeLifeIns.title')}
+          text={(i) => t(`lifeIns.whyWeLifeIns.text${i}`)}
+        />
+        <FaqForServices
+          box1={[1, 2, 3, 4].map((index) => (
+            <Explanation
+              key={index}
+              question={t(`lifeIns.faqLifeIns.question${index}`)}
+              answer={t(`lifeIns.faqLifeIns.answer${index}`)} />
+          ))}
+          box2={[5, 6, 7].map((index) => (
+            <Explanation
+              key={index}
+              question={t(`lifeIns.faqLifeIns.question${index}`)}
+              answer={t(`lifeIns.faqLifeIns.answer${index}`)} />
+          ))}
+        />
         <Contacts />
       </main>
       <Footer />

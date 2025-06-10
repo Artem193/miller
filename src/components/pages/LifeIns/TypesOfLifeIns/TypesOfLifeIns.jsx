@@ -14,18 +14,19 @@ export const TypesOfLifeIns = () => {
     <section className="typesOfLifeIns container">
       <h1 className="typesOfLifeIns__title">{t('lifeIns.typesOfLifeIns.title')}</h1>
 
-      <div className="typesOfLifeIns__boxes">
+      <div className="typesOfLifeIns__row">
         {[1, 2, 3].map((index) => (
-          <div key={index} className="typesOfLifeIns__box">
+          <div key={index} className="typesOfLifeIns__item">
             <img
               src={`/miller/pages/lifeIns/typesOfLifeIns__icon${index}.svg`}
               alt="icon"
-              className="typesOfLifeIns__icon"
+              className={`typesOfLifeIns__icon${index}`}
             />
-            <h2
-              className='typesOfLifeIns__subtitle'
-              dangerouslySetInnerHTML={{ __html: t(`lifeIns.typesOfLifeIns.subtitle${index}`) }}
-            />
+            <h2 
+            className="typesOfLifeIns__subtitle"
+            dangerouslySetInnerHTML={{ __html: t(`lifeIns.typesOfLifeIns.subtitle${index}`) }}
+            >
+            </h2>
             <p className="typesOfLifeIns__text">{t(`lifeIns.typesOfLifeIns.text${index}`)}</p>
           </div>
         ))}
