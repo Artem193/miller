@@ -1,0 +1,161 @@
+.costAccidentIns {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    &--2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tableDesktop {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      background-color: #ffffff;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__cell {
+    border: 2px solid #5A9BD5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    &--1 {
+      border-top-left-radius: 15px;
+    }
+
+    &--3 {
+      border-top-right-radius: 15px;
+    }
+
+    &--10 {
+      border-bottom-left-radius: 15px;
+    }
+
+    &--12 {
+      border-bottom-right-radius: 15px;
+    }
+  }
+
+  &__value {
+    font-size: 1.5rem;
+
+    &--2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    &--3 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    &--4 {
+      font-weight: 700;
+    }
+
+    &--5 {
+      font-size: 1rem;
+    }
+
+    &--6 {
+      font-size: 1rem;
+    }
+
+    &--7 {
+      font-weight: 700;
+    }
+
+    &--10 {
+      font-weight: 700;
+    }
+  }
+
+  &__boxMobile {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 20px;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    &--blue {
+      border: 2px solid #5A9BD5;
+    }
+
+    &--yellow {
+      border: 2px solid #D4B02C;
+    }
+  }
+
+  &__subtitleMobile {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__textMobile {
+    margin-bottom: 5px;
+
+    &--2 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+[dir='rtl'] .costAccidentIns {
+  &__cell {
+
+    &--1 {
+      border-top-left-radius: unset;
+      border-top-right-radius: 15px;
+    }
+
+    &--3 {
+      border-top-right-radius: unset;
+      border-top-left-radius: 15px;
+    }
+
+    &--10 {
+      border-bottom-left-radius: unset;
+      border-bottom-right-radius: 15px;
+    }
+
+    &--12 {
+      border-bottom-right-radius: unset;
+      border-bottom-left-radius: 15px;
+    }
+  }
+}

@@ -7,14 +7,14 @@ import { Header } from '../../Header/Header';
 import { HeroSectionForServices } from '../../ComponentsForServices/HeroSectionForServices/HeroSectionForServices';
 import { Button } from '../home/HeroSection/Button/Button'
 import { WhyInsuranceForTravel } from './WhyInsuranceForTravel/WhyInsuranceForTravel';
-import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
-import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { WhatCoverTravelIns } from './WhatCoverTravelIns/WhatCoverTravelIns';
 import { StatForm } from '../../StatForm/StatForm';
 import { ImportantTravelIns } from './ImportantTravelIns/ImportantTravelIns';
 import { CostOfTravelIns } from './CostOfTravelIns/CostOfTravelIns';
 import { ProcessTravelIns } from './ProcessTravelIns/ProcessTravelIns';
 import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
+import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
+import { Explanation } from '../../ComponentsForServices/FaqForServices/Explanation/Explanation';
 import { Contacts } from '../home/Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 

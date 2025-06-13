@@ -10,6 +10,7 @@ import { HealthIns } from './components/pages/HealthIns/HealthIns';
 import { LifeIns } from './components/pages/LifeIns/LifeIns';
 import { BusinessIns } from './components/pages/BusinessIns/BusinessIns';
 import { TravelIns } from './components/pages/TravelIns/TravelIns';
+import { AccidentIns } from './components/pages/AccidentIns/AccidentIns';
 import { FinancialPlanning } from './components/pages/FinancialPlanning/FinancialPlanning';
 
 import './App.scss';
@@ -27,8 +28,9 @@ function App() {
         <Route path='/HealthIns' element={<HealthIns />}/>
         <Route path='/LifeIns' element={<LifeIns />}/>
         <Route path='/BusinessIns' element={<BusinessIns />}/>
-        <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
         <Route path='/TravelIns' element={<TravelIns />}/>
+        <Route path='/AccidentIns' element={<AccidentIns />}/>
+        <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
       </Routes>
     </Router>
   );

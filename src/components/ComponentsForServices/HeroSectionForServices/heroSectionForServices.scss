@@ -39,6 +39,10 @@
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_travelIns.png);
   }
 
+  &--heroSectionTravelIns {
+    background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_accidentIns.png);
+  }
+
   @media (min-width: 768px) {
     background-size: 100% 100%;
   }

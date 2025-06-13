@@ -47,7 +47,7 @@ export const Footer = () => {
               </div>
               <div className='footer__flexList'>
                 <li className='footer__item'>
-                  <Link className="footer__link" to='/'>{t('header.accidentInsurance')}</Link>
+                  <Link className="footer__link" to='/AccidentIns'>{t('header.accidentInsurance')}</Link>
                 </li>
                 <li className='footer__item'>
                   <Link className="footer__link" to='/'>{t('header.propertyInsurance')}</Link>

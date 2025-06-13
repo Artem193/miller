@@ -55,7 +55,7 @@ export const StatForm = ({ onClose, title }) => {
   return (
     <div className="statForm">
       <div className="statForm__content" onClick={(e) => e.stopPropagation()}>
-        <h2 className="statForm__title">{title}</h2>
+        <h2 className="statForm__title" dangerouslySetInnerHTML={{ __html: title }}></h2>
         <form className="statForm__form" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
