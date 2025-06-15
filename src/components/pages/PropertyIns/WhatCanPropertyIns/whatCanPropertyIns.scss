@@ -1,4 +1,4 @@
-.costAccidentIns {
+.whatCanPropertyIns {
   margin-bottom: 50px;
 
   @media (min-width: 768px) {
@@ -59,38 +59,32 @@
       border-top-right-radius: 15px;
     }
 
-    &--10 {
+    &--16 {
       border-bottom-left-radius: 15px;
     }
 
-    &--12 {
+    &--18 {
       border-bottom-right-radius: 15px;
     }
   }
 
   &__value {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+
+    &--1 {
+      font-weight: 700;
+    }
 
     &--2 {
-      font-size: 2.5rem;
       font-weight: 700;
     }
 
     &--3 {
-      font-size: 2.5rem;
       font-weight: 700;
     }
 
     &--4 {
       font-weight: 700;
-    }
-
-    &--5 {
-      font-size: 1rem;
-    }
-
-    &--6 {
-      font-size: 1rem;
     }
 
     &--7 {
@@ -100,11 +94,20 @@
     &--10 {
       font-weight: 700;
     }
+
+    &--13 {
+      font-weight: 700;
+    }
+
+    &--16 {
+      font-weight: 700;
+    }
   }
 
   &__boxMobile {
     background-color: #ffffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #5A9BD5;
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 20px;
@@ -112,17 +115,10 @@
     @media (min-width: 1024px) {
       display: none;
     }
-
-    &--blue {
-      border: 2px solid #5A9BD5;
-    }
-
-    &--yellow {
-      border: 2px solid #D4B02C;
-    }
   }
 
   &__subtitleMobile {
+    font-size: 1.125rem;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -136,7 +132,7 @@
   }
 }
 
-[dir='rtl'] .costAccidentIns {
+[dir='rtl'] .whatCanPropertyIns {
   &__cell {
 
     &--1 {
@@ -149,12 +145,12 @@
       border-top-left-radius: 15px;
     }
 
-    &--10 {
+    &--16 {
       border-bottom-left-radius: unset;
       border-bottom-right-radius: 15px;
     }
 
-    &--12 {
+    &--18 {
       border-bottom-right-radius: unset;
       border-bottom-left-radius: 15px;
     }

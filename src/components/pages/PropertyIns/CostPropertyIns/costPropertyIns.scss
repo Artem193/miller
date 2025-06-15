@@ -1,0 +1,89 @@
+.costPropertyIns {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+
+    @media (min-width: 768px) {
+      width: 350px;
+    }
+  }
+
+  &__subtitle {
+    padding: 15px;
+    background-color: #E1C95A;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.25rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__textFlex {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  &__description {
+
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: unset;
+    padding: 15px;
+  }
+}
