@@ -13,6 +13,7 @@ import { TravelIns } from './components/pages/TravelIns/TravelIns';
 import { AccidentIns } from './components/pages/AccidentIns/AccidentIns';
 import { PropertyIns } from './components/pages/PropertyIns/PropertyIns';
 import { FinancialPlanning } from './components/pages/FinancialPlanning/FinancialPlanning';
+import { PensionManagement } from './components/pages/PensionManagement/PensionManagement';
 
 import './App.scss';
 
@@ -33,6 +34,7 @@ function App() {
         <Route path='/AccidentIns' element={<AccidentIns />}/>
         <Route path='/PropertyIns' element={<PropertyIns />}/>
         <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
+        <Route path='/PensionManagement' element={<PensionManagement />}/>
       </Routes>
     </Router>
   );
