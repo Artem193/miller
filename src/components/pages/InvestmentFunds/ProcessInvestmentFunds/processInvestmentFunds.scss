@@ -1,0 +1,82 @@
+.processInvestmentFunds {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__boxes {
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 35px;
+    height: 120px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+
+    &--1 {
+      background-image: url('/miller/pages/lifeIns/processLifeIns__box--1.svg');
+    }
+
+    &--2 {
+      background-image: url('/miller/pages/lifeIns/processLifeIns__box--2.svg');
+    }
+
+    &--3 {
+      background-image: url('/miller/pages/lifeIns/processLifeIns__box--3.svg');
+    }
+  }
+
+  &__item {
+    font-weight: 600;
+    color: #ffffff;
+    width: 200px;
+
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+      width: 250px;
+    }
+
+    &--3 {
+      color: #5A9BD5;
+    }
+  }
+}
+
+[dir='rtl'] .processInvestmentFunds {
+  &__box {
+    transform: scaleX(-1);
+    height: 100px;
+  }
+
+  &__item {
+    transform: scaleX(-1);
+
+    @media (min-width: 768px) {
+      width: 220px;
+    }
+  }
+}

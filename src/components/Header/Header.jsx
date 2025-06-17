@@ -92,7 +92,7 @@ export const Header = () => {
                       <Link className="nav__link nav__link--dropdown" to='/PensionManagement'>{t('header.pensionAssetManagement')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.investmentFunds')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/InvestmentFunds'>{t('header.investmentFunds')}</Link>
                     </li>
                     <li className='nav__item'>
                       <Link className="nav__link nav__link--dropdown" to='/'>{t('header.rightsRealization')}</Link>
@@ -203,7 +203,7 @@ export const Header = () => {
                   <Link className="nav__link nav__link--dropdown" to='/PensionManagement'>{t('header.pensionAssetManagement')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.investmentFunds')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/InvestmentFunds'>{t('header.investmentFunds')}</Link>
                 </li>
                 <li className='nav__item'>
                   <Link className="nav__link nav__link--dropdown" to='/'>{t('header.rightsRealization')}</Link>
