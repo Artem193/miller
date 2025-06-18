@@ -15,6 +15,7 @@ import { PropertyIns } from './components/pages/PropertyIns/PropertyIns';
 import { FinancialPlanning } from './components/pages/FinancialPlanning/FinancialPlanning';
 import { PensionManagement } from './components/pages/PensionManagement/PensionManagement';
 import { InvestmentFunds } from './components/pages/InvestmentFunds/InvestmentFunds';
+import { CustomerSupport } from './components/pages/CustomerSupport/CustomerSupport';
 
 import './App.scss';
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/FinancialPlanning' element={<FinancialPlanning />}/>
         <Route path='/PensionManagement' element={<PensionManagement />}/>
         <Route path='/InvestmentFunds' element={<InvestmentFunds />}/>
+        <Route path='/CustomerSupport' element={<CustomerSupport />}/>
       </Routes>
     </Router>
   );

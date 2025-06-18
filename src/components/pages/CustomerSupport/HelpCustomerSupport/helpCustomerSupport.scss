@@ -1,0 +1,147 @@
+.helpCustomerSupport {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__items {
+
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: 768px) {
+        margin: 0 auto;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, max-content);
+        column-gap: 50px;
+        row-gap: 20px;
+
+        grid-template-areas:
+          "icon1 icon2 icon3"
+          "sub1 sub2 sub3"
+          "txt1 txt2 txt3"
+          "icon4 icon5 icon6"
+          "sub4 sub5 sub6"
+          "txt4 txt5 txt6";
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__icon {
+    margin: 0 auto;
+
+    &--1 {
+      grid-area: icon1;
+    }
+
+    &--2 {
+      grid-area: icon2;
+    }
+
+    &--3 {
+      grid-area: icon3;
+    }
+
+    &--4 {
+      grid-area: icon4;
+    }
+
+    &--5 {
+      grid-area: icon5;
+    }
+
+    &--6 {
+      grid-area: icon6;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+
+    &--1 {
+      grid-area: sub1;
+    }
+
+    &--2 {
+      grid-area: sub2;
+    }
+
+    &--3 {
+      grid-area: sub3;
+    }
+
+    &--4 {
+      grid-area: sub4;
+    }
+
+    &--5 {
+      grid-area: sub5;
+    }
+
+    &--6 {
+      grid-area: sub6;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    &--1 {
+      grid-area: txt1;
+
+      @media (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--2 {
+      grid-area: txt2;
+    }
+
+    &--3 {
+      grid-area: txt3;
+    }
+
+    &--4 {
+      grid-area: txt4;
+    }
+
+    &--5 {
+      grid-area: txt5;
+    }
+
+    &--6 {
+      grid-area: txt6;
+    }
+  }
+}
