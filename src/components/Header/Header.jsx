@@ -46,7 +46,7 @@ export const Header = () => {
               </Link>
             </li>
             <li className='nav__item'>
-              <Link className='nav__link' to='/'>{t('header.aboutUs')}</Link>
+              <Link className='nav__link' to='/AboutUs'>{t('header.aboutUs')}</Link>
             </li>
             <li className='nav__item'>
               <span
@@ -162,7 +162,7 @@ export const Header = () => {
           </Link>
         </li>
         <li className='nav__item'>
-          <Link className='nav__link' to='/'>{t('header.aboutUs')}</Link>
+          <Link className='nav__link' to='/AboutUs'>{t('header.aboutUs')}</Link>
         </li>
         <li className='nav__item'>
           <span className='nav__link' onClick={() => { toggleDropdown('services') }}>

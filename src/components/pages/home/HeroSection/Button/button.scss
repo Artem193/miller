@@ -2,9 +2,9 @@
   display: block;
   font-family: inherit;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
   width: 80%;
-  height: 35px;
+  // height: 35px;
   border-radius: 100px;
   border: none;
   background: linear-gradient(90deg, #1e4193, #5A9BD5);
@@ -17,7 +17,6 @@
 
   @media (min-width: 400px) {
     width: 295px;
-    height: 55px;
   }
 
   @media (min-width: 768px) {
@@ -26,7 +25,6 @@
   }
 
   @media (min-width: 1400px) {
-    height: 90px;
   }
 
   &:hover {

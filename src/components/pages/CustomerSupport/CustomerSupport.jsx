@@ -43,7 +43,7 @@ export const CustomerSupport = () => {
         <HelpCustomerSupport />
         <ProcessForServices
           title={t('customerSupport.processCustomerSupport.title')}
-          text={(i) => t(`ustomerSupport.processCustomerSupport.text${i}`)}
+          text={(i) => t(`customerSupport.processCustomerSupport.text${i}`)}
           titleDesk={(i) => (
             <span dangerouslySetInnerHTML={{ __html: t(`customerSupport.processCustomerSupport.titleDesk${i}`) }} />
           )}

@@ -1,0 +1,157 @@
+.ourTeamAboutUs {
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__cards {
+    display: grid;
+    row-gap: 50px;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      row-gap: 30px;
+    }
+
+    @media (min-width: 1080px) {
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+  }
+
+  &__card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+
+    @media (min-width: 1080px) {
+      max-width: unset;
+      flex-direction: row;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #1E4193;
+    border-radius: 15px 15px 0 0;
+
+    @media (min-width: 1080px) {
+      height: 100%;
+      width: unset;
+      border-radius: 15px 0 0 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__textContent {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border: 1px solid #1E4193;
+    border-radius: 0 0 15px 15px;
+
+    @media (min-width: 768px) {
+      height: 250px;
+    }
+
+    @media (min-width: 1080px) {
+      height: unset;
+      border-radius: 0 15px 15px 0;
+    }
+  }
+
+  &__name {
+    display: block;
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #1E4193;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      text-align: start;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 0;
+      height: 2px;
+      background-color: #1E4193;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__profession {
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      text-align: start;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+
+    text-align: center;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+      text-align: start;
+    }
+  }
+}
+
+[dir='rtl'] .ourTeamAboutUs {
+
+  &__photo {
+    @media (min-width: 1080px) {
+      border-radius: 0 15px 15px 0;
+    }
+  }
+
+  &__textContent {
+    @media (min-width: 1080px) {
+      border-radius: 15px 0 0 15px;
+    }
+  }
+}
