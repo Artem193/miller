@@ -1,0 +1,131 @@
+.importantRealizationOfRights {
+  display: flex;
+  background-color: #E7F0FA;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 25px;
+    font-size: 1.875rem;
+
+    @media (min-width: 768px) {
+      margin: 50px;
+      font-size: 2.5rem;
+    }
+  }
+
+
+
+  &__img {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      width: 30%;
+    }
+  }
+
+  &__list {
+    margin: 0 0 0 25px;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: 768px) {
+      margin-left: 50px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 25px 0 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url('/miller/pages/touristIns/importantTouristIns/check.svg');
+      background-position: left;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-width: 768px) {
+        left: -40px;
+        margin-bottom: 30px;
+        padding: 0 50px 0 30px;
+        width: 30px;
+        height: 30px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 25px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &--title {
+      margin-bottom: 5px;
+      font-size: 1.125rem;
+
+      @media (min-width: 768px) {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+    }
+
+    &--text {
+
+      @media (min-width: 768px) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+[dir='rtl'] .importantRealizationOfRights {
+  &__img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transform: scaleX(-1);
+  }
+
+  &__list {
+    margin: 0 25px 0 0;
+
+    @media (min-width: 768px) {
+      margin-right: 50px;
+    }
+  }
+
+  &__item {
+    &::before {
+      left: unset;
+      right: 0;
+      background-position: right;
+
+      @media (min-width: 768px) {
+        left: unset;
+        right: -40px;
+      }
+    }
+  }
+}
