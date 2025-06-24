@@ -140,7 +140,7 @@ export const Header = () => {
               <Link className='nav__link' to='/'>{t('header.blog')}</Link>
             </li>
             <li className='nav__item'>
-              <Link className='nav__link' to='/'>{t('header.contacts')}</Link>
+              <Link className='nav__link' to='/ContactsPage'>{t('header.contacts')}</Link>
             </li>
           </ul>
         </nav>
@@ -246,7 +246,7 @@ export const Header = () => {
           <Link className='nav__link' to='/'>{t('header.blog')}</Link>
         </li>
         <li className='nav__item'>
-          <Link className='nav__link' to='/'>{t('header.contacts')}</Link>
+          <Link className='nav__link' to='/ContactsPage'>{t('header.contacts')}</Link>
         </li>
       </ul>
       <Accessibility />

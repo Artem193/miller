@@ -17,6 +17,7 @@ import { PensionManagement } from './components/pages/PensionManagement/PensionM
 import { InvestmentFunds } from './components/pages/InvestmentFunds/InvestmentFunds';
 import { CustomerSupport } from './components/pages/CustomerSupport/CustomerSupport';
 import { RealizationOfRights } from './components/pages/RealizationOfRights/RealizationOfRights';
+import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
 
 import './App.scss';
 
@@ -41,6 +42,7 @@ function App() {
         <Route path='/InvestmentFunds' element={<InvestmentFunds />}/>
         <Route path='/CustomerSupport' element={<CustomerSupport />}/>
         <Route path='/RealizationOfRights' element={<RealizationOfRights />}/>
+        <Route path='/ContactsPage' element={<ContactsPage />}/>
       </Routes>
     </Router>
   );
