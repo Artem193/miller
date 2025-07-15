@@ -18,6 +18,7 @@ import { InvestmentFunds } from './components/pages/InvestmentFunds/InvestmentFu
 import { CustomerSupport } from './components/pages/CustomerSupport/CustomerSupport';
 import { RealizationOfRights } from './components/pages/RealizationOfRights/RealizationOfRights';
 import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
+import { MillerAnatoliy } from './components/pages/PageAgent/MillerAnatoliy/MillerAnatoliy';
 
 import './App.scss';
 
@@ -43,6 +44,7 @@ function App() {
         <Route path='/CustomerSupport' element={<CustomerSupport />}/>
         <Route path='/RealizationOfRights' element={<RealizationOfRights />}/>
         <Route path='/ContactsPage' element={<ContactsPage />}/>
+        <Route path='/MillerAnatoliy' element={<MillerAnatoliy />}/>
       </Routes>
     </Router>
   );

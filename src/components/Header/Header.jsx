@@ -115,22 +115,22 @@ export const Header = () => {
                 {openDropdown === 'ourTeam' && (
                   <ul className='nav__dropdown'>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.AnatolyMiller')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/MillerAnatoliy'>{t('header.AnatolyMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.KristinaMiller')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/2'>{t('header.KristinaMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Permyakov')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Plugin')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/4'>{t('header.Plugin')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Povolotsky')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/5'>{t('header.Povolotsky')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Pinkasovich')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/6'>{t('header.Pinkasovich')}</Link>
                     </li>
                   </ul>
                 )}
@@ -221,22 +221,22 @@ export const Header = () => {
             {openDropdown === 'ourTeam' && (
               <ul className='nav__dropdown'>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.AnatolyMiller')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/MillerAnatoliy'>{t('header.AnatolyMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.KristinaMiller')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/2'>{t('header.KristinaMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Permyakov')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Plugin')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/4'>{t('header.Plugin')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Povolotsky')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/5'>{t('header.Povolotsky')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/'>{t('header.Pinkasovich')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/6'>{t('header.Pinkasovich')}</Link>
                 </li>
               </ul>
             )}
