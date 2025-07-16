@@ -118,7 +118,7 @@ export const Header = () => {
                       <Link className="nav__link nav__link--dropdown" to='/MillerAnatoliy'>{t('header.AnatolyMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/2'>{t('header.KristinaMiller')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/MillerKristina'>{t('header.KristinaMiller')}</Link>
                     </li>
                     <li className='nav__item'>
                       <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>
@@ -224,7 +224,7 @@ export const Header = () => {
                   <Link className="nav__link nav__link--dropdown" to='/MillerAnatoliy'>{t('header.AnatolyMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/2'>{t('header.KristinaMiller')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/MillerKristina'>{t('header.KristinaMiller')}</Link>
                 </li>
                 <li className='nav__item'>
                   <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>

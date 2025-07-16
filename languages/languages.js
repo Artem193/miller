@@ -3538,6 +3538,42 @@ export const languages = {
           license2: 'Лицензия2',
           license3: 'Лицензия3',
         },
+
+        millerKristinaPreview: {
+          name: 'Кристина Миллер',
+          text: 'Лицензировнный страховой агент',
+        },
+
+        millerKristinaInfo: {
+          title1: 'О себе',
+          title2: 'Могу помочь',
+          title3: 'Контакты',
+          title4: 'Лицензии',
+
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
+
+          item1: 'Страхование автомобилей',
+          item2: 'Страхование ипотеки',
+          item3: 'Страхование для иностранных граждан',
+          item4: 'Страхование здоровья',
+          item5: 'Страхование жизни',
+          item6: 'Страхование бизнеса',
+          item7: 'Страхование путишествий за границу',
+          item8: 'Страхование от несчасных случаев',
+          item9: 'Страхование имущества',
+          item10: 'Финансовое планирование и ссуды',
+          item11: 'Ведение пенсионных активов',
+          item12: 'Инвестиционные фонды',
+          item13: 'Реализация прав',
+
+
+          contactsItem1: 'Телефон: 050-425-5338',
+          contactsItem2: 'Email: anatoly@miller-ins.co.il ',
+          contactsItem3: 'WhatsApp: 050-425-5338',
+          contactsItem4: 'Facebook: Anatoli Natan Miller',
+
+          license1: 'Лицензия1',
+        },
       },
     }
   }

@@ -19,6 +19,7 @@ import { CustomerSupport } from './components/pages/CustomerSupport/CustomerSupp
 import { RealizationOfRights } from './components/pages/RealizationOfRights/RealizationOfRights';
 import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
 import { MillerAnatoliy } from './components/pages/PageAgent/MillerAnatoliy/MillerAnatoliy';
+import { MillerKristina } from './components/pages/PageAgent/MillerKristina/MillerKristina';
 
 import './App.scss';
 
@@ -45,6 +46,7 @@ function App() {
         <Route path='/RealizationOfRights' element={<RealizationOfRights />}/>
         <Route path='/ContactsPage' element={<ContactsPage />}/>
         <Route path='/MillerAnatoliy' element={<MillerAnatoliy />}/>
+        <Route path='/MillerKristina' element={<MillerKristina />}/>
       </Routes>
     </Router>
   );
