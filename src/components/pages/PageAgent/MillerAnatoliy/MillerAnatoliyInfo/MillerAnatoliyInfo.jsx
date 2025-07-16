@@ -55,10 +55,6 @@ export const MillerAnatoliyInfo = () => {
       href: '/miller/pages/agentPage/AnatoliyMiller/license2.jpg',
       textKey: 'pageAgent.millerAnatoliyInfo.license2',
     },
-    {
-      href: '/miller/pages/agentPage/AnatoliyMiller/license3.jpg',
-      textKey: 'pageAgent.millerAnatoliyInfo.license3',
-    },
   ];
 
   const { t, i18n } = useTranslation();

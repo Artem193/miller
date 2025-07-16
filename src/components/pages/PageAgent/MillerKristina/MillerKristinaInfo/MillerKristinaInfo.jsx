@@ -25,22 +25,22 @@ export const MillerKristinaInfo = () => {
 
   const contactsItem = [
     {
-      href: 'tel:+972504255338',
+      href: 'tel:+972536278616',
       textKey: 'pageAgent.millerKristinaInfo.contactsItem1',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
-      href: 'mailto:anatoly@miller-ins.co.il',
+      href: 'mailto:kristina@miller-ins.co.il',
       textKey: 'pageAgent.millerKristinaInfo.contactsItem2',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
-      href: 'https://wa.me/972504255338',
+      href: 'https://wa.me/972536278616',
       textKey: 'pageAgent.millerKristinaInfo.contactsItem3',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
-      href: 'https://www.facebook.com/anatolynatan.miller',
+      href: 'https://www.facebook.com/profile.php?id=61551068793445',
       textKey: 'pageAgent.millerKristinaInfo.contactsItem4',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
     },

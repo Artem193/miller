@@ -3520,8 +3520,8 @@ export const languages = {
           item4: 'Страхование здоровья',
           item5: 'Страхование жизни',
           item6: 'Страхование бизнеса',
-          item7: 'Страхование путишествий за границу',
-          item8: 'Страхование от несчасных случаев',
+          item7: 'Страхование путешествий за границу',
+          item8: 'Страхование от несчастных случаев',
           item9: 'Страхование имущества',
           item10: 'Финансовое планирование и ссуды',
           item11: 'Ведение пенсионных активов',
@@ -3530,13 +3530,12 @@ export const languages = {
 
 
           contactsItem1: 'Телефон: 050-425-5338',
-          contactsItem2: 'Email: anatoly@miller-ins.co.il ',
+          contactsItem2: 'Email: anatoly@miller-ins.co.il',
           contactsItem3: 'WhatsApp: 050-425-5338',
           contactsItem4: 'Facebook: Anatoli Natan Miller',
 
-          license1: 'Лицензия1',
-          license2: 'Лицензия2',
-          license3: 'Лицензия3',
+          license1: 'Член Палаты страховых агентов Израиля',
+          license2: 'Лицензия страхового агента',
         },
 
         millerKristinaPreview: {
@@ -3550,7 +3549,7 @@ export const languages = {
           title3: 'Контакты',
           title4: 'Лицензии',
 
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
+          text: 'Я Кристина Миллер, я профессионал с более чем 15-летним опытом в сфере страхования и пенсионного планирования. У меня есть лицензия страхового агента, выданная государством Израиль через Министерство финансов. Для меня каждый клиент — это личность, а не просто строка или цифра в отчёте. Я тщательно анализирую каждую программу и проверяю все «мелкие буквы» в полисах. Моя цель — найти и закрыть все подводные камни, которые могут помешать вам получить то, что вам полагается. Я подбираю решения индивидуально, исходя из вашей ситуации и целей. Работаю со всеми страховыми и пенсионными компаниями, чтобы дать вам максимальный выбор. Я не продаю готовые шаблоны — я создаю для вас персональный план защиты и накоплений. Каждый мой клиент знает, за что он платит и что он получит. Честность и внимание к деталям — основа моей работы. Я здесь, чтобы ваша пенсия и страховка работали на вас, а не наоборот.',
 
           item1: 'Страхование автомобилей',
           item2: 'Страхование ипотеки',
@@ -3558,8 +3557,8 @@ export const languages = {
           item4: 'Страхование здоровья',
           item5: 'Страхование жизни',
           item6: 'Страхование бизнеса',
-          item7: 'Страхование путишествий за границу',
-          item8: 'Страхование от несчасных случаев',
+          item7: 'Страхование путешествий за границу',
+          item8: 'Страхование от несчастных случаев',
           item9: 'Страхование имущества',
           item10: 'Финансовое планирование и ссуды',
           item11: 'Ведение пенсионных активов',
@@ -3567,12 +3566,12 @@ export const languages = {
           item13: 'Реализация прав',
 
 
-          contactsItem1: 'Телефон: 050-425-5338',
-          contactsItem2: 'Email: anatoly@miller-ins.co.il ',
-          contactsItem3: 'WhatsApp: 050-425-5338',
-          contactsItem4: 'Facebook: Anatoli Natan Miller',
+          contactsItem1: 'Телефон: 053-627-8616',
+          contactsItem2: 'Email: kristina@miller-ins.co.il',
+          contactsItem3: 'WhatsApp: 053-627-8616',
+          contactsItem4: 'Facebook: Kristina Miller',
 
-          license1: 'Лицензия1',
+          license1: 'Лицензия страхового агента',
         },
       },
     }
