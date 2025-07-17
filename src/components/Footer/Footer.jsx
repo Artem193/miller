@@ -64,6 +64,9 @@ export const Footer = () => {
                 <li className='footer__item'>
                   <Link className="footer__link" to='/RealizationOfRights'>{t('header.rightsRealization')}</Link>
                 </li>
+                <li className='footer__item'>
+                  <Link className="footer__link" to='/CustomerSupport'>{t('header.helpCustomers')}</Link>
+                </li>
               </div>
             </ul>
           </div>

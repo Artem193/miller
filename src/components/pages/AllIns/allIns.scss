@@ -1,0 +1,121 @@
+.allIns {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 768px) {
+      padding: 20px 50px;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    color: #1e4193;
+    font-size: 1.125rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    @media (min-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+    position: relative;
+    color: #1e4193;
+    font-weight: 600;
+
+    @media (min-width: 1280px) {
+      padding-bottom: 5px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background-color: #1E4193;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 23%;
+      }
+    }
+  }
+}
+
+[dir='rtl'] .allIns {
+  &__link {
+
+    &::after {
+      left: auto;
+      right: 0;
+    }
+
+    &:hover::after {
+      width: 15%;
+    }
+  }
+}

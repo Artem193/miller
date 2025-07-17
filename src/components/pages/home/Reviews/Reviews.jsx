@@ -32,16 +32,15 @@ export const Reviews = () => {
         navigation
         pagination={{ clickable: true }}
         breakpoints={{
-          768: { slidesPerView: 2 },
+          768: { slidesPerView: 1 },
         }}
       >
-        {[1, 2, 3, 4, 5].map((num) => (
+        {[1, 2, 3].map((num) => (
           <SwiperSlide key={num}>
             <div className='reviews__block'>
               <div className='reviews__person'>
-                <div className={`reviews__photo reviews__photo--${num}`}>
-                </div>
                 <h3 className='reviews__name'>{t(`home.reviews.name${num}`)}</h3>
+                <p className='reviews__city'>{t(`home.reviews.city${num}`)}</p>
               </div>
               <p className='reviews__text'>{t(`home.reviews.text${num}`)}</p>
             </div>

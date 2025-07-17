@@ -27,39 +27,16 @@
 
     @media (min-width: 768px) {
       padding: 25px;
+      width: 40%;
+      margin: 0 auto;
     }
   }
 
-  &__person{
+  &__person {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: center;
     margin-bottom: 30px;
-
-    @media (min-width: 768px) {
-      flex-direction: row;
-      gap: 30px;
-    }
-  }
-
-  &__photo {
-    width: 65px;
-    height: 65px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid #1E4193;
-    border-radius: 50%;
-
-    @media (min-width: 1268px) {
-      width: 170px;
-      height: 170px;
-    }
-
-    &--1 {
-      background-image: url(/miller/pages/home/reviews/reviews__photo--1.png);
-    }
   }
 
   &__name {
@@ -69,6 +46,16 @@
 
     @media (min-width: 768px) {
       font-size: 1.875rem;
+    }
+  }
+
+  &__city {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
     }
   }
 

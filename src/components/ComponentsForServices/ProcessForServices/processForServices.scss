@@ -32,7 +32,7 @@
     gap: 20px;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.1s ease, transform 0.6s ease;
 
     &--visible {
       opacity: 1;
@@ -84,6 +84,7 @@
   }
 
   &__circleNum {
+    margin: 0 auto;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,5 +259,15 @@
   &__textDesk {
     text-align: center;
     font-size: 1.125rem;
+  }
+}
+
+[dir='rtl'] .processForServices {
+  &__arrow {
+    &::after {
+      left: 0;
+      right: unset;
+      transform: translateY(-50%) rotate(-135deg);
+    }
   }
 }

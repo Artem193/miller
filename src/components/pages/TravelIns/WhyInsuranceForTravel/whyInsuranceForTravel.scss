@@ -175,10 +175,12 @@
     }
   }
 
-  &__text {
+  &__link {
+    display: block;
     color: #ffffff;
     font-weight: 700;
     text-align: center;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       font-size: 1.25rem;

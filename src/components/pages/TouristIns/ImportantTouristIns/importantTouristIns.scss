@@ -5,8 +5,8 @@
   border-radius: 15px;
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
-    height: 600px;
+  @media (min-width: 1024px) {
+    height: 700px;
     margin-bottom: 90px;
   }
 
@@ -14,7 +14,7 @@
     margin: 25px;
     font-size: 1.875rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin: 50px;
       font-size: 2.5rem;
     }
@@ -23,7 +23,7 @@
   &__img {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       display: block;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
@@ -36,7 +36,7 @@
     padding: 0;
     list-style: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin-left: 50px;
     }
   }
@@ -57,7 +57,7 @@
       background-size: contain;
       background-repeat: no-repeat;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         left: -40px;
         margin-bottom: 30px;
         padding: 0 50px 0 30px;
@@ -74,7 +74,7 @@
     &:last-child {
       margin-bottom: 25px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         margin-bottom: 50px;
       }
     }
@@ -83,7 +83,7 @@
       margin-bottom: 5px;
       font-size: 1.125rem;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         margin-bottom: 10px;
         font-size: 1.5rem;
       }
@@ -91,7 +91,7 @@
 
     &--text {
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         font-size: 1.125rem;
       }
     }
@@ -110,7 +110,7 @@
   &__list {
     margin: 0 25px 0 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin-right: 50px;
     }
   }
@@ -121,7 +121,7 @@
       right: 0;
       background-position: right;
 
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         left: unset;
         right: -40px;
       }

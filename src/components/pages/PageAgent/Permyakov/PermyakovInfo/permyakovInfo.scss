@@ -1,0 +1,159 @@
+.permyakovInfo {
+  margin-bottom: 50px;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 250px;
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    margin: 0 20px 20px;
+    padding: 10px 0;
+    border: 1px solid #5A9BD5;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #5A9BD5;
+    font-weight: 600;
+
+    @media (min-width: 1024px) {
+      margin: 0 0 30px;
+      padding: 30px 0;
+      border: 3px solid #5A9BD5;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+
+    @media (min-width: 1024px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+    position: relative;
+    color: unset;
+
+    @media (min-width: 1280px) {
+      padding-bottom: 5px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background-color: #1E4193;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    &--button {
+      border: none;
+      padding: 0 0 5px;
+      font-size: 0.875rem;
+      color: unset;
+      font-family: inherit;
+
+      @media (min-width: 1024px) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__contactsList {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+    list-style: none;
+
+    @media (min-width: 1024px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__contactLink {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+  }
+
+  &__contactLinkText {
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+    position: relative;
+
+    @media (min-width: 1280px) {
+      padding-bottom: 5px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
+        height: 2px;
+        background-color: #1E4193;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__imageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+  }
+
+  &__img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    cursor: zoom-out;
+    transform: scale(1);
+  }
+}

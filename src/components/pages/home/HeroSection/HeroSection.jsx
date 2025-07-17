@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { Button } from './Button/Button'
@@ -47,7 +48,9 @@ export const HeroSection = () => {
           </div>
           <div className='heroSection__person'>
             <img src='/miller/pages/home/heroSection/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
-            <p className="heroSection__signature" dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__signature') }}></p>
+            <Link to='/MillerAnatoliy' className="heroSection__signature--link">
+              <p className="heroSection__signature" dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__signature') }}></p>
+            </Link>
           </div>
         </div>
       </section>

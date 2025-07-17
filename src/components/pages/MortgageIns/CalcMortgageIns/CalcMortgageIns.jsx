@@ -104,7 +104,7 @@ export const CalcMortgageIns = () => {
           {t('mortgageIns.calcMortgageIns.button')}
         </button>
 
-        <a href="#form" className='calcMortgageIns__link'>{t('mortgageIns.calcMortgageIns.link')}</a>
+        <a href="https://my.migdal.co.il/onlinepurchase/mortgage" target='blanked' className='calcMortgageIns__link'>{t('mortgageIns.calcMortgageIns.link')}</a>
       </div>
 
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}

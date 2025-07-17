@@ -121,16 +121,13 @@ export const Header = () => {
                       <Link className="nav__link nav__link--dropdown" to='/MillerKristina'>{t('header.KristinaMiller')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/Permyakov'>{t('header.Permyakov')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/4'>{t('header.Plugin')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/Plugin'>{t('header.Plugin')}</Link>
                     </li>
                     <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/5'>{t('header.Povolotsky')}</Link>
-                    </li>
-                    <li className='nav__item'>
-                      <Link className="nav__link nav__link--dropdown" to='/PageAgent/6'>{t('header.Pinkasovich')}</Link>
+                      <Link className="nav__link nav__link--dropdown" to='/Povolotsky'>{t('header.Povolotsky')}</Link>
                     </li>
                   </ul>
                 )}
@@ -227,16 +224,13 @@ export const Header = () => {
                   <Link className="nav__link nav__link--dropdown" to='/MillerKristina'>{t('header.KristinaMiller')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/3'>{t('header.Permyakov')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/Permyakov'>{t('header.Permyakov')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/4'>{t('header.Plugin')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/Plugin'>{t('header.Plugin')}</Link>
                 </li>
                 <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/5'>{t('header.Povolotsky')}</Link>
-                </li>
-                <li className='nav__item'>
-                  <Link className="nav__link nav__link--dropdown" to='/PageAgent/6'>{t('header.Pinkasovich')}</Link>
+                  <Link className="nav__link nav__link--dropdown" to='/Povolotsky'>{t('header.Povolotsky')}</Link>
                 </li>
               </ul>
             )}

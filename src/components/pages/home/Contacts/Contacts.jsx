@@ -106,14 +106,14 @@ export const Contacts = ({ onClose }) => {
 
             <li className='contacts__item'>
               <a
-                href="https://www.facebook.com/anatolynatan.miller"
+                href="https://www.facebook.com/profile.php?id=100067468904835"
                 className='contacts__link'
                 target="_blank"
               >
                 <img src="/miller/pages/home/contacts/contacts__fb.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>Facebook</p>
-                  <p className='contacts__text--info'>Anatoli Natan Miller</p>
+                  <p className='contacts__text--info'>מילר סוכנות לביטוח בע"מ</p>
                 </div>
               </a>
             </li>

@@ -20,6 +20,10 @@ import { RealizationOfRights } from './components/pages/RealizationOfRights/Real
 import { ContactsPage } from './components/pages/ContactsPage/ContactsPage';
 import { MillerAnatoliy } from './components/pages/PageAgent/MillerAnatoliy/MillerAnatoliy';
 import { MillerKristina } from './components/pages/PageAgent/MillerKristina/MillerKristina';
+import { Permyakov } from './components/pages/PageAgent/Permyakov/Permyakov';
+import { Plugin } from './components/pages/PageAgent/Plugin/Plugin';
+import { Povolotsky } from './components/pages/PageAgent/Povolotsky/Povolotsky';
+import { AllIns } from './components/pages/AllIns/AllIns';
 
 import './App.scss';
 
@@ -45,8 +49,13 @@ function App() {
         <Route path='/CustomerSupport' element={<CustomerSupport />}/>
         <Route path='/RealizationOfRights' element={<RealizationOfRights />}/>
         <Route path='/ContactsPage' element={<ContactsPage />}/>
+        <Route path='/AllIns' element={<AllIns />}/>
         <Route path='/MillerAnatoliy' element={<MillerAnatoliy />}/>
         <Route path='/MillerKristina' element={<MillerKristina />}/>
+        <Route path='/Permyakov' element={<Permyakov />}/>
+        <Route path='/Plugin' element={<Plugin />}/>
+        <Route path='/Permyakov' element={<Permyakov />}/>
+        <Route path='/Povolotsky' element={<Povolotsky />}/>
       </Routes>
     </Router>
   );

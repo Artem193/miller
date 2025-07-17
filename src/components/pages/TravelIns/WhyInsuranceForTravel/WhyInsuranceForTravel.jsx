@@ -68,9 +68,13 @@ export const WhyInsuranceForTravel = () => {
       </div>
 
       <div className="whyInsuranceForTravel__conclusion">
-        <p className="whyInsuranceForTravel__text">
-          {t('travelIns.whyInsuranceForTravel.text')}
-        </p>
+        <a
+          href="https://buy.passportcard.co.il/existing?AffiliateId=lUUDbiP5PwSOlR%2Fh0kXUIw%3D%3D"
+          className="whyInsuranceForTravel__link"
+          target="blanked"
+        >
+          {t('travelIns.whyInsuranceForTravel.link')}
+        </a>
       </div>
     </section>
   )

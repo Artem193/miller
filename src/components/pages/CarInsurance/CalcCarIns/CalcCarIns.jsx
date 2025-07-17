@@ -137,7 +137,6 @@ export const CalcCarIns = () => {
         >
           {t('carInsurance.calcCarIns.button')}
         </button>
-        <a href="" className='calcCarIns__link'>{t('carInsurance.calcCarIns.link')}</a>
       </div>
       {isModalFormOpen && <ModalForm onClose={() => setIsModalFormOpen(false)} />}
     </section>
