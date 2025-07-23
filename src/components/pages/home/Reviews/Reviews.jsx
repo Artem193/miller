@@ -34,6 +34,7 @@ export const Reviews = () => {
         breakpoints={{
           768: { slidesPerView: 1 },
         }}
+        className="reviews__swiper"
       >
         {[1, 2, 3].map((num) => (
           <SwiperSlide key={num}>
