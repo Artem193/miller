@@ -1,7 +1,7 @@
 .processInvestmentFunds {
   margin-bottom: 50px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin-bottom: 90px;
   }
 
@@ -10,16 +10,19 @@
     text-align: center;
     font-size: 1.5rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       margin-bottom: 30px;
       font-size: 2.5rem;
     }
   }
 
   &__boxes {
-    @media (min-width: 768px) {
-      display: flex;
-      gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
     }
   }
 
@@ -33,7 +36,7 @@
     padding: 35px;
     height: 120px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       width: 100%;
     }
 
@@ -55,7 +58,7 @@
     color: #ffffff;
     width: 200px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       font-size: 1.125rem;
       width: 250px;
     }
@@ -75,7 +78,7 @@
   &__item {
     transform: scaleX(-1);
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       width: 220px;
     }
   }

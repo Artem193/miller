@@ -25,30 +25,20 @@ export const PluginInfo = () => {
 
   const contactsItem = [
     {
-      href: 'tel:+972536278616',
+      href: 'tel:+972545735647',
       textKey: 'pageAgent.pluginInfo.contactsItem1',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
-      href: 'mailto:kristina@miller-ins.co.il',
+      href: 'https://wa.me/972545735647',
       textKey: 'pageAgent.pluginInfo.contactsItem2',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
-    },
-    {
-      href: 'https://wa.me/972536278616',
-      textKey: 'pageAgent.pluginInfo.contactsItem3',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
-    },
-    {
-      href: 'https://www.facebook.com/profile.php?id=61551068793445',
-      textKey: 'pageAgent.pluginInfo.contactsItem4',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
     },
   ];
 
   const licenses = [
     {
-      href: '/miller/pages/agentPage/MillerKristina/license1.jpg',
+      href: '/miller/pages/agentPage/Plugin/license1.jpg',
       textKey: 'pageAgent.pluginInfo.license1',
     },
   ];
@@ -67,7 +57,10 @@ export const PluginInfo = () => {
     <section className='pluginInfo container'>
       <div className='pluginInfo__about'>
         <h2 className='pluginInfo__title'>{t('pageAgent.pluginInfo.title1')}</h2>
-        <p className='pluginInfo__text'>{t(`pageAgent.pluginInfo.text`)}</p>
+        <p
+          className='pluginInfo__text'
+          dangerouslySetInnerHTML={{ __html: t('pageAgent.pluginInfo.text') }}
+        ></p>
       </div>
 
       <div className='pluginInfo__canHelp'>

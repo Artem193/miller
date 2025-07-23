@@ -25,22 +25,22 @@ export const PovolotskyInfo = () => {
 
   const contactsItem = [
     {
-      href: 'tel:+972536278616',
+      href: 'tel:+972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem1',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
-      href: 'mailto:kristina@miller-ins.co.il',
+      href: 'mailto:michael@miller-ins.co.il',
       textKey: 'pageAgent.povolotskyInfo.contactsItem2',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
-      href: 'https://wa.me/972536278616',
+      href: 'https://wa.me/972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem3',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
-      href: 'https://www.facebook.com/profile.php?id=61551068793445',
+      href: 'https://t.me/+972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem4',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
     },
@@ -48,7 +48,7 @@ export const PovolotskyInfo = () => {
 
   const licenses = [
     {
-      href: '/miller/pages/agentPage/MillerKristina/license1.jpg',
+      href: '/miller/pages/agentPage/Povolotskiy/license1.png',
       textKey: 'pageAgent.povolotskyInfo.license1',
     },
   ];
@@ -67,7 +67,7 @@ export const PovolotskyInfo = () => {
     <section className='povolotskyInfo container'>
       <div className='povolotskyInfo__about'>
         <h2 className='povolotskyInfo__title'>{t('pageAgent.povolotskyInfo.title1')}</h2>
-        <p className='povolotskyInfo__text'>{t(`pageAgent.povolotskyInfo.text`)}</p>
+        <p className='povolotskyInfo__text' dangerouslySetInnerHTML={{ __html: t('pageAgent.povolotskyInfo.text') }}></p>
       </div>
 
       <div className='povolotskyInfo__canHelp'>

@@ -71,7 +71,7 @@ export const MillerAnatoliyInfo = () => {
     <section className='millerAnatoliyInfo container'>
       <div className='millerAnatoliyInfo__about'>
         <h2 className='millerAnatoliyInfo__title'>{t('pageAgent.millerAnatoliyInfo.title1')}</h2>
-        <p className='millerAnatoliyInfo__text'>{t(`pageAgent.millerAnatoliyInfo.text`)}</p>
+        <p className='millerAnatoliyInfo__text' dangerouslySetInnerHTML={{ __html: t('pageAgent.millerAnatoliyInfo.text') }}></p>
       </div>
 
       <div className='millerAnatoliyInfo__canHelp'>

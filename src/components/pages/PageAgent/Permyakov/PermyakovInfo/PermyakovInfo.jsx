@@ -17,30 +17,27 @@ export const PermyakovInfo = () => {
     { to: '/TravelIns', textKey: 'pageAgent.permyakovInfo.item7' },
     { to: '/AccidentIns', textKey: 'pageAgent.permyakovInfo.item8' },
     { to: '/PropertyIns', textKey: 'pageAgent.permyakovInfo.item9' },
-    { to: '/FinancialPlanning', textKey: 'pageAgent.permyakovInfo.item10' },
-    { to: '/PensionManagement', textKey: 'pageAgent.permyakovInfo.item11' },
-    { to: '/InvestmentFunds', textKey: 'pageAgent.permyakovInfo.item12' },
-    { to: '/RealizationOfRights', textKey: 'pageAgent.permyakovInfo.item13' },
+    { to: '/RealizationOfRights', textKey: 'pageAgent.permyakovInfo.item10' },
   ];
 
   const contactsItem = [
     {
-      href: 'tel:+972536278616',
+      href: 'tel:+972522253328',
       textKey: 'pageAgent.permyakovInfo.contactsItem1',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
-      href: 'mailto:kristina@miller-ins.co.il',
+      href: 'mailto:stasbityah@gmail.com',
       textKey: 'pageAgent.permyakovInfo.contactsItem2',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
-      href: 'https://wa.me/972536278616',
+      href: 'https://wa.me/972522253328',
       textKey: 'pageAgent.permyakovInfo.contactsItem3',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
-      href: 'https://www.facebook.com/profile.php?id=61551068793445',
+      href: 'https://www.facebook.com/harbitinsurance?mibextid=wwXIfr&rdid=2DNegwPA5m7BlgQA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19kFbry9rx%2F%3Fmibextid%3DwwXIfr#',
       textKey: 'pageAgent.permyakovInfo.contactsItem4',
       icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
     },
@@ -75,7 +72,7 @@ export const PermyakovInfo = () => {
     <section className='permyakovInfo container'>
       <div className='permyakovInfo__about'>
         <h2 className='permyakovInfo__title'>{t('pageAgent.permyakovInfo.title1')}</h2>
-        <p className='permyakovInfo__text'>{t(`pageAgent.permyakovInfo.text`)}</p>
+        <p className='permyakovInfo__text' dangerouslySetInnerHTML={{ __html: t('pageAgent.permyakovInfo.text') }}></p>
       </div>
 
       <div className='permyakovInfo__canHelp'>

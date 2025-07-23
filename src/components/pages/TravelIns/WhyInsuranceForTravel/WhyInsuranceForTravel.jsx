@@ -73,7 +73,15 @@ export const WhyInsuranceForTravel = () => {
           className="whyInsuranceForTravel__link"
           target="blanked"
         >
-          {t('travelIns.whyInsuranceForTravel.link')}
+          {t('travelIns.whyInsuranceForTravel.link1')}
+        </a>
+
+        <a
+          href="https://digital.harel-group.co.il/travel-policy?guid=bee1d408-c6a7-410e-b4ee-ac690224bdd3&an=011596"
+          className="whyInsuranceForTravel__link"
+          target="blanked"
+        >
+          {t('travelIns.whyInsuranceForTravel.link2')}
         </a>
       </div>
     </section>
