@@ -69,3 +69,14 @@
     }
   }
 }
+
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  height: 600px;
+
+  @media (min-width: 1600px) {
+    height: 510px;
+  }
+}

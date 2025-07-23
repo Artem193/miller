@@ -100,7 +100,11 @@
       }
 
       &:hover::after {
-        width: 23%;
+        width: 32%;
+
+        @media (min-width: 1600px) {
+          width: 23%;
+        }
       }
     }
   }
