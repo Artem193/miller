@@ -1,8 +1,12 @@
 .accessibility {
   position: fixed;
-  bottom: 10vh;
+  bottom: 2vh;
   right: 10px;
   z-index: 2;
+
+  @media (min-width: 768px) {
+    bottom: 10vh;
+  }
 
   &__icon-button {
     background-image: url(/miller/accessability/accessability.png);
@@ -60,7 +64,7 @@
       font-size: 1.125rem;
     }
   }
-  
+
 }
 
 [dir='rtl'] .accessibility {
