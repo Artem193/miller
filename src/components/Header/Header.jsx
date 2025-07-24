@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from "react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '/miller/header/logo.svg';
 
 import { ButtonsLanguages } from '../ButtonsLanguages/ButtonsLanguages';
 import { Accessibility } from '../Accessibility/Accessibility';
@@ -36,8 +35,7 @@ export const Header = () => {
       <Buttons />
       <header className={openMenu === 'menuMob' ? 'header header--openMenu' : 'header'}>
         <Link to='/' className='header__logo'>
-          {/* <img className='header__logo' src='/miller/header/logo.svg' alt={t('header.logo')}></img> */}
-          <Logo className='header__logo-svg' aria-label={t('header.logo')} />
+          <img className='header__logo' src='/miller/header/logo.webp' alt={t('header.logo')}></img>
         </Link>
         <nav className='nav'>
           <ul className='nav__list'>
