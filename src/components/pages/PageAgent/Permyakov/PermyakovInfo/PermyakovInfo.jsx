@@ -48,14 +48,14 @@ export const PermyakovInfo = () => {
       href: '/miller/pages/agentPage/Permyakov/license1.jpg',
       textKey: 'pageAgent.permyakovInfo.license1',
     },
-    {
-      href: '/miller/pages/agentPage/Permyakov/license2.png',
-      textKey: 'pageAgent.permyakovInfo.license2',
-    },
-    {
-      href: '/miller/pages/agentPage/Permyakov/license3.png',
-      textKey: 'pageAgent.permyakovInfo.license3',
-    },
+    // {
+    //   href: '/miller/pages/agentPage/Permyakov/license2.png',
+    //   textKey: 'pageAgent.permyakovInfo.license2',
+    // },
+    // {
+    //   href: '/miller/pages/agentPage/Permyakov/license3.png',
+    //   textKey: 'pageAgent.permyakovInfo.license3',
+    // },
   ];
 
   const { t, i18n } = useTranslation();

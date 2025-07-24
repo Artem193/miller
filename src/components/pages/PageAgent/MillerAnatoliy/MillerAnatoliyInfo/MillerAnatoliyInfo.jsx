@@ -47,10 +47,10 @@ export const MillerAnatoliyInfo = () => {
   ];
 
   const licenses = [
-    {
-      href: '/miller/pages/agentPage/AnatoliyMiller/license1.jpg',
-      textKey: 'pageAgent.millerAnatoliyInfo.license1',
-    },
+    // {
+    //   href: '/miller/pages/agentPage/AnatoliyMiller/license1.jpg',
+    //   textKey: 'pageAgent.millerAnatoliyInfo.license1',
+    // },
     {
       href: '/miller/pages/agentPage/AnatoliyMiller/license2.jpg',
       textKey: 'pageAgent.millerAnatoliyInfo.license2',

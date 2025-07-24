@@ -29,7 +29,7 @@ export const MedicineHealthIns = () => {
             </h2>
             <ul className="medicineHealthIns__list">
               <li className="medicineHealthIns__item">
-                <span className="medicineHealthIns__item--bold">{t('healthIns.medicineHealthIns.item1')}</span>
+                <span className="medicineHealthIns__item--bold" dangerouslySetInnerHTML={{ __html: t('healthIns.medicineHealthIns.item1') }}></span>
                 <br />
                 {t('healthIns.medicineHealthIns.explain1')}
               </li>
@@ -54,7 +54,7 @@ export const MedicineHealthIns = () => {
             </h2>
             <ul className="medicineHealthIns__list">
               <li className="medicineHealthIns__item">
-                <span className="medicineHealthIns__item--bold">{t('healthIns.medicineHealthIns.item4')}</span>
+                <span className="medicineHealthIns__item--bold"  dangerouslySetInnerHTML={{ __html: t('healthIns.medicineHealthIns.item4') }}></span>
                 <br />
                 {t('healthIns.medicineHealthIns.explain4')}
               </li>

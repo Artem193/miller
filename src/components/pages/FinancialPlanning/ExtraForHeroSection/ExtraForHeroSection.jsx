@@ -53,7 +53,7 @@ export const ExtraForHeroSection = () => {
             loop={true}
             autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }}
             speed={7000}
-            allowTouchMove={false}
+            allowTouchMove={true}
             centeredSlides={true}
             breakpoints={{
               0: {

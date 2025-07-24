@@ -23,13 +23,13 @@ export const WhyInsuranceForTravel = () => {
       <div className="whyInsuranceForTravel__comparison">
         <div className="whyInsuranceForTravel__withoutIns">
           <div
-            className="whyInsuranceForTravel__box whyInsuranceForTravel__box--withoutIns">
+            className="whyInsuranceForTravel__box whyInsuranceForTravel__box--withoutIns"
+          >
             <h2 className="whyInsuranceForTravel__subtitle">
               {t('travelIns.whyInsuranceForTravel.subtitle1')}
             </h2>
             <ul className="whyInsuranceForTravel__list">
-              <li className="whyInsuranceForTravel__item">
-                {t('travelIns.whyInsuranceForTravel.item1')}
+              <li className="whyInsuranceForTravel__item" dangerouslySetInnerHTML={{ __html: t('travelIns.whyInsuranceForTravel.item1') }}>
               </li>
               <li className="whyInsuranceForTravel__item">
                 {t('travelIns.whyInsuranceForTravel.item2')}
