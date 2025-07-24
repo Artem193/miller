@@ -144,6 +144,8 @@
     border-bottom: 1px solid #4C4C4C;
     font-size: 1.1rem;
     resize: none;
+    -webkit-appearance: none;
+    border-radius: 0;
 
     &--textarea {
       width: 100%;
