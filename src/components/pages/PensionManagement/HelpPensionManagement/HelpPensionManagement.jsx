@@ -20,7 +20,7 @@ export const HelpPensionManagement = () => {
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <div key={index} className="helpPensionManagement__item">
             <img
-              src={`/miller/pages/pensionManagement/helpPensionManagement__icon${index}.svg`}
+              src={`/miller/pages/pensionManagement/helpPensionManagement__icon${index}.png`}
               alt="icon"
               className="helpPensionManagement__icon"
             />

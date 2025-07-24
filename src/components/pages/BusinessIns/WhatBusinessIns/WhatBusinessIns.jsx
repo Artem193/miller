@@ -18,7 +18,7 @@ export const WhatBusinessIns = () => {
           {[1, 2, 3].map((index) => (
             <div key={index} className="whatBusinessIns__item">
               <img
-                src={`/miller/pages/businessIns/whatBusinessIns__icon${index}.svg`}
+                src={`/miller/pages/businessIns/whatBusinessIns__icon${index}.png`}
                 alt="icon"
                 className={`whatBusinessIns__icon${index}`}
               />
@@ -32,7 +32,7 @@ export const WhatBusinessIns = () => {
           {[4, 5, 6].map((index) => (
             <div key={index} className="whatBusinessIns__item">
               <img
-                src={`/miller/pages/businessIns/whatBusinessIns__icon${index}.svg`}
+                src={`/miller/pages/businessIns/whatBusinessIns__icon${index}.png`}
                 alt="icon"
                 className={`whatBusinessIns__icon${index}`}
               />

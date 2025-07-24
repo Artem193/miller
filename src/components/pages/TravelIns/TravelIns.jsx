@@ -51,7 +51,7 @@ export const TravelIns = () => {
         />
         <ImportantTravelIns />
         <CostOfTravelIns />
-        {/* <ProcessTravelIns /> */}
+        <ProcessTravelIns />
         <WhyWeForServices
           icons={[
             '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',

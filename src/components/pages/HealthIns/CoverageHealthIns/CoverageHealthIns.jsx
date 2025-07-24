@@ -25,7 +25,7 @@ export const CoverageHealthIns = () => {
             className="coverageHealthIns__item"
           >
             <img
-              src={`/miller/pages/healthIns/coverageHealthIns${index}.svg`}
+              src={`/miller/pages/healthIns/coverageHealthIns${index}.png`}
               alt="icon"
               className="coverageHealthIns__icon"
             />
