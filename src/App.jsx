@@ -24,6 +24,7 @@ import { Permyakov } from './components/pages/PageAgent/Permyakov/Permyakov';
 import { Plugin } from './components/pages/PageAgent/Plugin/Plugin';
 import { Povolotsky } from './components/pages/PageAgent/Povolotsky/Povolotsky';
 import { AllIns } from './components/pages/AllIns/AllIns';
+import { Blog } from './components/pages/Blog/Blog';
 
 import './App.scss';
 
@@ -56,6 +57,7 @@ function App() {
         <Route path='/Plugin' element={<Plugin />}/>
         <Route path='/Permyakov' element={<Permyakov />}/>
         <Route path='/Povolotsky' element={<Povolotsky />}/>
+        <Route path='/Blog' element={<Blog />}/>
       </Routes>
     </Router>
   );

@@ -136,7 +136,7 @@ export const Header = () => {
               </span>
             </li>
             <li className='nav__item'>
-              <Link className='nav__link' to='/'>{t('header.blog')}</Link>
+              <Link className='nav__link' to='/Blog'>{t('header.blog')}</Link>
             </li>
             <li className='nav__item'>
               <Link className='nav__link' to='/ContactsPage'>{t('header.contacts')}</Link>
@@ -239,7 +239,7 @@ export const Header = () => {
           </span>
         </li>
         <li className='nav__item'>
-          <Link className='nav__link' to='/'>{t('header.blog')}</Link>
+          <Link className='nav__link' to='/Blog'>{t('header.blog')}</Link>
         </li>
         <li className='nav__item'>
           <Link className='nav__link' to='/ContactsPage'>{t('header.contacts')}</Link>

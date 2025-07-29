@@ -29,7 +29,7 @@ export const AboutUs = () => {
       <Header />
       <main className='aboutUs'>
         <HeroSectionForServices
-          background={'heroAboutUs'}
+          background={'heroSectionAboutUs'}
           title1={t('aboutUs.heroSection.title1')}
           title2={t('aboutUs.heroSection.title2')}
           text={{ __html: t('aboutUs.heroSection.text') }}

@@ -31,7 +31,7 @@ export const AccidentIns = () => {
       <Header />
       <main className='accidentIns'>
         <HeroSectionForServices
-          background={'heroSectionTravelIns'}
+          background={'heroSectionAccidentIns'}
           title1={t('accidentIns.heroSection.title1')}
           title2={t('accidentIns.heroSection.title2')}
           text={{ __html: t('accidentIns.heroSection.text') }}

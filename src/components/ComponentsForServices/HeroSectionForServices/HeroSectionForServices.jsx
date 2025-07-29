@@ -32,16 +32,5 @@ export const HeroSectionForServices = ({ title1, title2, text, textAddClass, bac
       <p className={`heroSectionForServices__${textAddClass}`} dangerouslySetInnerHTML={text}></p>
       {button}
     </section>
-
-    // <section className={`heroSectionForServices heroSectionForServices--${background}`}>
-    //   <div className='container heroSectionForServices__content'>
-    //     <h1 className='heroSectionForServices__title'>{title1} {title2}</h1>
-    //     <div className={`heroSectionForServices__${extraForHeroSectionAddClass}`}>
-    //       {extraForHeroSection}
-    //     </div>
-    //     <p className={`heroSectionForServices__${textAddClass}`} dangerouslySetInnerHTML={text}></p>
-    //     {button}
-    //   </div>
-    // </section>
   )
 }

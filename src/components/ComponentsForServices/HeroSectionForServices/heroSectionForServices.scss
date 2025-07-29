@@ -39,7 +39,7 @@
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_travelIns.png);
   }
 
-  &--heroSectionTravelIns {
+  &--heroSectionAccidentIns {
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_accidentIns.png);
   }
 
@@ -61,6 +61,10 @@
 
   &--heroSectionRealizationOfRights {
     background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_realizationOfRights.png);
+  }
+
+  &--heroSectionAboutUs {
+    background-image: url(/miller/componentsForServices/HeroSectionForServices/heroSection_aboutUs.png);
   }
 
   @media (min-width: 1024px) {
