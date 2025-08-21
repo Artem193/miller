@@ -51,11 +51,17 @@
 // });
 
 
-const express = require('express');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-const path = require('path');
-require('dotenv').config();
+import dotenv from 'dotenv';
+import express from 'express';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -79,21 +85,20 @@ app.post('/send', async (req, res) => {
     },
   });
 
-  const mailOptions = {
-    from: `"<Miller-site>" <${process.env.EMAIL_USER}>`,
-    to: process.env.TO_EMAIL,
-    subject: 'Новая заявка с Miller-site',
-    html: `
-      <h2>Новая заявка:</h2>
-      <p><strong>Имя:</strong> ${name}</p>
-      <p><strong>Телефон:</strong> ${phone}</p>
-      ${city ? `<p><strong>Город:</strong> ${city}</p>` : ''}
-      ${question ? `<p><strong>Вопрос:</strong> ${question}</p>` : ''}
-    `,
-  };
-
   try {
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail({
+      from: `"Miller-site" <${process.env.EMAIL_USER}>`,
+      to: process.env.TO_EMAIL,
+      subject: 'Новая заявка с Miller-site',
+      html: `
+        <h2>Новая заявка:</h2>
+        <p><strong>Имя:</strong> ${name}</p>
+        <p><strong>Телефон:</strong> ${phone}</p>
+        ${city ? `<p><strong>Город:</strong> ${city}</p>` : ''}
+        ${question ? `<p><strong>Вопрос:</strong> ${question}</p>` : ''}
+      `,
+    });
+
     res.status(200).json({ success: true, message: 'Email sent successfully' });
   } catch (err) {
     console.error('Email error:', err);
@@ -102,15 +107,10 @@ app.post('/send', async (req, res) => {
 });
 
 // ====== Раздача фронтенда (dist) ======
-const __dirnamePath = path.resolve();
-app.use(express.static(path.join(__dirnamePath, 'dist')));
-
-// ====== React Router SPA (fix for Express 5) ======
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirnamePath, 'dist', 'index.html'));
-});
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // ====== Start ======
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
+
