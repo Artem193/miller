@@ -51,12 +51,12 @@
 // });
 
 
-import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -85,20 +85,21 @@ app.post('/send', async (req, res) => {
     },
   });
 
-  try {
-    await transporter.sendMail({
-      from: `"Miller-site" <${process.env.EMAIL_USER}>`,
-      to: process.env.TO_EMAIL,
-      subject: 'Новая заявка с Miller-site',
-      html: `
-        <h2>Новая заявка:</h2>
-        <p><strong>Имя:</strong> ${name}</p>
-        <p><strong>Телефон:</strong> ${phone}</p>
-        ${city ? `<p><strong>Город:</strong> ${city}</p>` : ''}
-        ${question ? `<p><strong>Вопрос:</strong> ${question}</p>` : ''}
-      `,
-    });
+  const mailOptions = {
+    from: `"Miller-site" <${process.env.EMAIL_USER}>`,
+    to: process.env.TO_EMAIL,
+    subject: 'Новая заявка с Miller-site',
+    html: `
+      <h2>Новая заявка:</h2>
+      <p><strong>Имя:</strong> ${name}</p>
+      <p><strong>Телефон:</strong> ${phone}</p>
+      ${city ? `<p><strong>Город:</strong> ${city}</p>` : ''}
+      ${question ? `<p><strong>Вопрос:</strong> ${question}</p>` : ''}
+    `,
+  };
 
+  try {
+    await transporter.sendMail(mailOptions);
     res.status(200).json({ success: true, message: 'Email sent successfully' });
   } catch (err) {
     console.error('Email error:', err);
@@ -106,11 +107,15 @@ app.post('/send', async (req, res) => {
   }
 });
 
-// ====== Раздача фронтенда (dist) ======
-app.use(express.static(path.join(__dirname, 'dist')));
+// ====== Раздача фронтенда с префиксом /miller ======
+app.use('/miller', express.static(path.join(__dirname, 'dist')));
+
+// Для React Router — всегда index.html
+app.get('/miller/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
 // ====== Start ======
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}/miller/`);
 });
-
