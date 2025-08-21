@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import './povolotsky.scss'
 
 import { Header } from '../../../Header/Header';
-import { PovolotskyPreview } from './PovolotskyPreview/povolotskyPreview';
+import { PovolotskyPreview } from './PovolotskyPreview/ovolotskyPreview';
 import { PovolotskyInfo } from './PovolotskyInfo/PovolotskyInfo';
 import { Footer } from '../../../Footer/Footer';
 
