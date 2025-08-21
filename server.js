@@ -106,7 +106,7 @@ const __dirnamePath = path.resolve();
 app.use(express.static(path.join(__dirnamePath, 'dist')));
 
 // ====== React Router SPA (fix for Express 5) ======
-app.get('/*', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirnamePath, 'dist', 'index.html'));
 });
 
