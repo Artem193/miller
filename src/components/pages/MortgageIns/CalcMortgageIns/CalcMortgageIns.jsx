@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
 import { ModalForm } from '../../home/HeroSection/ModalForm/ModalForm';
-import './calcMortgageIns.scss';
+import './alcMortgageIns.scss';
 
 export const CalcMortgageIns = () => {
   const { t, i18n } = useTranslation();
