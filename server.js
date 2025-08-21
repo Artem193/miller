@@ -105,8 +105,8 @@ app.post('/send', async (req, res) => {
 const __dirnamePath = path.resolve();
 app.use(express.static(path.join(__dirnamePath, 'dist')));
 
-// Для React Router — всегда отдаём index.html
-app.get('*', (req, res) => {
+// ====== React Router SPA (fix for Express 5) ======
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirnamePath, 'dist', 'index.html'));
 });
 
