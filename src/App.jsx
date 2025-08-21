@@ -30,7 +30,7 @@ import './App.scss';
 
 function App() {
   return (
-    <Router basename='/miller'>
+    <Router basename='/'>
       <StartTopPage />
       <Routes>
         <Route path='/' element={<Home />}/>
