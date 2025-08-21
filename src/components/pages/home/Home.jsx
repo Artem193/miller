@@ -9,7 +9,7 @@ import { Reviews } from './Reviews/Reviews';
 import { Contacts } from './Contacts/Contacts';
 import { Footer } from '../../Footer/Footer';
 
-import './home.scss'
+import './Home.scss'
 
 export const Home = () => {
   const { t, i18n } = useTranslation();
