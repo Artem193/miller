@@ -51,16 +51,22 @@
 // });
 
 
-const express = require('express');
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-const path = require('path');
-require('dotenv').config();
+import express from 'express';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middlewares
+// Для __dirname в ES-модулях
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 app.use(cors());
 app.use(express.json());
 
@@ -81,7 +87,7 @@ app.post('/send', async (req, res) => {
   });
 
   const mailOptions = {
-    from: `"<Miller-site>" <${process.env.EMAIL_USER}>`,
+    from: `"Miller-site" <${process.env.EMAIL_USER}>`,
     to: process.env.TO_EMAIL,
     subject: 'Новая заявка с Miller-site',
     html: `
@@ -102,15 +108,15 @@ app.post('/send', async (req, res) => {
   }
 });
 
-// ====== Раздача статики Vite ======
+// ====== Статика Vite ======
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Отдавать index.html на все маршруты (SPA поддержка)
-app.get('*', (req, res) => {
+// Любой маршрут → index.html
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // ====== Запуск сервера ======
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
+  console.log(`✅ Server running on http://localhost:${PORT}`);
 });
