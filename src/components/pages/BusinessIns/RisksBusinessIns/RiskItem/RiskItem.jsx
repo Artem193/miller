@@ -14,7 +14,7 @@ export const RiskItem = ({ subtitle, description, proof, num }) => {
       <div className={`riskItem__descriptionFlex riskItem__descriptionFlex--emoji${num}`} onClick={handleToggle}>
         <p className='riskItem__subtitle' dangerouslySetInnerHTML={subtitle}></p>
         <img
-          src={`/miller/pages/businessIns/riskItem__icon--${num}.svg`}
+          src={`pages/businessIns/riskItem__icon--${num}.svg`}
           alt="icon"
           className={`explanation__icon ${isOpen ? 'explanation__icon--open' : ''}`}
         />

@@ -10,8 +10,6 @@ import { WhyInsuranceForTourist } from './WhyInsuranceForTourist/WhyInsuranceFor
 import { IncludeInTouristIns } from './IncludeInTouristIns/IncludeInTouristIns';
 import { ImportantTouristIns } from './ImportantTouristIns/ImportantTouristIns';
 import { StatForm } from '../../StatForm/StatForm';
-import { AboutForServices } from '../../ComponentsForServices/AboutForServices/AboutForServices';
-import { CalcTouristIns } from './CalcTouristIns/CalcTouristIns';
 import { ProcessForServices } from '../../ComponentsForServices/ProcessForServices/ProcessForServices';
 import { WhyWeForServices } from '../../ComponentsForServices/WhyWeForServices/WhyWeForServices';
 import { FaqForServices } from '../../ComponentsForServices/FaqForServices/FaqForServices';
@@ -70,12 +68,12 @@ export const TouristIns = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/pages/touristIns/whyWeTouristIns__icon1.svg',
-            '/miller/pages/touristIns/whyWeTouristIns__icon2.svg',
-            '/miller/pages/touristIns/whyWeTouristIns__icon3.svg',
-            '/miller/pages/touristIns/whyWeTouristIns__icon4.svg',
-            '/miller/pages/touristIns/whyWeTouristIns__icon5.svg',
-            '/miller/pages/touristIns/whyWeTouristIns__icon6.svg',
+            'pages/touristIns/whyWeTouristIns__icon1.svg',
+            'pages/touristIns/whyWeTouristIns__icon2.svg',
+            'pages/touristIns/whyWeTouristIns__icon3.svg',
+            'pages/touristIns/whyWeTouristIns__icon4.svg',
+            'pages/touristIns/whyWeTouristIns__icon5.svg',
+            'pages/touristIns/whyWeTouristIns__icon6.svg',
           ]}
           title={t('touristIns.whyWeTouristIns.title')}
           text={(i) => t(`touristIns.whyWeTouristIns.text${i}`)}

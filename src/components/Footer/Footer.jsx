@@ -71,7 +71,7 @@ export const Footer = () => {
             </ul>
           </div>
           <Link to='/' className='footer__logo'>
-            <img src="/miller/footer/logoForFooter.png" alt="logo" className='footer__logo' />
+            <img src="footer/logoForFooter.png" alt="logo" className='footer__logo' />
           </Link>
         </div>
         <p className='footer__copyright'>{t('footer.copyright')}</p>

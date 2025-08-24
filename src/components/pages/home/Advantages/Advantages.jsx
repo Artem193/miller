@@ -17,7 +17,7 @@ export const Advantages = () => {
       <div className='advantages__blocks'>
         <div className='advantages__block'>
           <img
-            src='/miller/pages/home/advantages/advantages__img1.svg'
+            src='pages/home/advantages/advantages__img1.svg'
             alt="icon"
             className='advantages__img'
           />
@@ -27,7 +27,7 @@ export const Advantages = () => {
 
         <div className='advantages__block advantages__block--white'>
           <img
-            src='/miller/pages/home/advantages/advantages__img2.svg'
+            src='pages/home/advantages/advantages__img2.svg'
             alt="icon"
             className='advantages__img'
           />
@@ -37,7 +37,7 @@ export const Advantages = () => {
 
         <div className='advantages__block'>
           <img
-            src='/miller/pages/home/advantages/advantages__img3.svg'
+            src='pages/home/advantages/advantages__img3.svg'
             alt="icon"
             className='advantages__img'
           />
@@ -48,4 +48,3 @@ export const Advantages = () => {
     </section>
   );
 };
-

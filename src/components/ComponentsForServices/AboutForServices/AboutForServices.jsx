@@ -36,11 +36,11 @@ export const AboutForServices = ({
               key={index}
               className='aboutForServices__box'
             >
-              <img src="/miller/componentsForServices/aboutForServices/aboutForServices__icon.svg" alt="icon" className='aboutForServices__icon aboutForServices__icon--desktop' />
+              <img src="componentsForServices/aboutForServices/aboutForServices__icon.svg" alt="icon" className='aboutForServices__icon aboutForServices__icon--desktop' />
 
               <div className='aboutForServices__textContent'>
                 <div className='aboutForServices__flexImgTitle'>
-                  <img src="/miller/componentsForServices/aboutForServices/aboutForServices__icon.svg" alt="icon" className='aboutForServices__icon aboutForServices__icon--mob' />
+                  <img src="componentsForServices/aboutForServices/aboutForServices__icon.svg" alt="icon" className='aboutForServices__icon aboutForServices__icon--mob' />
                   <h3 className='aboutForServices__nameBox'>
                     {nameBox(index)}
                   </h3>

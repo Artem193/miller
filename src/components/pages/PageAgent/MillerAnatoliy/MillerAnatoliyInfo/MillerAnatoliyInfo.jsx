@@ -27,32 +27,28 @@ export const MillerAnatoliyInfo = () => {
     {
       href: 'tel:+972504255338',
       textKey: 'pageAgent.millerAnatoliyInfo.contactsItem1',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
       href: 'mailto:anatoly@miller-ins.co.il',
       textKey: 'pageAgent.millerAnatoliyInfo.contactsItem2',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
       href: 'https://wa.me/972504255338',
       textKey: 'pageAgent.millerAnatoliyInfo.contactsItem3',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
       href: 'https://www.facebook.com/anatolynatan.miller',
       textKey: 'pageAgent.millerAnatoliyInfo.contactsItem4',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon4.svg',
     },
   ];
 
   const licenses = [
-    // {
-    //   href: '/miller/pages/agentPage/AnatoliyMiller/license1.jpg',
-    //   textKey: 'pageAgent.millerAnatoliyInfo.license1',
-    // },
     {
-      href: '/miller/pages/agentPage/AnatoliyMiller/license2.jpg',
+      href: 'pages/agentPage/AnatoliyMiller/license2.jpg',
       textKey: 'pageAgent.millerAnatoliyInfo.license2',
     },
   ];

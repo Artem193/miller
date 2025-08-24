@@ -20,7 +20,7 @@ export const PluginPreview = () => {
   return (
     <section className='pluginPreview'>
       <img
-        src={`/miller/pages/agentPage/pageAgentPreview__photo4.png`}
+        src={`pages/agentPage/pageAgentPreview__photo4.png`}
         alt="photo"
         className='pluginPreview__photo'
       />

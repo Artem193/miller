@@ -27,18 +27,18 @@ export const PluginInfo = () => {
     {
       href: 'tel:+972545735647',
       textKey: 'pageAgent.pluginInfo.contactsItem1',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
       href: 'https://wa.me/972545735647',
       textKey: 'pageAgent.pluginInfo.contactsItem2',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon3.svg',
     },
   ];
 
   const licenses = [
     {
-      href: '/miller/pages/agentPage/Plugin/license1.jpg',
+      href: 'pages/agentPage/Plugin/license1.jpg',
       textKey: 'pageAgent.pluginInfo.license1',
     },
   ];

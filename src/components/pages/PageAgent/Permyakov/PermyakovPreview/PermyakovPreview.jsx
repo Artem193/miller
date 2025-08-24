@@ -20,7 +20,7 @@ export const PermyakovPreview = () => {
   return (
     <section className='permyakovPreview'>
       <img
-        src={`/miller/pages/agentPage/pageAgentPreview__photo3.png`}
+        src={`pages/agentPage/pageAgentPreview__photo3.png`}
         alt="photo"
         className='permyakovPreview__photo'
       />

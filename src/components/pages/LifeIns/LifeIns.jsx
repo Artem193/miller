@@ -50,12 +50,12 @@ export const LifeIns = () => {
         <ProcessLifeIns />
         <WhyWeForServices
           icons={[
-            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
-            '/miller/pages/lifeIns/whyWeLifeIns__icon2.svg',
-            '/miller/pages/lifeIns/whyWeLifeIns__icon3.svg',
-            '/miller/pages/lifeIns/whyWeLifeIns__icon4.svg',
-            '/miller/pages/lifeIns/whyWeLifeIns__icon5.svg',
-            '/miller/pages/lifeIns/whyWeLifeIns__icon6.svg',
+            'pages/carInsurance/whyWeCarIns__icon1.svg',
+            'pages/lifeIns/whyWeLifeIns__icon2.svg',
+            'pages/lifeIns/whyWeLifeIns__icon3.svg',
+            'pages/lifeIns/whyWeLifeIns__icon4.svg',
+            'pages/lifeIns/whyWeLifeIns__icon5.svg',
+            'pages/lifeIns/whyWeLifeIns__icon6.svg',
           ]}
           title={t('lifeIns.whyWeLifeIns.title')}
           text={(i) => t(`lifeIns.whyWeLifeIns.text${i}`)}

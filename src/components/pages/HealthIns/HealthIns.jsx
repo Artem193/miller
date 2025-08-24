@@ -48,12 +48,12 @@ export const HealthIns = () => {
         <CostOfHealthIns />
         <WhyWeForServices
           icons={[
-            '/miller/pages/healthIns/whyWeHealthIns__icon1.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon2.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon3.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon4.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon5.svg',
-            '/miller/pages/healthIns/whyWeHealthIns__icon6.svg',
+            'pages/healthIns/whyWeHealthIns__icon1.svg',
+            'pages/healthIns/whyWeHealthIns__icon2.svg',
+            'pages/healthIns/whyWeHealthIns__icon3.svg',
+            'pages/healthIns/whyWeHealthIns__icon4.svg',
+            'pages/healthIns/whyWeHealthIns__icon5.svg',
+            'pages/healthIns/whyWeHealthIns__icon6.svg',
           ]}
           title={t('healthIns.whyWeHealthIns.title')}
           text={(i) => t(`healthIns.whyWeHealthIns.text${i}`)}

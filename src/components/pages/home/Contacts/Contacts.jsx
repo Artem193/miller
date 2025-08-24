@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 
 import { ThankYouPage } from '../HeroSection/ModalForm/ThankYouPage/ThankYouPage';
 
@@ -26,27 +25,6 @@ export const Contacts = ({ onClose }) => {
     setIsSubmitted(false);
     onClose && onClose();
   };
-
-  // const onSubmit = (data) => {
-  //   emailjs.send(
-  //     'service_artem193',
-  //     'template_zjh9pmt',
-  //     {
-  //       name: data.name,
-  //       phone: data.phone,
-  //       city: data.city,
-  //       to_email: "aviktorovich193@gmail.com",
-  //     },
-  //     'SzlkGa3Kx8Zxlkt17'
-  //   )
-  //     .then(() => {
-  //       setIsSubmitted(true);
-  //       reset();
-  //     })
-  //     .catch((error) => {
-  //       console.error("Ошибка при отправке", error);
-  //     });
-  // };
 
   const onSubmit = async (data) => {
     try {
@@ -86,7 +64,7 @@ export const Contacts = ({ onClose }) => {
                 target="_blank"
               >
                 <img
-                  src="/miller/pages/home/contacts/contacts__email.svg"
+                  src="pages/home/contacts/contacts__email.svg"
                   alt="icon"
                   className='contacts__icon'
                 />
@@ -103,7 +81,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__phone.svg" alt="icon" className='contacts__icon' />
+                <img src="pages/home/contacts/contacts__phone.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>{t('home.contacts.textTitle1')}</p>
                   <p className='contacts__text--info'>050-425-5338</p>
@@ -117,7 +95,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__wp.svg" alt="icon" className='contacts__icon' />
+                <img src="pages/home/contacts/contacts__wp.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>WhatsApp</p>
                   <p className='contacts__text--info'>050-425-5338</p>
@@ -131,7 +109,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__fb.svg" alt="icon" className='contacts__icon' />
+                <img src="pages/home/contacts/contacts__fb.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>Facebook</p>
                   <p className='contacts__text--info'>מילר סוכנות לביטוח בע"מ</p>
@@ -145,7 +123,7 @@ export const Contacts = ({ onClose }) => {
                 className='contacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__location.svg" alt="icon" className='contacts__icon' />
+                <img src="pages/home/contacts/contacts__location.svg" alt="icon" className='contacts__icon' />
                 <div className='contacts__text'>
                   <p className='contacts__text--title'>{t('home.contacts.textTitle2')}</p>
                   <p className='contacts__text--info'>{t('home.contacts.textInfo')}</p>

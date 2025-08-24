@@ -19,7 +19,7 @@ export const WhyLifeIns = () => {
         {[1, 2, 3].map((index) => (
           <div key={index} className="whyLifeIns__box">
             <img
-              src="/miller/pages/lifeIns/whyLifeIns__icon.svg"
+              src="pages/lifeIns/whyLifeIns__icon.svg"
               alt="icon"
               className="whyLifeIns__icon"
             />

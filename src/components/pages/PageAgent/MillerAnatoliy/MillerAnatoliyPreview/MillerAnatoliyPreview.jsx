@@ -20,7 +20,7 @@ export const MillerAnatoliyPreview = () => {
   return (
     <section className='millerAnatoliyPreview'>
       <img
-        src={`/miller/pages/agentPage/pageAgentPreview__photo1.png`}
+        src={`pages/agentPage/pageAgentPreview__photo1.png`}
         alt="photo"
         className='millerAnatoliyPreview__photo'
       />

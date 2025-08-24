@@ -20,7 +20,7 @@ export const HelpCustomerSupport = () => {
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <div key={index} className="helpCustomerSupport__item">
             <img
-              src={`/miller/pages/customerSupport/helpCustomerSupport__icon${index}.png`}
+              src={`pages/customerSupport/helpCustomerSupport__icon${index}.png`}
               alt="icon"
               className={`helpCustomerSupport__icon helpCustomerSupport__icon--${index}`}
             />
@@ -38,7 +38,7 @@ export const HelpCustomerSupport = () => {
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <>
             <img
-              src={`/miller/pages/customerSupport/helpCustomerSupport__icon${index}.png`}
+              src={`pages/customerSupport/helpCustomerSupport__icon${index}.png`}
               alt="icon"
               className={`helpCustomerSupport__icon helpCustomerSupport__icon--${index}`}
             />

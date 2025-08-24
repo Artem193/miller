@@ -25,7 +25,7 @@ export const CostPropertyIns = () => {
             <h2 className="costPropertyIns__subtitle">{t(`propertyIns.costPropertyIns.subtitle${index}`)}</h2>
             <div className="costPropertyIns__textFlex">
               <img
-                src="/miller/pages/propertyIns/costPropertyIns__icon.svg"
+                src="pages/propertyIns/costPropertyIns__icon.svg"
                 alt="icon"
                 className="costPropertyIns__icon"
               />

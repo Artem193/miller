@@ -23,7 +23,7 @@ export const CoverPropertyIns = () => {
               <div key={index} className="coverPropertyIns__box">
                 <div className="coverPropertyIns__circle">
                   <img
-                    src={`/miller/pages/propertyIns/coverPropertyIns__icon${index}.svg`}
+                    src={`pages/propertyIns/coverPropertyIns__icon${index}.svg`}
                     alt="icon"
                     className="coverPropertyIns__icon"
                   />
@@ -41,7 +41,7 @@ export const CoverPropertyIns = () => {
               <div key={index} className="coverPropertyIns__box">
                 <div className="coverPropertyIns__circle">
                   <img
-                    src={`/miller/pages/propertyIns/coverPropertyIns__icon${index}.svg`}
+                    src={`pages/propertyIns/coverPropertyIns__icon${index}.svg`}
                     alt="icon"
                     className="coverPropertyIns__icon"
                   />
@@ -66,7 +66,7 @@ export const CoverPropertyIns = () => {
             <div key={index} className={`coverPropertyIns__boxMob ${index % 2 === 0 ? 'coverPropertyIns__boxMob--left' : ''}`}>
               <div className="coverPropertyIns__circleMob">
                 <img
-                  src={`/miller/pages/propertyIns/coverPropertyIns__icon${index}.svg`}
+                  src={`pages/propertyIns/coverPropertyIns__icon${index}.svg`}
                   alt="icon"
                   className="coverPropertyIns__iconMob"
                 />

@@ -65,7 +65,7 @@ export const ContactsPageContacts = ({ onClose }) => {
                 target="_blank"
               >
                 <img
-                  src="/miller/pages/home/contacts/contacts__email.svg"
+                  src="pages/home/contacts/contacts__email.svg"
                   alt="icon"
                   className='contactsPageContacts__icon'
                 />
@@ -82,7 +82,7 @@ export const ContactsPageContacts = ({ onClose }) => {
                 className='contactsPageContacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__phone.svg" alt="icon" className='contacts__icon' />
+                <img src="pages/home/contacts/contacts__phone.svg" alt="icon" className='contacts__icon' />
                 <div className='contactsPageContacts__text'>
                   <p className='contactsPageContacts__text--title'>{t('contactsPage.contactsPageContacts.textTitle1')}</p>
                   <p className='contactsPageContacts__text--info'>050-425-5338</p>
@@ -96,7 +96,7 @@ export const ContactsPageContacts = ({ onClose }) => {
                 className='contactsPageContacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__wp.svg" alt="icon" className='contactsPageContacts__icon' />
+                <img src="pages/home/contacts/contacts__wp.svg" alt="icon" className='contactsPageContacts__icon' />
                 <div className='contactsPageContacts__text'>
                   <p className='contactsPageContacts__text--title'>WhatsApp</p>
                   <p className='contactsPageContacts__text--info'>050-425-5338</p>
@@ -110,7 +110,7 @@ export const ContactsPageContacts = ({ onClose }) => {
                 className='contactsPageContacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__fb.svg" alt="icon" className='contactsPageContacts__icon' />
+                <img src="pages/home/contacts/contacts__fb.svg" alt="icon" className='contactsPageContacts__icon' />
                 <div className='contactsPageContacts__text'>
                   <p className='contactsPageContacts__text--title'>Facebook</p>
                   <p className='contactsPageContacts__text--info'>Anatoli Natan Miller</p>
@@ -124,7 +124,7 @@ export const ContactsPageContacts = ({ onClose }) => {
                 className='contactsPageContacts__link'
                 target="_blank"
               >
-                <img src="/miller/pages/home/contacts/contacts__location.svg" alt="icon" className='contactsPageContacts__icon' />
+                <img src="pages/home/contacts/contacts__location.svg" alt="icon" className='contactsPageContacts__icon' />
                 <div className='contactsPageContacts__text'>
                   <p className='contactsPageContacts__text--title'>{t('contactsPage.contactsPageContacts.textTitle2')}</p>
                   <p className='contactsPageContacts__text--info'>{t('contactsPage.contactsPageContacts.textInfo')}</p>

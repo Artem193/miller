@@ -55,12 +55,12 @@ export const PensionManagement = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
-            '/miller/pages/carInsurance/whyWeCarIns__icon2.svg',
-            '/miller/pages/pensionManagement/whyWePensionManagement__icon3.svg',
-            '/miller/pages/pensionManagement/whyWePensionManagement__icon4.svg',
-            '/miller/pages/pensionManagement/whyWePensionManagement__icon5.svg',
-            '/miller/pages/pensionManagement/whyWePensionManagement__icon6.svg',
+            'pages/carInsurance/whyWeCarIns__icon1.svg',
+            'pages/carInsurance/whyWeCarIns__icon2.svg',
+            'pages/pensionManagement/whyWePensionManagement__icon3.svg',
+            'pages/pensionManagement/whyWePensionManagement__icon4.svg',
+            'pages/pensionManagement/whyWePensionManagement__icon5.svg',
+            'pages/pensionManagement/whyWePensionManagement__icon6.svg',
           ]}
           title={t('pensionManagement.whyWePensionManagement.title')}
           text={(i) => t(`pensionManagement.whyWePensionManagement.text${i}`)}

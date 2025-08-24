@@ -57,12 +57,12 @@ export const RealizationOfRights = () => {
         <ImportantRealizationOfRights />
         <WhyWeForServices
           icons={[
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon1.svg',
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon2.svg',
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon3.svg',
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon4.svg',
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon5.svg',
-            '/miller/pages/realizationOfRights/whyWeRealizationOfRights__icon6.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon1.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon2.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon3.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon4.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon5.svg',
+            'pages/realizationOfRights/whyWeRealizationOfRights__icon6.svg',
           ]}
           title={t('realizationOfRights.whyWeRealizationOfRights.title')}
           text={(i) => t(`realizationOfRights.whyWeRealizationOfRights.text${i}`)}

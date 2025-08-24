@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
 import './modalForm.scss';
@@ -19,27 +18,6 @@ export const ModalForm = ({ onClose }) => {
   useEffect(() => {
     document.body.setAttribute('dir', i18n.language === 'he' ? 'rtl' : 'ltr');
   }, [i18n.language]);
-
-  // const onSubmit = (data) => {
-  //   emailjs.send(
-  //     'service_artem193',
-  //     'template_zjh9pmt',
-  //     {
-  //       name: data.name,
-  //       phone: data.phone,
-  //       city: data.city,
-  //       to_email: "aviktorovich193@gmail.com",
-  //     },
-  //     'SzlkGa3Kx8Zxlkt17'
-  //   )
-  //   .then(() => {
-  //     setIsSubmitted(true);
-  //     reset();
-  //   })
-  //   .catch((error) => {
-  //     console.error("Ошибка при отправке", error);
-  //   });
-  // };
 
   const onSubmit = async (data) => {
     try {

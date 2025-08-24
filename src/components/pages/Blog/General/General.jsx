@@ -23,7 +23,7 @@ export const General = () => {
         {arrayPrev.map((index) => (
           <div key={index} className="general__preview">
             <img
-              src={`/miller/pages/blog/previews/img${index}.png`}
+              src={`pages/blog/previews/img${index}.png`}
               alt="preview"
               className="general__img"
             />

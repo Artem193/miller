@@ -17,7 +17,7 @@ export const ImportantAccidentIns = () => {
   return (
     <section className="importantAccidentIns container">
       <img
-        src="/miller/pages/accidentIns/importantAccidentIns__img.png"
+        src="pages/accidentIns/importantAccidentIns__img.png"
         alt="illustration"
         className="importantAccidentIns__img"
       />

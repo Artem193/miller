@@ -20,7 +20,7 @@ export const MistakesPropertyIns = () => {
         {[1, 2, 3, 4].map((index) => (
           <div key={index} className="mistakesPropertyIns__box">
             <img
-              src="/miller/pages/propertyIns/mistakesPropertyIns__icon--cross.svg"
+              src="pages/propertyIns/mistakesPropertyIns__icon--cross.svg"
               alt=""
               className="mistakesPropertyIns__icon"
             />
@@ -36,7 +36,7 @@ export const MistakesPropertyIns = () => {
       <h2 className="mistakesPropertyIns__subtitle">{t('propertyIns.mistakesPropertyIns.subtitle')}</h2>
       <div className="mistakesPropertyIns__box mistakesPropertyIns__box--green">
         <img
-          src="/miller/pages/propertyIns/mistakesPropertyIns__icon--check.svg"
+          src="pages/propertyIns/mistakesPropertyIns__icon--check.svg"
           alt=""
           className="mistakesPropertyIns__icon"
         />

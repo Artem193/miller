@@ -32,7 +32,7 @@ export const Services = () => {
         {AllServices.map((service, index) => (
           <div key={index} className='services__box'>
             <img
-              src={`/miller/pages/home/services/services__icon--${index + 1}.svg`}
+              src={`pages/home/services/services__icon--${index + 1}.svg`}
               alt="icon"
               className='services__icon'
             />

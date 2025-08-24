@@ -3,10 +3,6 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules";
 
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-
-
 import './extraForHeroSection.scss'
 
 export const ExtraForHeroSection = () => {
@@ -33,7 +29,7 @@ export const ExtraForHeroSection = () => {
             <div key={index} className='extraForHeroSection__box'>
               <div className='extraForHeroSection__circle'>
                 <img
-                  src={`/miller/pages/financialPlanning/extraForHeroSection__icon${index}.svg`}
+                  src={`pages/financialPlanning/extraForHeroSection__icon${index}.svg`}
                   alt="icon"
                   className='extraForHeroSection__icon'
                 />
@@ -75,7 +71,7 @@ export const ExtraForHeroSection = () => {
                 <div className='extraForHeroSection__box extraForHeroSection__box--mobile'>
                   <div className='extraForHeroSection__circle'>
                     <img
-                      src={`/miller/pages/financialPlanning/extraForHeroSection__icon${index}.svg`}
+                      src={`pages/financialPlanning/extraForHeroSection__icon${index}.svg`}
                       alt="icon"
                       className='extraForHeroSection__icon'
                     />

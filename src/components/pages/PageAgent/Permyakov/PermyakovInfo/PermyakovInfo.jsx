@@ -24,38 +24,30 @@ export const PermyakovInfo = () => {
     {
       href: 'tel:+972522253328',
       textKey: 'pageAgent.permyakovInfo.contactsItem1',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
       href: 'mailto:stasbityah@gmail.com',
       textKey: 'pageAgent.permyakovInfo.contactsItem2',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
       href: 'https://wa.me/972522253328',
       textKey: 'pageAgent.permyakovInfo.contactsItem3',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
       href: 'https://www.facebook.com/harbitinsurance?mibextid=wwXIfr&rdid=2DNegwPA5m7BlgQA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19kFbry9rx%2F%3Fmibextid%3DwwXIfr#',
       textKey: 'pageAgent.permyakovInfo.contactsItem4',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon4.svg',
     },
   ];
 
   const licenses = [
     {
-      href: '/miller/pages/agentPage/Permyakov/license1.jpg',
+      href: 'pages/agentPage/Permyakov/license1.jpg',
       textKey: 'pageAgent.permyakovInfo.license1',
     },
-    // {
-    //   href: '/miller/pages/agentPage/Permyakov/license2.png',
-    //   textKey: 'pageAgent.permyakovInfo.license2',
-    // },
-    // {
-    //   href: '/miller/pages/agentPage/Permyakov/license3.png',
-    //   textKey: 'pageAgent.permyakovInfo.license3',
-    // },
   ];
 
   const { t, i18n } = useTranslation();

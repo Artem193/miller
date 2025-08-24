@@ -17,7 +17,7 @@ export const ImportantInvestmentFunds = () => {
   return (
     <section className="importantInvestmentFunds container">
       <img
-        src="/miller/pages/investmentFunds/importantInvestmentFunds__img.png"
+        src="pages/investmentFunds/importantInvestmentFunds__img.png"
         alt="illustration"
         className="importantInvestmentFunds__img"
       />

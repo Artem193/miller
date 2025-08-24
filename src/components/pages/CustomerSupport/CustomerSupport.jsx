@@ -51,12 +51,12 @@ export const CustomerSupport = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon1.svg',
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon2.svg',
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon3.svg',
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon4.svg',
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon5.svg',
-            '/miller/pages/customerSupport/whyWeCustomerSupport__icon6.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon1.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon2.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon3.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon4.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon5.svg',
+            'pages/customerSupport/whyWeCustomerSupport__icon6.svg',
           ]}
           title={t('customerSupport.whyWeCustomerSupport.title')}
           text={(i) => t(`customerSupport.whyWeCustomerSupport.text${i}`)}

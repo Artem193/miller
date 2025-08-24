@@ -70,12 +70,12 @@ export const MortgageIns = () => {
         />
         <WhyWeForServices
           icons={[
-            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
-            '/miller/pages/carInsurance/whyWeCarIns__icon2.svg',
-            '/miller/pages/mortgageIns/whyWeMortgageIns__icon3.svg',
-            '/miller/pages/mortgageIns/whyWeMortgageIns__icon4.svg',
-            '/miller/pages/mortgageIns/whyWeMortgageIns__icon5.svg',
-            '/miller/pages/mortgageIns/whyWeMortgageIns__icon6.svg',
+            'pages/carInsurance/whyWeCarIns__icon1.svg',
+            'pages/carInsurance/whyWeCarIns__icon2.svg',
+            'pages/mortgageIns/whyWeMortgageIns__icon3.svg',
+            'pages/mortgageIns/whyWeMortgageIns__icon4.svg',
+            'pages/mortgageIns/whyWeMortgageIns__icon5.svg',
+            'pages/mortgageIns/whyWeMortgageIns__icon6.svg',
           ]}
           title={t('mortgageIns.whyWeMortgageIns.title')}
           text={(i) => t(`mortgageIns.whyWeMortgageIns.text${i}`)}

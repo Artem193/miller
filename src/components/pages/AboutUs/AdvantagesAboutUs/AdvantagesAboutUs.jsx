@@ -18,7 +18,7 @@ export const AdvantagesAboutUs = () => {
         {[1, 2, 3, 4].map((index) => (
           <div className='advantagesAboutUs__block' key={index}>
             <img
-              src={`/miller/pages/aboutUs/advantagesAboutUs__img${index}.png`}
+              src={`pages/aboutUs/advantagesAboutUs__img${index}.png`}
               alt="icon"
               className='advantagesAboutUs__img'
             />

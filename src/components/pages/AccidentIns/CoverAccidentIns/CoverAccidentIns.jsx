@@ -23,7 +23,7 @@ export const CoverAccidentIns = () => {
               <div key={index} className="coverAccidentIns__box">
                 <div className="coverAccidentIns__circle">
                   <img
-                    src={`/miller/pages/accidentIns/coverAccidentIns__icon${index}.svg`}
+                    src={`pages/accidentIns/coverAccidentIns__icon${index}.svg`}
                     alt="icon"
                     className="coverAccidentIns__icon"
                   />
@@ -41,7 +41,7 @@ export const CoverAccidentIns = () => {
               <div key={index} className="coverAccidentIns__box">
                 <div className="coverAccidentIns__circle">
                   <img
-                    src={`/miller/pages/accidentIns/coverAccidentIns__icon${index}.svg`}
+                    src={`pages/accidentIns/coverAccidentIns__icon${index}.svg`}
                     alt="icon"
                     className="coverAccidentIns__icon"
                   />
@@ -66,7 +66,7 @@ export const CoverAccidentIns = () => {
             <div key={index} className={`coverAccidentIns__boxMob ${index % 2 === 0 ? 'coverAccidentIns__boxMob--left' : ''}`}>
               <div className="coverAccidentIns__circleMob">
                 <img
-                  src={`/miller/pages/accidentIns/coverAccidentIns__icon${index}.svg`}
+                  src={`pages/accidentIns/coverAccidentIns__icon${index}.svg`}
                   alt="icon"
                   className="coverAccidentIns__iconMob"
                 />

@@ -54,12 +54,12 @@ export const TravelIns = () => {
         <ProcessTravelIns />
         <WhyWeForServices
           icons={[
-            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
-            '/miller/pages/travelIns/whyWeTravelIns__icon2.svg',
-            '/miller/pages/travelIns/whyWeTravelIns__icon3.svg',
-            '/miller/pages/travelIns/whyWeTravelIns__icon4.svg',
-            '/miller/pages/travelIns/whyWeTravelIns__icon5.svg',
-            '/miller/pages/travelIns/whyWeTravelIns__icon6.svg',
+            'pages/carInsurance/whyWeCarIns__icon1.svg',
+            'pages/travelIns/whyWeTravelIns__icon2.svg',
+            'pages/travelIns/whyWeTravelIns__icon3.svg',
+            'pages/travelIns/whyWeTravelIns__icon4.svg',
+            'pages/travelIns/whyWeTravelIns__icon5.svg',
+            'pages/travelIns/whyWeTravelIns__icon6.svg',
           ]}
           title={t('travelIns.whyWeTravelIns.title')}
           text={(i) => t(`travelIns.whyWeTravelIns.text${i}`)}

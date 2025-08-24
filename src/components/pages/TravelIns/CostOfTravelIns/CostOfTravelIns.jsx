@@ -20,7 +20,7 @@ export const CostOfTravelIns = () => {
           {[1, 2, 3, 4, 5].map((index) => (
             <div className="costOfTravelIns__item" key={index}>
               <img
-                src={`/miller/pages/travelIns/costOfTravelIns__icon${index}.svg`}
+                src={`pages/travelIns/costOfTravelIns__icon${index}.svg`}
                 alt="icon"
                 className="costOfTravelIns__icon"
               />

@@ -22,7 +22,7 @@ export const WhyRelevant = () => {
       </p>
       <div className="whyRelevant__content">
         <img
-          src="/miller/pages/financialPlanning/whyRelevant__img.png"
+          src="pages/financialPlanning/whyRelevant__img.png"
           alt="background"
           className="whyRelevant__img"
         />

@@ -42,12 +42,12 @@ export const AboutUs = () => {
         <OurTeamAboutUs />
         <WhyWeForServices
           icons={[
-            '/miller/pages/aboutUs/whyWeAboutUs__icon1.svg',
-            '/miller/pages/aboutUs/whyWeAboutUs__icon2.svg',
-            '/miller/pages/aboutUs/whyWeAboutUs__icon3.svg',
-            '/miller/pages/aboutUs/whyWeAboutUs__icon4.svg',
-            '/miller/pages/aboutUs/whyWeAboutUs__icon5.svg',
-            '/miller/pages/aboutUs/whyWeAboutUs__icon6.svg',
+            'pages/aboutUs/whyWeAboutUs__icon1.svg',
+            'pages/aboutUs/whyWeAboutUs__icon2.svg',
+            'pages/aboutUs/whyWeAboutUs__icon3.svg',
+            'pages/aboutUs/whyWeAboutUs__icon4.svg',
+            'pages/aboutUs/whyWeAboutUs__icon5.svg',
+            'pages/aboutUs/whyWeAboutUs__icon6.svg',
           ]}
           title={t('aboutUs.whyWeAboutUs.title')}
           text={(i) => t(`aboutUs.whyWeAboutUs.text${i}`)}

@@ -27,28 +27,28 @@ export const PovolotskyInfo = () => {
     {
       href: 'tel:+972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem1',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon1.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon1.svg',
     },
     {
       href: 'mailto:michael@miller-ins.co.il',
       textKey: 'pageAgent.povolotskyInfo.contactsItem2',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon2.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon2.svg',
     },
     {
       href: 'https://wa.me/972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem3',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon3.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon3.svg',
     },
     {
       href: 'https://t.me/+972506684684',
       textKey: 'pageAgent.povolotskyInfo.contactsItem4',
-      icon: '/miller/pages/agentPage/AnatoliyMiller/icon4.svg',
+      icon: 'pages/agentPage/AnatoliyMiller/icon4.svg',
     },
   ];
 
   const licenses = [
     {
-      href: '/miller/pages/agentPage/Povolotskiy/license1.png',
+      href: 'pages/agentPage/Povolotskiy/license1.png',
       textKey: 'pageAgent.povolotskyInfo.license1',
     },
   ];

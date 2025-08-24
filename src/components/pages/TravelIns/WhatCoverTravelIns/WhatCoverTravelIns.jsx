@@ -23,7 +23,7 @@ export const WhatCoverTravelIns = () => {
       <div className="whatCoverTravelIns__boxes">
         <div className="whatCoverTravelIns__box">
           <img
-            src="/miller/pages/travelIns/whatCoverTravelIns__icon1.svg"
+            src="pages/travelIns/whatCoverTravelIns__icon1.svg"
             alt="icon"
             className="whatCoverTravelIns__icon"
           />
@@ -38,7 +38,7 @@ export const WhatCoverTravelIns = () => {
 
         <div className="whatCoverTravelIns__box">
           <img
-            src="/miller/pages/travelIns/whatCoverTravelIns__icon2.svg"
+            src="pages/travelIns/whatCoverTravelIns__icon2.svg"
             alt="icon"
             className="whatCoverTravelIns__icon"
           />

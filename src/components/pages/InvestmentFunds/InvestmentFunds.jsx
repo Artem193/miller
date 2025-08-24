@@ -50,12 +50,12 @@ export const InvestmentFunds = () => {
         <ProcessInvestmentFunds />
         <WhyWeForServices
           icons={[
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon1.svg',
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon2.svg',
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon3.svg',
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon4.svg',
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon5.svg',
-            '/miller/pages/investmentFunds/whyWeInvestmentFunds__icon6.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon1.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon2.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon3.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon4.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon5.svg',
+            'pages/investmentFunds/whyWeInvestmentFunds__icon6.svg',
           ]}
           title={t('investmentFunds.whyWeInvestmentFunds.title')}
           text={(i) => t(`investmentFunds.whyWeInvestmentFunds.text${i}`)}

@@ -41,12 +41,12 @@ export const FinancialPlanning = () => {
         <WhyRelevant />
         <WhyWeForServices
           icons={[
-            '/miller/pages/carInsurance/whyWeCarIns__icon1.svg',
-            '/miller/pages/carInsurance/whyWeCarIns__icon2.svg',
-            '/miller/pages/carInsurance/whyWeCarIns__icon3.svg',
-            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon4.svg',
-            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon5.svg',
-            '/miller/pages/financialPlanning/whyWeFinancialPlanning__icon6.svg',
+            'pages/carInsurance/whyWeCarIns__icon1.svg',
+            'pages/carInsurance/whyWeCarIns__icon2.svg',
+            'pages/carInsurance/whyWeCarIns__icon3.svg',
+            'pages/financialPlanning/whyWeFinancialPlanning__icon4.svg',
+            'pages/financialPlanning/whyWeFinancialPlanning__icon5.svg',
+            'pages/financialPlanning/whyWeFinancialPlanning__icon6.svg',
           ]}
           title={t('financialPlanning.whyWeFinancialPlanning.title')}
           text={(i) => t(`financialPlanning.whyWeFinancialPlanning.text${i}`)}

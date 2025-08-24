@@ -30,10 +30,10 @@ export const OurTeamAboutUs = () => {
             <picture>
               <source
                 media="(max-width: 1080px)"
-                srcSet={`/miller/pages/aboutUs/ourTeamAboutUs__photoMob${index + 1}.png`}
+                srcSet={`pages/aboutUs/ourTeamAboutUs__photoMob${index + 1}.png`}
               />
               <img
-                src={`/miller/pages/aboutUs/ourTeamAboutUs__photoDesk${index + 1}.png`}
+                src={`pages/aboutUs/ourTeamAboutUs__photoDesk${index + 1}.png`}
                 alt="photo"
                 className="ourTeamAboutUs__photo"
               />

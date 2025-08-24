@@ -23,7 +23,7 @@ export const MistakesMortgage = () => {
             className={`mistakesMortgage__mistake mistakesMortgage__mistake--${index}`}
           >
             <img
-              src={`/miller/pages/mortgageIns/mistakesMortgage/mistakesMortgage__img--${index}.svg`}
+              src={`pages/mortgageIns/mistakesMortgage/mistakesMortgage__img--${index}.svg`}
               alt="icon"
               className={`mistakesMortgage__img`}
             />

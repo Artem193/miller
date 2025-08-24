@@ -41,7 +41,7 @@ export const AllIns = () => {
           {AllServices.map((service, index) => (
             <div key={index} className='allIns__box'>
               <img
-                src={`/miller/pages/allIns/allIns__icon--${index + 1}.svg`}
+                src={`pages/allIns/allIns__icon--${index + 1}.svg`}
                 alt="icon"
                 className='allIns__icon'
               />
