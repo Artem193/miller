@@ -2025,6 +2025,18 @@ export const languages = {
           license1: 'רישיון סוכן ביטוח מוסמך',
         },
       },
+
+      blog: {
+        general: {
+          title: 'מאמרים',
+          link: 'לקרוא',
+
+          text1: 'שם המאמר',
+          text2: 'שם המאמר',
+          text3: 'שם המאמר',
+          text4: 'שם המאמר',
+        }
+      },
     }
   },
 
