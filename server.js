@@ -92,7 +92,7 @@ app.post("/send", async (req, res) => {
   const mailOptions = {
     from: `"<Miller-site>" <${process.env.EMAIL_USER}>`,
     to: process.env.TO_EMAIL,
-    subject: "Новая заявка с Miller-site",
+    subject: `Новая заявка с Miller-site от ${name}`,
     html: `
       <h2>Новая заявка:</h2>
       <p><strong>Имя:</strong> ${name}</p>
