@@ -32,6 +32,11 @@ export const languages = {
         Pinkasovich: 'מיכאל פינקסוביץ׳'
       },
 
+      buttonsLanguages: {
+        ru: 'RU',
+        he: 'HE',
+      },
+
       accessibility: {
         accessibility__title: 'תפריט נגישות',
         accessibility__button1: 'כיבוי מצב מונוכרום',
@@ -2071,6 +2076,11 @@ export const languages = {
         Plugin: 'Владислав Плюгин',
         Povolotsky: 'Михаил Поволоцкий',
         Pinkasovich: 'Михаил Пинкасович',
+      },
+
+      buttonsLanguages: {
+        ru: 'RU',
+        he: 'HE',
       },
 
       accessibility: {

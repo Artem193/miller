@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './buttonsLanguages.scss';
 
 export const ButtonsLanguages = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [activeLanguage, setActiveLanguage] = useState(i18n.language)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -43,17 +43,20 @@ export const ButtonsLanguages = () => {
           className="buttonsLanguages__buttonPhone buttonsLanguages__buttonPhone--he"
           onClick={() => changeLanguage('he')}
         >
+          {t('buttonsLanguages.he')}
         </button>
         <button
           className="buttonsLanguages__buttonPhone buttonsLanguages__buttonPhone--ru"
           onClick={() => changeLanguage('ru')}
         >
+          {t('buttonsLanguages.ru')}
         </button>
       </div>
       <button
         className={`buttonsLanguages__button buttonsLanguages__button--${activeLanguage}`}
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
+        {t(`buttonsLanguages.${activeLanguage}`)}
       </button>
       {isDropdownOpen && (
         <div className="buttonsLanguages__list">
@@ -61,11 +64,13 @@ export const ButtonsLanguages = () => {
             className="buttonsLanguages__button buttonsLanguages__button--he"
             onClick={() => changeLanguage('he')}
           >
+            {t('buttonsLanguages.he')}
           </button>
           <button
             className="buttonsLanguages__button buttonsLanguages__button--ru"
             onClick={() => changeLanguage('ru')}
           >
+            {t('buttonsLanguages.ru')}
           </button>
         </div>
       )}
