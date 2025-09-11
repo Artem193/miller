@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 2vh;
   right: 10px;
-  z-index: 2;
+  z-index: 10000;
 
   @media (min-width: 768px) {
     bottom: 10vh;
