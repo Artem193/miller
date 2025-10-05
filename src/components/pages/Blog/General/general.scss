@@ -29,6 +29,11 @@
     background-color: #FFFF;
     border-radius: 15px;
     padding: 25px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 
   &__img {
@@ -41,15 +46,10 @@
   &__text {
     font-weight: 700;
     text-align: center;
+    color: #1E4193;
   }
 
   &__link {
-    background-color: #5A9BD5;
-    color: #FFF;
     text-decoration: none;
-    font-weight: 700;
-    border-radius: 15px;
-    padding: 5px 0;
-    text-align: center;
   }
 }
