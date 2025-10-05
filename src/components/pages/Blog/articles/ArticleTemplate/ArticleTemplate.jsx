@@ -34,8 +34,14 @@ export const ArticleTemplate = ({
       <div className="articleTemplate__line"></div>
       {paragraphs.map((num) => (
         <div key={num} className="articleTemplate__article">
-          <h3 className="articleTemplate__article--title">{props[`articleTitle${num}`]}</h3>
-          <p className="articleTemplate__article--text">{props[`articleText${num}`]}</p>
+          <h3
+            className="articleTemplate__article--title"
+            dangerouslySetInnerHTML={props[`articleTitle${num}`]}
+          />
+          <p
+            className="articleTemplate__article--text"
+            dangerouslySetInnerHTML={props[`articleText${num}`]}
+          />
         </div>
       ))}
     </div>

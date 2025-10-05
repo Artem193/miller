@@ -28,20 +28,20 @@ export const PensionInsurance = () => {
           subtitle={t('blog.pensionInsurance.subtitle')}
           img='pages/blog/pensionInsurance.png'
           paragraphCount={5}
-          articleTitle1={t('blog.pensionInsurance.articleTitle1')}
-          articleText1={t('blog.pensionInsurance.articleText1')}
-
-          articleTitle2={t('blog.pensionInsurance.articleTitle2')}
-          articleText2={t('blog.pensionInsurance.articleText2')}
-
-          articleTitle3={t('blog.pensionInsurance.articleTitle3')}
-          articleText3={t('blog.pensionInsurance.articleText3')}
-
-          articleTitle4={t('blog.pensionInsurance.articleTitle4')}
-          articleText4={t('blog.pensionInsurance.articleText4')}
-
-          articleTitle5={t('blog.pensionInsurance.articleTitle5')}
-          articleText5={t('blog.pensionInsurance.articleText5')}
+          {
+          ...Object.fromEntries(
+            [
+              ...Array.from({ length: 5 }, (_, i) => [
+                `articleTitle${i + 1}`,
+                { __html: t(`blog.pensionInsurance.articleTitle${i + 1}`) }
+              ]),
+              ...Array.from({ length: 5 }, (_, i) => [
+                `articleText${i + 1}`,
+                { __html: t(`blog.pensionInsurance.articleText${i + 1}`) }
+              ])
+            ]
+          )
+          }
         />
       </main>
       <Contacts />
