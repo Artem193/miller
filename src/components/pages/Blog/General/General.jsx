@@ -9,7 +9,7 @@ export const General = () => {
 
   const articles = [
     { id: 1, path: '/PensionInsurance' },
-    { id: 2, path: '/' },
+    { id: 2, path: '/CarInsurancePersonal' },
     { id: 3, path: '/' },
     { id: 4, path: '/' },
   ]

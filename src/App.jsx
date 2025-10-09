@@ -26,6 +26,7 @@ import { Povolotsky } from './components/pages/PageAgent/Povolotsky/Povolotsky';
 import { AllIns } from './components/pages/AllIns/AllIns';
 import { Blog } from './components/pages/Blog/Blog';
 import { PensionInsurance } from './components/pages/Blog/articles/PensionInsurance/PensionInsurance';
+import { CarInsurancePersonal } from './components/pages/Blog/articles/CarInsurancePersonal/CarInsurancePersonal';
 
 import './App.scss';
 
@@ -60,6 +61,7 @@ function App() {
         <Route path='/Povolotsky' element={<Povolotsky />}/>
         <Route path='/Blog' element={<Blog />}/>
         <Route path='/PensionInsurance' element={<PensionInsurance />}/>
+        <Route path='/CarInsurancePersonal' element={<CarInsurancePersonal />}/>
       </Routes>
     </Router>
   );
