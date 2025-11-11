@@ -44,6 +44,7 @@ export const ArticleTemplate = ({
           />
         </div>
       ))}
+      <div className="articleTemplate__line"></div>
     </div>
   )
 }

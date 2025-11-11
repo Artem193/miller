@@ -57,21 +57,35 @@
   }
 
   &__line {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color: rgba(30, 65, 147, 0.4);
-    height: 5px;
+    height: 2px;
     width: 100%;
 
     @media (min-width: 1024px) {
-      margin-bottom: 20px;
+      width: 70%;
     }
   }
 
-  &__article--title {
-    text-align: center;
+  &__article {
+    margin-bottom: 30px;
 
     @media (min-width: 1024px) {
-      font-size: 1.25rem;
+      margin-bottom: 42px;
+      width: 70%;
+      line-height: 1.7;
     }
+
+    &--title {
+      margin-bottom: 12px;
+      color: #202020;
+      font-weight: 600;
+
+      @media (min-width: 1024px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    &--text {}
   }
 }

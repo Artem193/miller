@@ -6,9 +6,9 @@ import { ArticleTemplate } from "../ArticleTemplate/ArticleTemplate";
 import { Contacts } from '../../../home/Contacts/Contacts';
 import { Footer } from '../../../../Footer/Footer';
 
-import './carInsurancePersonal.scss'
+import './actuarialDeficit.scss'
 
-export const CarInsurancePersonal = () => {
+export const ActuarialDeficit = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -21,22 +21,22 @@ export const CarInsurancePersonal = () => {
   return (
     <>
       <Header />
-      <main className="carInsurancePersonal">
+      <main className="actuarialDeficit">
         <ArticleTemplate
-          title={t('blog.carInsurancePersonal.title')}
-          subtitle={t('blog.carInsurancePersonal.subtitle')}
-          img='pages/blog/carInsurancePersonal.png'
-          paragraphCount={2}
+          title={t('blog.actuarialDeficit.title')}
+          subtitle={t('blog.actuarialDeficit.subtitle')}
+          img='pages/blog/actuarialDeficit.png'
+          paragraphCount={4}
           {
           ...Object.fromEntries(
             [
-              ...Array.from({ length: 2 }, (_, i) => [
+              ...Array.from({ length: 4 }, (_, i) => [
                 `articleTitle${i + 1}`,
-                { __html: t(`blog.carInsurancePersonal.articleTitle${i + 1}`) }
+                { __html: t(`blog.actuarialDeficit.articleTitle${i + 1}`) }
               ]),
-              ...Array.from({ length: 2 }, (_, i) => [
+              ...Array.from({ length: 4 }, (_, i) => [
                 `articleText${i + 1}`,
-                { __html: t(`blog.carInsurancePersonal.articleText${i + 1}`) }
+                { __html: t(`blog.actuarialDeficit.articleText${i + 1}`) }
               ])
             ]
           )
