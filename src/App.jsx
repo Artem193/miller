@@ -28,6 +28,7 @@ import { Blog } from './components/pages/Blog/Blog';
 import { PensionInsurance } from './components/pages/Blog/articles/PensionInsurance/PensionInsurance';
 import { CarInsurancePersonal } from './components/pages/Blog/articles/CarInsurancePersonal/CarInsurancePersonal';
 import { ActuarialDeficit } from './components/pages/Blog/articles/ActuarialDeficit/ActuarialDeficit';
+import { SavingMoney } from './components/pages/Blog/articles/SavingMoney/SavingMoney';
 
 import './App.scss';
 
@@ -64,6 +65,7 @@ function App() {
         <Route path='/PensionInsurance' element={<PensionInsurance />}/>
         <Route path='/CarInsurancePersonal' element={<CarInsurancePersonal />}/>
         <Route path='/ActuarialDeficit' element={<ActuarialDeficit />}/>
+        <Route path='/SavingMoney' element={<SavingMoney />}/>
       </Routes>
     </Router>
   );
