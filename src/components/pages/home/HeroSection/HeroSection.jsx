@@ -47,7 +47,7 @@ export const HeroSection = () => {
             <Button textButton={t('home.heroSection.heroSection__button')} />
           </div>
           <div className='heroSection__person'>
-            <img src='pages/home/heroSection/heroSectionPhoto.png' className='heroSection__photo' alt='Photo' />
+            <img src='pages/home/heroSection/heroSectionPhoto.webp' className='heroSection__photo' alt='Photo' />
             <Link to='/MillerAnatoliy' className="heroSection__signature--link">
               <p className="heroSection__signature" dangerouslySetInnerHTML={{ __html: t('home.heroSection.heroSection__signature') }}></p>
             </Link>
