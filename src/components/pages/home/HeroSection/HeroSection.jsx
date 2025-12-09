@@ -8,12 +8,12 @@ import { Button } from './Button/Button'
 import "swiper/css";
 import './heroSection.scss';
 
-import Arel from '/pages/home/heroSection/insCompanies/Arel.png';
-import Klal from '/pages/home/heroSection/insCompanies/Klal.png';
-import Shomera from '/pages/home/heroSection/insCompanies/Shomera.png';
-import Shlomo from '/pages/home/heroSection/insCompanies/Shlomo.png';
-import Fenix from '/pages/home/heroSection/insCompanies/Fenix.png';
-import Migdal from '/pages/home/heroSection/insCompanies/Migdal.png';
+import Arel from '/pages/home/heroSection/insCompanies/Arel.webp';
+import Klal from '/pages/home/heroSection/insCompanies/Klal.webp';
+import Shomera from '/pages/home/heroSection/insCompanies/Shomera.webp';
+import Shlomo from '/pages/home/heroSection/insCompanies/Shlomo.webp';
+import Fenix from '/pages/home/heroSection/insCompanies/Fenix.webp';
+import Migdal from '/pages/home/heroSection/insCompanies/Migdal.webp';
 
 export const HeroSection = () => {
   const { t, i18n } = useTranslation();
