@@ -18,7 +18,7 @@ export const WhatIsInvestmentFunds = () => {
         {[1, 2, 3].map((index) => (
           <div key={index} className='whatIsInvestmentFunds__block'>
             <img
-              src={`pages/investmentFunds/whatIsInvestmentFunds__img${index}.png`}
+              src={`pages/investmentFunds/whatIsInvestmentFunds__img${index}.webp`}
               alt="icon"
               className='whatIsInvestmentFunds__img'
             />

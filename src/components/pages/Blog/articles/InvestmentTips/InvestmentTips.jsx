@@ -25,7 +25,7 @@ export const InvestmentTips = () => {
         <ArticleTemplate
           title={t('blog.investmentTips.title')}
           subtitle={t('blog.investmentTips.subtitle')}
-          img='pages/blog/investmentTips.png'
+          img='pages/blog/investmentTips.webp'
           paragraphCount={7}
           {
           ...Object.fromEntries(

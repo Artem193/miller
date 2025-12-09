@@ -30,10 +30,10 @@ export const OurTeamAboutUs = () => {
             <picture>
               <source
                 media="(max-width: 1080px)"
-                srcSet={`pages/aboutUs/ourTeamAboutUs__photoMob${index + 1}.png`}
+                srcSet={`pages/aboutUs/ourTeamAboutUs__photoMob${index + 1}.webp`}
               />
               <img
-                src={`pages/aboutUs/ourTeamAboutUs__photoDesk${index + 1}.png`}
+                src={`pages/aboutUs/ourTeamAboutUs__photoDesk${index + 1}.webp`}
                 alt="photo"
                 className="ourTeamAboutUs__photo"
               />

@@ -25,7 +25,7 @@ export const ActuarialDeficit = () => {
         <ArticleTemplate
           title={t('blog.actuarialDeficit.title')}
           subtitle={t('blog.actuarialDeficit.subtitle')}
-          img='pages/blog/actuarialDeficit.png'
+          img='pages/blog/actuarialDeficit.webp'
           paragraphCount={4}
           {
           ...Object.fromEntries(

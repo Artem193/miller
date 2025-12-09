@@ -24,7 +24,7 @@ export const IncludeInTouristIns = ({ title, arr, pack }) => {
             className="includeInTouristIns__item"
           >
             <img
-              src={`pages/touristIns/${pack}/item--${index}.png`}
+              src={`pages/touristIns/${pack}/item--${index}.webp`}
               alt="icon"
               className="includeInTouristIns__icon"
             />

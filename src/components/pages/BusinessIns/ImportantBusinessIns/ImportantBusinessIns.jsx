@@ -17,7 +17,7 @@ export const ImportantBusinessIns = () => {
   return (
     <section className="importantBusinessIns container">
       <img
-        src="pages/businessIns/importantBusinessIns__img.png"
+        src="pages/businessIns/importantBusinessIns__img.webp"
         alt="illustration"
         className="importantBusinessIns__img"
       />

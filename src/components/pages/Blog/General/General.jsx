@@ -31,7 +31,7 @@ export const General = () => {
           <Link to={article.path} key={article.id} className="general__link">
             <div className="general__preview">
               <img
-                src={`pages/blog/previews/img${index + 1}.png`}
+                src={`pages/blog/previews/img${index + 1}.webp`}
                 alt="preview"
                 className="general__img"
               />

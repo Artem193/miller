@@ -25,7 +25,7 @@ export const CoverageHealthIns = () => {
             className="coverageHealthIns__item"
           >
             <img
-              src={`pages/healthIns/coverageHealthIns${index}.png`}
+              src={`pages/healthIns/coverageHealthIns${index}.webp`}
               alt="icon"
               className="coverageHealthIns__icon"
             />

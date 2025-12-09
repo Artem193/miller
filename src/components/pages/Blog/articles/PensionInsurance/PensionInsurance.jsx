@@ -26,7 +26,7 @@ export const PensionInsurance = () => {
         <ArticleTemplate
           title={t('blog.pensionInsurance.title')}
           subtitle={t('blog.pensionInsurance.subtitle')}
-          img='pages/blog/pensionInsurance.png'
+          img='pages/blog/pensionInsurance.webp'
           paragraphCount={5}
           {
           ...Object.fromEntries(

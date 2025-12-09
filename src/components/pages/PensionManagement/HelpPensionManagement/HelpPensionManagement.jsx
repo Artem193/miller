@@ -20,7 +20,7 @@ export const HelpPensionManagement = () => {
         {[1, 2, 3, 4, 5, 6].map((index) => (
           <div key={index} className="helpPensionManagement__item">
             <img
-              src={`pages/pensionManagement/helpPensionManagement__icon${index}.png`}
+              src={`pages/pensionManagement/helpPensionManagement__icon${index}.webp`}
               alt="icon"
               className="helpPensionManagement__icon"
             />

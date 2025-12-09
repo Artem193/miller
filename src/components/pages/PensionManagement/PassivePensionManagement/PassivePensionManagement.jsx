@@ -18,7 +18,7 @@ export const PassivePensionManagement = () => {
 
       <div className="passivePensionManagement__flex">
         <img
-          src="pages/pensionManagement/passivePensionManagement__img.png"
+          src="pages/pensionManagement/passivePensionManagement__img.webp"
           alt="money"
           className="passivePensionManagement__img"
         />

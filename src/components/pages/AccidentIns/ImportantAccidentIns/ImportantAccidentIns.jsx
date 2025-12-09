@@ -17,7 +17,7 @@ export const ImportantAccidentIns = () => {
   return (
     <section className="importantAccidentIns container">
       <img
-        src="pages/accidentIns/importantAccidentIns__img.png"
+        src="pages/accidentIns/importantAccidentIns__img.webp"
         alt="illustration"
         className="importantAccidentIns__img"
       />
