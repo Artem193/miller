@@ -30,6 +30,12 @@ export const ModalForm = ({ onClose }) => {
       const result = await response.json();
 
       if (result.success) {
+        // ✅ Meta Pixel — отправляем Lead
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+          window.fbq('trackCustom', 'FormSubmit', { form: 'modal' });
+        }
+
         setIsSubmitted(true);
         reset();
       } else {

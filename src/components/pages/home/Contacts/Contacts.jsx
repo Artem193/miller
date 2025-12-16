@@ -37,6 +37,12 @@ export const Contacts = ({ onClose }) => {
       const result = await response.json();
 
       if (result.success) {
+        // ✅ Meta Pixel — Lead из формы контактов
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+          window.fbq('trackCustom', 'FormSubmit', { form: 'contacts' });
+        }
+
         setIsSubmitted(true);
         reset();
       } else {
