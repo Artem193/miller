@@ -36,7 +36,7 @@ export const Reviews = () => {
         }}
         className="reviews__swiper"
       >
-        {[1, 2, 3].map((num) => (
+        {[1, 2, 3, 4].map((num) => (
           <SwiperSlide key={num}>
             <div className='reviews__block'>
               <div className='reviews__person'>
