@@ -22,7 +22,10 @@ export const OurTeamAboutUs = () => {
   return (
     <section className='ourTeamAboutUs container'>
       <h1 className='ourTeamAboutUs__title'>{t('aboutUs.ourTeamAboutUs.title')}</h1>
-      <p className='ourTeamAboutUs__text'>{t('aboutUs.ourTeamAboutUs.text')}</p>
+      <p
+        className="ourTeamAboutUs__text"
+        dangerouslySetInnerHTML={{ __html: t('aboutUs.ourTeamAboutUs.text') }}
+      />
 
       <div className='ourTeamAboutUs__cards'>
         {agents.map((agent, index) => (
