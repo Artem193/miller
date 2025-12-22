@@ -59,6 +59,26 @@
     }
   }
 
+  &__date {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__source {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
   &__text {
     margin: 0;
     font-size: 1rem;
