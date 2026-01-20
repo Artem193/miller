@@ -13,6 +13,7 @@ export const General = () => {
     { id: 3, path: '/ActuarialDeficit' },
     { id: 4, path: '/SavingMoney' },
     { id: 5, path: '/InvestmentTips' },
+    { id: 6, path: '/InvestmentStrategyGuide' },
   ]
 
   useEffect(() => {

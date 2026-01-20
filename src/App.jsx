@@ -30,6 +30,7 @@ import { CarInsurancePersonal } from './components/pages/Blog/articles/CarInsura
 import { ActuarialDeficit } from './components/pages/Blog/articles/ActuarialDeficit/ActuarialDeficit';
 import { SavingMoney } from './components/pages/Blog/articles/SavingMoney/SavingMoney';
 import { InvestmentTips } from './components/pages/Blog/articles/InvestmentTips/InvestmentTips';
+import { InvestmentStrategyGuide } from './components/pages/Blog/articles/InvestmentStrategyGuide/InvestmentStrategyGuide';
 
 import './App.scss';
 
@@ -68,6 +69,7 @@ function App() {
         <Route path='/ActuarialDeficit' element={<ActuarialDeficit />}/>
         <Route path='/SavingMoney' element={<SavingMoney />}/>
         <Route path='/InvestmentTips' element={<InvestmentTips />}/>
+        <Route path='/InvestmentStrategyGuide' element={<InvestmentStrategyGuide />}/>
       </Routes>
     </Router>
   );
