@@ -31,6 +31,7 @@ import { ActuarialDeficit } from './components/pages/Blog/articles/ActuarialDefi
 import { SavingMoney } from './components/pages/Blog/articles/SavingMoney/SavingMoney';
 import { InvestmentTips } from './components/pages/Blog/articles/InvestmentTips/InvestmentTips';
 import { InvestmentStrategyGuide } from './components/pages/Blog/articles/InvestmentStrategyGuide/InvestmentStrategyGuide';
+import { StrategyQuestionnaire } from './components/pages/Blog/articles/StrategyQuestionnaire/StrategyQuestionnaire';
 
 import './App.scss';
 
@@ -70,6 +71,7 @@ function App() {
         <Route path='/SavingMoney' element={<SavingMoney />}/>
         <Route path='/InvestmentTips' element={<InvestmentTips />}/>
         <Route path='/InvestmentStrategyGuide' element={<InvestmentStrategyGuide />}/>
+        <Route path='/StrategyQuestionnaire' element={<StrategyQuestionnaire />}/>
       </Routes>
     </Router>
   );
