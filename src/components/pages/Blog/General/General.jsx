@@ -15,6 +15,7 @@ export const General = () => {
     { id: 5, path: '/InvestmentTips' },
     { id: 6, path: '/InvestmentStrategyGuide' },
     { id: 7, path: '/StrategyQuestionnaire' },
+    { id: 8, path: '/InvestmentRiskExplainer' },
   ]
 
   useEffect(() => {
