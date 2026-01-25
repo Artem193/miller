@@ -33,6 +33,7 @@ import { InvestmentTips } from './components/pages/Blog/articles/InvestmentTips/
 import { InvestmentStrategyGuide } from './components/pages/Blog/articles/InvestmentStrategyGuide/InvestmentStrategyGuide';
 import { StrategyQuestionnaire } from './components/pages/Blog/articles/StrategyQuestionnaire/StrategyQuestionnaire';
 import { InvestmentRiskExplainer } from './components/pages/Blog/articles/InvestmentRiskExplainer/InvestmentRiskExplainer';
+import { InvestorRiskProfile } from './components/pages/Blog/articles/InvestorRiskProfile/InvestorRiskProfile';
 
 import './App.scss';
 
@@ -74,6 +75,7 @@ function App() {
         <Route path='/InvestmentStrategyGuide' element={<InvestmentStrategyGuide />}/>
         <Route path='/StrategyQuestionnaire' element={<StrategyQuestionnaire />}/>
         <Route path='/InvestmentRiskExplainer' element={<InvestmentRiskExplainer />}/>
+        <Route path='/InvestorRiskProfile' element={<InvestorRiskProfile />}/>
       </Routes>
     </Router>
   );
