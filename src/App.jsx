@@ -34,6 +34,7 @@ import { InvestmentStrategyGuide } from './components/pages/Blog/articles/Invest
 import { StrategyQuestionnaire } from './components/pages/Blog/articles/StrategyQuestionnaire/StrategyQuestionnaire';
 import { InvestmentRiskExplainer } from './components/pages/Blog/articles/InvestmentRiskExplainer/InvestmentRiskExplainer';
 import { InvestorRiskProfile } from './components/pages/Blog/articles/InvestorRiskProfile/InvestorRiskProfile';
+import { LiquidityImportance } from './components/pages/Blog/articles/LiquidityImportance/LiquidityImportance';
 
 import './App.scss';
 
@@ -76,6 +77,7 @@ function App() {
         <Route path='/StrategyQuestionnaire' element={<StrategyQuestionnaire />}/>
         <Route path='/InvestmentRiskExplainer' element={<InvestmentRiskExplainer />}/>
         <Route path='/InvestorRiskProfile' element={<InvestorRiskProfile />}/>
+        <Route path='/LiquidityImportance' element={<LiquidityImportance />}/>
       </Routes>
     </Router>
   );
