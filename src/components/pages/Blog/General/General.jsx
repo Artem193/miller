@@ -18,6 +18,7 @@ export const General = () => {
     { id: 8, path: '/InvestmentRiskExplainer' },
     { id: 9, path: '/InvestorRiskProfile' },
     { id: 10, path: '/LiquidityImportance' },
+    { id: 11, path: '/AssetManagement' },
   ]
 
   useEffect(() => {
