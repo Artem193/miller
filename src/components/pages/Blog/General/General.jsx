@@ -19,6 +19,7 @@ export const General = () => {
     { id: 9, path: '/InvestorRiskProfile' },
     { id: 10, path: '/LiquidityImportance' },
     { id: 11, path: '/AssetManagement' },
+    { id: 12, path: '/ServicePricingCard' },
   ]
 
   useEffect(() => {
