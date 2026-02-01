@@ -38,6 +38,7 @@ import { LiquidityImportance } from './components/pages/Blog/articles/LiquidityI
 import { AssetManagement } from './components/pages/Blog/articles/AssetManagement/AssetManagement';
 import { ServicePricingCard } from './components/pages/Blog/articles/ServicePricingCard/ServicePricingCard';
 import { PhoenixInvest } from './components/pages/Blog/articles/PhoenixInvest/PhoenixInvest';
+import { InvestmentPhilosophy } from './components/pages/Blog/articles/InvestmentPhilosophy/InvestmentPhilosophy';
 
 import './App.scss';
 
@@ -84,6 +85,7 @@ function App() {
         <Route path='/AssetManagement' element={<AssetManagement />}/>
         <Route path='/ServicePricingCard' element={<ServicePricingCard />}/>
         <Route path='/PhoenixInvest' element={<PhoenixInvest />}/>
+        <Route path='/InvestmentPhilosophy' element={<InvestmentPhilosophy />}/>
       </Routes>
     </Router>
   );

@@ -21,6 +21,7 @@ export const General = () => {
     { id: 11, path: '/AssetManagement' },
     { id: 12, path: '/ServicePricingCard' },
     { id: 13, path: '/PhoenixInvest' },
+    { id: 14, path: '/InvestmentPhilosophy' },
   ]
 
   useEffect(() => {
