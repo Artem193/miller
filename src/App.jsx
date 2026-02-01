@@ -37,6 +37,7 @@ import { InvestorRiskProfile } from './components/pages/Blog/articles/InvestorRi
 import { LiquidityImportance } from './components/pages/Blog/articles/LiquidityImportance/LiquidityImportance';
 import { AssetManagement } from './components/pages/Blog/articles/AssetManagement/AssetManagement';
 import { ServicePricingCard } from './components/pages/Blog/articles/ServicePricingCard/ServicePricingCard';
+import { PhoenixInvest } from './components/pages/Blog/articles/PhoenixInvest/PhoenixInvest';
 
 import './App.scss';
 
@@ -82,6 +83,7 @@ function App() {
         <Route path='/LiquidityImportance' element={<LiquidityImportance />}/>
         <Route path='/AssetManagement' element={<AssetManagement />}/>
         <Route path='/ServicePricingCard' element={<ServicePricingCard />}/>
+        <Route path='/PhoenixInvest' element={<PhoenixInvest />}/>
       </Routes>
     </Router>
   );
