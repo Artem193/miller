@@ -2079,6 +2079,15 @@ export const languages = {
           text12: 'אשראי כנגד חסכונות: מתי זה עובד',
           text13: 'למי מתאים Phoenix Invest',
           text14: 'השקעות כמערכת',
+
+          showMore: "להציג עוד",
+        },
+
+        filters: {
+          all: "הכול",
+          invest: "קרנות השקעה",
+          car: "ביטוח רכב",
+          pension: "נכסים פנסיוניים"
         },
 
         pensionInsurance: {
@@ -4384,6 +4393,15 @@ export const languages = {
           text12: 'Кредит под накопления: когда это работает',
           text13: 'Кому подходит Phoenix Invest',
           text14: 'Инвестиции как система',
+
+          showMore: "Показать больше",
+        },
+
+        filters: {
+          all: "Все",
+          invest: "Инвестиционные фонды",
+          car: "Страхование автомобилей",
+          pension: 'Пенсионные активы'
         },
 
         pensionInsurance: {
