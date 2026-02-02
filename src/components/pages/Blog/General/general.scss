@@ -19,6 +19,7 @@
   &__articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 0.25fr));
+    justify-content: center;
     gap: 50px;
   }
 
