@@ -39,6 +39,7 @@ import { AssetManagement } from './components/pages/Blog/articles/AssetManagemen
 import { ServicePricingCard } from './components/pages/Blog/articles/ServicePricingCard/ServicePricingCard';
 import { PhoenixInvest } from './components/pages/Blog/articles/PhoenixInvest/PhoenixInvest';
 import { InvestmentPhilosophy } from './components/pages/Blog/articles/InvestmentPhilosophy/InvestmentPhilosophy';
+import { PregnancyHealthInsurance } from './components/pages/Blog/articles/PregnancyHealthInsurance/PregnancyHealthInsurance';
 
 import './App.scss';
 
@@ -86,6 +87,7 @@ function App() {
         <Route path='/ServicePricingCard' element={<ServicePricingCard />}/>
         <Route path='/PhoenixInvest' element={<PhoenixInvest />}/>
         <Route path='/InvestmentPhilosophy' element={<InvestmentPhilosophy />}/>
+        <Route path='/PregnancyHealthInsurance' element={<PregnancyHealthInsurance />}/>
       </Routes>
     </Router>
   );
