@@ -24,6 +24,7 @@ export const General = () => {
       { id: 13, path: "/PhoenixInvest", category: "invest" },
       { id: 14, path: "/InvestmentPhilosophy", category: "invest" },
       { id: 15, path: "/PregnancyHealthInsurance", category: "healthy" },
+      { id: 16, path: "/ChildHealthInsurance", category: "healthy" },
     ],
     []
   );
