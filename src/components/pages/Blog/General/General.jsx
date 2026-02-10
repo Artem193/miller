@@ -26,6 +26,7 @@ export const General = () => {
       { id: 15, path: "/PregnancyHealthInsurance", category: "healthy" },
       { id: 16, path: "/ChildHealthInsurance", category: "healthy" },
       { id: 17, path: "/PensionPlanningOverview", category: "pension" },
+      { id: 18, path: "/TransplantCoverage", category: "healthy" },
     ],
     []
   );

@@ -42,6 +42,7 @@ import { InvestmentPhilosophy } from './components/pages/Blog/articles/Investmen
 import { PregnancyHealthInsurance } from './components/pages/Blog/articles/PregnancyHealthInsurance/PregnancyHealthInsurance';
 import { ChildHealthInsurance } from './components/pages/Blog/articles/ChildHealthInsurance/ChildHealthInsurance';
 import { PensionPlanningOverview } from './components/pages/Blog/articles/PensionPlanningOverview/PensionPlanningOverview';
+import { TransplantCoverage } from './components/pages/Blog/articles/TransplantCoverage/TransplantCoverage';
 
 import './App.scss';
 
@@ -92,6 +93,7 @@ function App() {
         <Route path='/PregnancyHealthInsurance' element={<PregnancyHealthInsurance />}/>
         <Route path='/ChildHealthInsurance' element={<ChildHealthInsurance />}/>
         <Route path='/PensionPlanningOverview' element={<PensionPlanningOverview />}/>
+        <Route path='/TransplantCoverage' element={<TransplantCoverage />}/>
       </Routes>
     </Router>
   );
