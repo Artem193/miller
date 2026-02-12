@@ -43,6 +43,7 @@ import { PregnancyHealthInsurance } from './components/pages/Blog/articles/Pregn
 import { ChildHealthInsurance } from './components/pages/Blog/articles/ChildHealthInsurance/ChildHealthInsurance';
 import { PensionPlanningOverview } from './components/pages/Blog/articles/PensionPlanningOverview/PensionPlanningOverview';
 import { TransplantCoverage } from './components/pages/Blog/articles/TransplantCoverage/TransplantCoverage';
+import { InsurancePayoutsIsrael } from './components/pages/Blog/articles/InsurancePayoutsIsrael/InsurancePayoutsIsrael';
 
 import './App.scss';
 
@@ -94,6 +95,7 @@ function App() {
         <Route path='/ChildHealthInsurance' element={<ChildHealthInsurance />}/>
         <Route path='/PensionPlanningOverview' element={<PensionPlanningOverview />}/>
         <Route path='/TransplantCoverage' element={<TransplantCoverage />}/>
+        <Route path='/InsurancePayoutsIsrael' element={<InsurancePayoutsIsrael />}/>
       </Routes>
     </Router>
   );
