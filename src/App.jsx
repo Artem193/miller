@@ -44,6 +44,7 @@ import { ChildHealthInsurance } from './components/pages/Blog/articles/ChildHeal
 import { PensionPlanningOverview } from './components/pages/Blog/articles/PensionPlanningOverview/PensionPlanningOverview';
 import { TransplantCoverage } from './components/pages/Blog/articles/TransplantCoverage/TransplantCoverage';
 import { InsurancePayoutsIsrael } from './components/pages/Blog/articles/InsurancePayoutsIsrael/InsurancePayoutsIsrael';
+import { CriticalIllnessStats } from './components/pages/Blog/articles/CriticalIllnessStats/CriticalIllnessStats';
 
 import './App.scss';
 
@@ -96,6 +97,7 @@ function App() {
         <Route path='/PensionPlanningOverview' element={<PensionPlanningOverview />}/>
         <Route path='/TransplantCoverage' element={<TransplantCoverage />}/>
         <Route path='/InsurancePayoutsIsrael' element={<InsurancePayoutsIsrael />}/>
+        <Route path='/CriticalIllnessStats' element={<CriticalIllnessStats />}/>
       </Routes>
     </Router>
   );
