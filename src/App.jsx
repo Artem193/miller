@@ -46,6 +46,7 @@ import { TransplantCoverage } from './components/pages/Blog/articles/TransplantC
 import { InsurancePayoutsIsrael } from './components/pages/Blog/articles/InsurancePayoutsIsrael/InsurancePayoutsIsrael';
 import { CriticalIllnessStats } from './components/pages/Blog/articles/CriticalIllnessStats/CriticalIllnessStats';
 import { AbroadSurgeryCoverage } from './components/pages/Blog/articles/AbroadSurgeryCoverage/AbroadSurgeryCoverage';
+import { OutsideBasket } from './components/pages/Blog/articles/OutsideBasket/OutsideBasket';
 
 import './App.scss';
 
@@ -100,6 +101,7 @@ function App() {
         <Route path='/InsurancePayoutsIsrael' element={<InsurancePayoutsIsrael />}/>
         <Route path='/CriticalIllnessStats' element={<CriticalIllnessStats />}/>
         <Route path='/AbroadSurgeryCoverage' element={<AbroadSurgeryCoverage />}/>
+        <Route path='/OutsideBasket' element={<OutsideBasket />}/>
       </Routes>
     </Router>
   );
