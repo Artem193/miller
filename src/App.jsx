@@ -47,6 +47,7 @@ import { InsurancePayoutsIsrael } from './components/pages/Blog/articles/Insuran
 import { CriticalIllnessStats } from './components/pages/Blog/articles/CriticalIllnessStats/CriticalIllnessStats';
 import { AbroadSurgeryCoverage } from './components/pages/Blog/articles/AbroadSurgeryCoverage/AbroadSurgeryCoverage';
 import { OutsideBasket } from './components/pages/Blog/articles/OutsideBasket/OutsideBasket';
+import { LifeInsurancePayoutTypes } from './components/pages/Blog/articles/LifeInsurancePayoutTypes/LifeInsurancePayoutTypes';
 
 import './App.scss';
 
@@ -102,6 +103,7 @@ function App() {
         <Route path='/CriticalIllnessStats' element={<CriticalIllnessStats />}/>
         <Route path='/AbroadSurgeryCoverage' element={<AbroadSurgeryCoverage />}/>
         <Route path='/OutsideBasket' element={<OutsideBasket />}/>
+        <Route path='/LifeInsurancePayoutTypes' element={<LifeInsurancePayoutTypes />}/>
       </Routes>
     </Router>
   );

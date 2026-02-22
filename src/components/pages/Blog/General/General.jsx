@@ -31,6 +31,7 @@ export const General = () => {
       { id: 20, path: "/CriticalIllnessStats", category: "healthy" },
       { id: 21, path: "/AbroadSurgeryCoverage", category: "healthy" },
       { id: 22, path: "/OutsideBasket", category: "healthy" },
+      { id: 23, path: "/LifeInsurancePayoutTypes", category: "life" },
     ],
     []
   );
@@ -121,6 +122,14 @@ export const General = () => {
           onClick={() => setActiveCategory("healthy")}
         >
           {t("blog.filters.healthy")}
+        </button>
+
+        <button
+          type="button"
+          className={`general__filter ${activeCategory === "life" ? "is-active" : ""}`}
+          onClick={() => setActiveCategory("life")}
+        >
+          {t("blog.filters.life")}
         </button>
 
         <button
