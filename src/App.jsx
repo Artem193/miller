@@ -48,6 +48,7 @@ import { CriticalIllnessStats } from './components/pages/Blog/articles/CriticalI
 import { AbroadSurgeryCoverage } from './components/pages/Blog/articles/AbroadSurgeryCoverage/AbroadSurgeryCoverage';
 import { OutsideBasket } from './components/pages/Blog/articles/OutsideBasket/OutsideBasket';
 import { LifeInsurancePayoutTypes } from './components/pages/Blog/articles/LifeInsurancePayoutTypes/LifeInsurancePayoutTypes';
+import { CancerCoverageConditions } from './components/pages/Blog/articles/CancerCoverageConditions/CancerCoverageConditions';
 
 import './App.scss';
 
@@ -104,6 +105,7 @@ function App() {
         <Route path='/AbroadSurgeryCoverage' element={<AbroadSurgeryCoverage />}/>
         <Route path='/OutsideBasket' element={<OutsideBasket />}/>
         <Route path='/LifeInsurancePayoutTypes' element={<LifeInsurancePayoutTypes />}/>
+        <Route path='/CancerCoverageConditions' element={<CancerCoverageConditions />}/>
       </Routes>
     </Router>
   );
