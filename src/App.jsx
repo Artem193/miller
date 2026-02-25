@@ -50,6 +50,7 @@ import { OutsideBasket } from './components/pages/Blog/articles/OutsideBasket/Ou
 import { LifeInsurancePayoutTypes } from './components/pages/Blog/articles/LifeInsurancePayoutTypes/LifeInsurancePayoutTypes';
 import { CancerCoverageConditions } from './components/pages/Blog/articles/CancerCoverageConditions/CancerCoverageConditions';
 import { CriticalIllness } from './components/pages/Blog/articles/CriticalIllness/CriticalIllness';
+import { PolicyFeature } from './components/pages/Blog/articles/PolicyFeature/PolicyFeature';
 
 import './App.scss';
 
@@ -108,6 +109,7 @@ function App() {
         <Route path='/LifeInsurancePayoutTypes' element={<LifeInsurancePayoutTypes />}/>
         <Route path='/CancerCoverageConditions' element={<CancerCoverageConditions />}/>
         <Route path='/CriticalIllness' element={<CriticalIllness />}/>
+        <Route path='/PolicyFeature' element={<PolicyFeature />}/>
       </Routes>
     </Router>
   );
