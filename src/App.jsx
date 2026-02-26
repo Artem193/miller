@@ -51,6 +51,7 @@ import { LifeInsurancePayoutTypes } from './components/pages/Blog/articles/LifeI
 import { CancerCoverageConditions } from './components/pages/Blog/articles/CancerCoverageConditions/CancerCoverageConditions';
 import { CriticalIllness } from './components/pages/Blog/articles/CriticalIllness/CriticalIllness';
 import { PolicyFeature } from './components/pages/Blog/articles/PolicyFeature/PolicyFeature';
+import { CriticalIllnessSurvivalDays } from './components/pages/Blog/articles/CriticalIllnessSurvivalDays/CriticalIllnessSurvivalDays';
 
 import './App.scss';
 
@@ -110,6 +111,7 @@ function App() {
         <Route path='/CancerCoverageConditions' element={<CancerCoverageConditions />}/>
         <Route path='/CriticalIllness' element={<CriticalIllness />}/>
         <Route path='/PolicyFeature' element={<PolicyFeature />}/>
+        <Route path='/CriticalIllnessSurvivalDays' element={<CriticalIllnessSurvivalDays />}/>
       </Routes>
     </Router>
   );
