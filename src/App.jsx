@@ -53,6 +53,7 @@ import { CriticalIllness } from './components/pages/Blog/articles/CriticalIllnes
 import { PolicyFeature } from './components/pages/Blog/articles/PolicyFeature/PolicyFeature';
 import { CriticalIllnessSurvivalDays } from './components/pages/Blog/articles/CriticalIllnessSurvivalDays/CriticalIllnessSurvivalDays';
 import { OperationRequiredForPayout } from './components/pages/Blog/articles/OperationRequiredForPayout/OperationRequiredForPayout';
+import { CriticalIllnessPolicyGuide } from './components/pages/Blog/articles/CriticalIllnessPolicyGuide/CriticalIllnessPolicyGuide';
 
 import './App.scss';
 
@@ -114,6 +115,7 @@ function App() {
         <Route path='/PolicyFeature' element={<PolicyFeature />}/>
         <Route path='/CriticalIllnessSurvivalDays' element={<CriticalIllnessSurvivalDays />}/>
         <Route path='/OperationRequiredForPayout' element={<OperationRequiredForPayout />}/>
+        <Route path='/CriticalIllnessPolicyGuide' element={<CriticalIllnessPolicyGuide />}/>
       </Routes>
     </Router>
   );
