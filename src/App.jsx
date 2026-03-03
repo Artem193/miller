@@ -54,6 +54,7 @@ import { PolicyFeature } from './components/pages/Blog/articles/PolicyFeature/Po
 import { CriticalIllnessSurvivalDays } from './components/pages/Blog/articles/CriticalIllnessSurvivalDays/CriticalIllnessSurvivalDays';
 import { OperationRequiredForPayout } from './components/pages/Blog/articles/OperationRequiredForPayout/OperationRequiredForPayout';
 import { CriticalIllnessPolicyGuide } from './components/pages/Blog/articles/CriticalIllnessPolicyGuide/CriticalIllnessPolicyGuide';
+import { PensionWithdrawalInfo } from './components/pages/Blog/articles/PensionWithdrawalInfo/PensionWithdrawalInfo';
 
 import './App.scss';
 
@@ -116,6 +117,7 @@ function App() {
         <Route path='/CriticalIllnessSurvivalDays' element={<CriticalIllnessSurvivalDays />}/>
         <Route path='/OperationRequiredForPayout' element={<OperationRequiredForPayout />}/>
         <Route path='/CriticalIllnessPolicyGuide' element={<CriticalIllnessPolicyGuide />}/>
+        <Route path='/PensionWithdrawalInfo' element={<PensionWithdrawalInfo />}/>
       </Routes>
     </Router>
   );
