@@ -57,6 +57,7 @@ import { CriticalIllnessPolicyGuide } from './components/pages/Blog/articles/Cri
 import { PensionWithdrawalInfo } from './components/pages/Blog/articles/PensionWithdrawalInfo/PensionWithdrawalInfo';
 import { LifeInsuranceGuide } from './components/pages/Blog/articles/LifeInsuranceGuide/LifeInsuranceGuide';
 import { LifeInsuranceTypes } from './components/pages/Blog/articles/LifeInsuranceTypes/LifeInsuranceTypes';
+import { LifeInsuranceOverview } from './components/pages/Blog/articles/LifeInsuranceOverview/LifeInsuranceOverview';
 
 import './App.scss';
 
@@ -122,6 +123,7 @@ function App() {
         <Route path='/PensionWithdrawalInfo' element={<PensionWithdrawalInfo />}/>
         <Route path='/LifeInsuranceGuide' element={<LifeInsuranceGuide />}/>
         <Route path='/LifeInsuranceTypes' element={<LifeInsuranceTypes />}/>
+        <Route path='/LifeInsuranceOverview' element={<LifeInsuranceOverview />}/>
       </Routes>
     </Router>
   );

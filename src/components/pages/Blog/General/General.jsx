@@ -41,6 +41,7 @@ export const General = () => {
       { id: 30, path: "/PensionWithdrawalInfo", category: "pension" },
       { id: 31, path: "/LifeInsuranceGuide", category: "life" },
       { id: 32, path: "/LifeInsuranceTypes", category: "life" },
+      { id: 33, path: "/LifeInsuranceOverview", category: "life" },
     ],
     []
   );
