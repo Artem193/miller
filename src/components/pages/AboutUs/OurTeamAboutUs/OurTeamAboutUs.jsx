@@ -11,6 +11,7 @@ export const OurTeamAboutUs = () => {
     { to: '/Permyakov' },
     { to: '/Plugin' },
     { to: '/Povolotsky' },
+    { to: '/Ciporin' },
   ]
 
   const { t, i18n } = useTranslation();

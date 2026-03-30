@@ -131,6 +131,9 @@ export const Header = () => {
                     <li className='nav__item'>
                       <Link className="nav__link nav__link--dropdown" to='/Povolotsky'>{t('header.Povolotsky')}</Link>
                     </li>
+                    <li className='nav__item'>
+                      <Link className="nav__link nav__link--dropdown" to='/Ciporin'>{t('header.Ciporin')}</Link>
+                    </li>
                   </ul>
                 )}
               </span>
@@ -233,6 +236,9 @@ export const Header = () => {
                 </li>
                 <li className='nav__item'>
                   <Link className="nav__link nav__link--dropdown" to='/Povolotsky'>{t('header.Povolotsky')}</Link>
+                </li>
+                <li className='nav__item'>
+                  <Link className="nav__link nav__link--dropdown" to='/Ciporin'>{t('header.Ciporin')}</Link>
                 </li>
               </ul>
             )}

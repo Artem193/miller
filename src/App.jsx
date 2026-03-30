@@ -23,6 +23,7 @@ import { MillerKristina } from './components/pages/PageAgent/MillerKristina/Mill
 import { Permyakov } from './components/pages/PageAgent/Permyakov/Permyakov';
 import { Plugin } from './components/pages/PageAgent/Plugin/Plugin';
 import { Povolotsky } from './components/pages/PageAgent/Povolotsky/Povolotsky';
+import { Ciporin } from './components/pages/PageAgent/Ciporin/Ciporin';
 import { AllIns } from './components/pages/AllIns/AllIns';
 import { Blog } from './components/pages/Blog/Blog';
 import { PensionInsurance } from './components/pages/Blog/articles/PensionInsurance/PensionInsurance';
@@ -90,6 +91,7 @@ function App() {
         <Route path='/Plugin' element={<Plugin />}/>
         <Route path='/Permyakov' element={<Permyakov />}/>
         <Route path='/Povolotsky' element={<Povolotsky />}/>
+        <Route path='/Ciporin' element={<Ciporin />}/>
         <Route path='/Blog' element={<Blog />}/>
         <Route path='/PensionInsurance' element={<PensionInsurance />}/>
         <Route path='/CarInsurancePersonal' element={<CarInsurancePersonal />}/>
