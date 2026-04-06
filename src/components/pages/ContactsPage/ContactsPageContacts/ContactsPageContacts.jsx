@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 
 import { ThankYouPage } from '../../home/HeroSection/ModalForm/ThankYouPage/ThankYouPage';
 
@@ -27,25 +26,31 @@ export const ContactsPageContacts = ({ onClose }) => {
     onClose && onClose();
   };
 
-  const onSubmit = (data) => {
-    emailjs.send(
-      'service_artem193',
-      'template_zjh9pmt',
-      {
-        name: data.name,
-        phone: data.phone,
-        city: data.city,
-        to_email: "aviktorovich193@gmail.com",
-      },
-      'SzlkGa3Kx8Zxlkt17'
-    )
-      .then(() => {
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch('https://miller-k5i2.onrender.com/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // ✅ Meta Pixel — отправляем Lead
+        if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+          window.fbq('trackCustom', 'FormSubmit', { form: 'modal' });
+        }
+
         setIsSubmitted(true);
         reset();
-      })
-      .catch((error) => {
-        console.error("Ошибка при отправке", error);
-      });
+      } else {
+        alert('Ошибка отправки: ' + result.message);
+      }
+    } catch (error) {
+      console.error("Ошибка при отправке:", error);
+    }
   };
 
   if (isSubmitted) {
