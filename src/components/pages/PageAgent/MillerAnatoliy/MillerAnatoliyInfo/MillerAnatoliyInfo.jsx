@@ -52,7 +52,7 @@ export const MillerAnatoliyInfo = () => {
       textKey: 'pageAgent.millerAnatoliyInfo.license2',
     },
     {
-      href: 'pages/agentPage/AnatoliyMiller/retirement-planning-certificate.jpeg',
+      href: 'pages/agentPage/AnatoliyMiller/retirement-planning-certificate.jpg',
       textKey: 'pageAgent.millerAnatoliyInfo.retirementCertificate',
     },
   ];
