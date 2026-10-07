@@ -166,4 +166,12 @@
     cursor: zoom-out;
     transform: scale(1);
   }
+
+  &__licenses {
+    .millerAnatoliyInfo__link--button {
+      display: block;
+      width: 100%;
+      text-align: start;
+    }
+  }
 }
