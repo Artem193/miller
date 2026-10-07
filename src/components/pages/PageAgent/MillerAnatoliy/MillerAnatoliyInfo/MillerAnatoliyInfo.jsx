@@ -46,10 +46,14 @@ export const MillerAnatoliyInfo = () => {
     },
   ];
 
-  const licenses = [
+   const licenses = [
     {
       href: 'pages/agentPage/AnatoliyMiller/license2.jpg',
       textKey: 'pageAgent.millerAnatoliyInfo.license2',
+    },
+    {
+      href: 'pages/agentPage/AnatoliyMiller/retirement-planning-certificate.jpg',
+      textKey: 'pageAgent.millerAnatoliyInfo.retirementCertificate',
     },
   ];
 
